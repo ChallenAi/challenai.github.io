@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>education on Challen</title>
+    <link>/tags/education/</link>
+    <description>Recent content in education on Challen</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>ChallenAi</copyright>
+    <lastBuildDate>Thu, 22 Apr 2021 07:48:16 +0800</lastBuildDate><atom:link href="/tags/education/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>谈教育</title>
+      <link>/posts/inspiration/education/</link>
+      <pubDate>Thu, 22 Apr 2021 07:48:16 +0800</pubDate>
+      
+      <guid>/posts/inspiration/education/</guid>
+      <description>education</description>
+      <content>&lt;p&gt;education&lt;/p&gt;
+</content>
+    </item>
+    
+  </channel>
+</rss>

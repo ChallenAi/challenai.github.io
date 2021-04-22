@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>art on Challen</title>
+    <link>/tags/art/</link>
+    <description>Recent content in art on Challen</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>ChallenAi</copyright>
+    <lastBuildDate>Thu, 22 Apr 2021 07:48:16 +0800</lastBuildDate><atom:link href="/tags/art/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Art</title>
+      <link>/posts/art/page/</link>
+      <pubDate>Thu, 22 Apr 2021 07:48:16 +0800</pubDate>
+      
+      <guid>/posts/art/page/</guid>
+      <description>  Blender探索
+  色彩原理
+  </description>
+      <content>&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;/posts/art/blender&#34;&gt;Blender探索&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;/posts/art/color&#34;&gt;色彩原理&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>Blender探索</title>
+      <link>/posts/art/blender/</link>
+      <pubDate>Thu, 22 Apr 2021 07:48:16 +0800</pubDate>
+      
+      <guid>/posts/art/blender/</guid>
+      <description>Blender探索 一些经验   前置工作
+编辑-偏好，设置语言为English或中文。快捷键映射，点击空格为搜索，而不是播放
+  如何创建5角环
+shift+A选择圆环，然后不要点击，左下角参数设置段数为5
+  如何处理场景中的单个物品
+使用/
+  如何查看当前物品位置，旋转参数？
+右上角的几个圆圈下面的小三角展开
+  如何放大一个对象
+s
+  如何在立方体的某个面中心放一个小立方体
+tab切换编辑模式，3切换面，选中该面，shift+s定位游标到这里。tab切回，shift+a创建立方体，s缩小。
+  三个并排的立方体，模拟1. 像天平一样，两边的立方体旋转，2. 3个围绕一点转。3. 三个各自绕自己旋转
+屏幕中间顶部有个局部和全局坐标系，右边那个就是参照点 1. 选围绕边界， 2. 选围绕游标，游标移到某处。 3. 旋转围绕物体原点
+  4个角色围绕某点，两两对面，如何拉远所有角色和圆心的距离
+同上，全选角色。选择局部坐标系，即参考自己的transform，gx拉远即可。可以看到他们都沿着自己世界的x轴移动，而不是真实的x轴
+  制作一个星球模型，星球上有很多环型山。即一个大球，上面有很多环
+shift+a创建球和环，环s缩小，点击屏幕中上吸附，吸附选项设置为面（项目中的元素、自动旋转），那么环就会自动旋转，吸附到球表面
+  3d角色 </description>
+      <content>&lt;h2 id=&#34;blender探索&#34;&gt;Blender探索&lt;/h2&gt;
+&lt;h3 id=&#34;一些经验&#34;&gt;一些经验&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;前置工作&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;编辑-偏好，设置语言为English或中文。快捷键映射，点击空格为搜索，而不是播放&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;如何创建5角环&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;shift+A选择圆环，然后不要点击，左下角参数设置段数为5&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;如何处理场景中的单个物品&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;使用/&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;如何查看当前物品位置，旋转参数？&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;右上角的几个圆圈下面的小三角展开&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;如何放大一个对象&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;s&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;如何在立方体的某个面中心放一个小立方体&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;tab切换编辑模式，3切换面，选中该面，shift+s定位游标到这里。tab切回，shift+a创建立方体，s缩小。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;三个并排的立方体，模拟1. 像天平一样，两边的立方体旋转，2. 3个围绕一点转。3. 三个各自绕自己旋转&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;屏幕中间顶部有个局部和全局坐标系，右边那个就是参照点 1. 选围绕边界， 2. 选围绕游标，游标移到某处。 3. 旋转围绕物体原点&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;4个角色围绕某点，两两对面，如何拉远所有角色和圆心的距离&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;同上，全选角色。选择局部坐标系，即参考自己的transform，gx拉远即可。可以看到他们都沿着自己世界的x轴移动，而不是真实的x轴&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;制作一个星球模型，星球上有很多环型山。即一个大球，上面有很多环&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;shift+a创建球和环，环s缩小，点击屏幕中上吸附，吸附选项设置为面（项目中的元素、自动旋转），那么环就会自动旋转，吸附到球表面&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;3d角色&#34;&gt;3d角色&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;../vendor/images/anime.jpeg&#34; alt=&#34;动漫人物&#34;&gt;&lt;/p&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>色彩设计</title>
+      <link>/posts/art/color/</link>
+      <pubDate>Thu, 22 Apr 2021 07:48:16 +0800</pubDate>
+      
+      <guid>/posts/art/color/</guid>
+      <description>color</description>
+      <content>&lt;p&gt;color&lt;/p&gt;
+</content>
+    </item>
+    
+  </channel>
+</rss>

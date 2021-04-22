@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>inspiration on Challen</title>
+    <link>/tags/inspiration/</link>
+    <description>Recent content in inspiration on Challen</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>ChallenAi</copyright>
+    <lastBuildDate>Thu, 22 Apr 2021 07:48:16 +0800</lastBuildDate><atom:link href="/tags/inspiration/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Inspiration</title>
+      <link>/posts/inspiration/page/</link>
+      <pubDate>Thu, 22 Apr 2021 07:48:16 +0800</pubDate>
+      
+      <guid>/posts/inspiration/page/</guid>
+      <description>  从知否看传统文化
+  谈教育
+  </description>
+      <content>&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;/posts/inspiration/zhifou&#34;&gt;从知否看传统文化&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;/posts/inspiration/education&#34;&gt;谈教育&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>知否里看</title>
+      <link>/posts/inspiration/zhifou/</link>
+      <pubDate>Thu, 22 Apr 2021 07:48:16 +0800</pubDate>
+      
+      <guid>/posts/inspiration/zhifou/</guid>
+      <description>zhi</description>
+      <content>&lt;p&gt;zhi&lt;/p&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>谈教育</title>
+      <link>/posts/inspiration/education/</link>
+      <pubDate>Thu, 22 Apr 2021 07:48:16 +0800</pubDate>
+      
+      <guid>/posts/inspiration/education/</guid>
+      <description>education</description>
+      <content>&lt;p&gt;education&lt;/p&gt;
+</content>
+    </item>
+    
+  </channel>
+</rss>

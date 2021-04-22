@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Challen</title>
+    <link>/posts/</link>
+    <description>Recent content in Posts on Challen</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>ChallenAi</copyright>
+    <lastBuildDate>Thu, 22 Apr 2021 07:48:16 +0800</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Art</title>
+      <link>/posts/art/page/</link>
+      <pubDate>Thu, 22 Apr 2021 07:48:16 +0800</pubDate>
+      
+      <guid>/posts/art/page/</guid>
+      <description>  Blender探索
+  色彩原理
+  </description>
+      <content>&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;/posts/art/blender&#34;&gt;Blender探索&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;/posts/art/color&#34;&gt;色彩原理&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>Blender探索</title>
+      <link>/posts/art/blender/</link>
+      <pubDate>Thu, 22 Apr 2021 07:48:16 +0800</pubDate>
+      
+      <guid>/posts/art/blender/</guid>
+      <description>Blender探索 一些经验   前置工作
+编辑-偏好，设置语言为English或中文。快捷键映射，点击空格为搜索，而不是播放
+  如何创建5角环
+shift+A选择圆环，然后不要点击，左下角参数设置段数为5
+  如何处理场景中的单个物品
+使用/
+  如何查看当前物品位置，旋转参数？
+右上角的几个圆圈下面的小三角展开
+  如何放大一个对象
+s
+  如何在立方体的某个面中心放一个小立方体
+tab切换编辑模式，3切换面，选中该面，shift+s定位游标到这里。tab切回，shift+a创建立方体，s缩小。
+  三个并排的立方体，模拟1. 像天平一样，两边的立方体旋转，2. 3个围绕一点转。3. 三个各自绕自己旋转
+屏幕中间顶部有个局部和全局坐标系，右边那个就是参照点 1. 选围绕边界， 2. 选围绕游标，游标移到某处。 3. 旋转围绕物体原点
+  4个角色围绕某点，两两对面，如何拉远所有角色和圆心的距离
+同上，全选角色。选择局部坐标系，即参考自己的transform，gx拉远即可。可以看到他们都沿着自己世界的x轴移动，而不是真实的x轴
+  制作一个星球模型，星球上有很多环型山。即一个大球，上面有很多环
+shift+a创建球和环，环s缩小，点击屏幕中上吸附，吸附选项设置为面（项目中的元素、自动旋转），那么环就会自动旋转，吸附到球表面
+  3d角色 </description>
+      <content>&lt;h2 id=&#34;blender探索&#34;&gt;Blender探索&lt;/h2&gt;
+&lt;h3 id=&#34;一些经验&#34;&gt;一些经验&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;前置工作&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;编辑-偏好，设置语言为English或中文。快捷键映射，点击空格为搜索，而不是播放&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;如何创建5角环&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;shift+A选择圆环，然后不要点击，左下角参数设置段数为5&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;如何处理场景中的单个物品&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;使用/&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;如何查看当前物品位置，旋转参数？&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;右上角的几个圆圈下面的小三角展开&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;如何放大一个对象&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;s&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;如何在立方体的某个面中心放一个小立方体&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;tab切换编辑模式，3切换面，选中该面，shift+s定位游标到这里。tab切回，shift+a创建立方体，s缩小。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;三个并排的立方体，模拟1. 像天平一样，两边的立方体旋转，2. 3个围绕一点转。3. 三个各自绕自己旋转&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;屏幕中间顶部有个局部和全局坐标系，右边那个就是参照点 1. 选围绕边界， 2. 选围绕游标，游标移到某处。 3. 旋转围绕物体原点&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;4个角色围绕某点，两两对面，如何拉远所有角色和圆心的距离&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;同上，全选角色。选择局部坐标系，即参考自己的transform，gx拉远即可。可以看到他们都沿着自己世界的x轴移动，而不是真实的x轴&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;制作一个星球模型，星球上有很多环型山。即一个大球，上面有很多环&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;shift+a创建球和环，环s缩小，点击屏幕中上吸附，吸附选项设置为面（项目中的元素、自动旋转），那么环就会自动旋转，吸附到球表面&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;3d角色&#34;&gt;3d角色&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;../vendor/images/anime.jpeg&#34; alt=&#34;动漫人物&#34;&gt;&lt;/p&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>HTTPS/SSL/TLS</title>
+      <link>/posts/tech/network/</link>
+      <pubDate>Thu, 22 Apr 2021 07:48:16 +0800</pubDate>
+      
+      <guid>/posts/tech/network/</guid>
+      <description>HTTPS/SSL/TLS 需要使用加密的http连接，就需要证书和私钥 私钥服务器持有，证书(公钥)分发出去 然后公钥加密对称加密的秘钥(生成的一串随机数) 最后双方通信使用对称加密。两边都持有对称加密的秘钥
+https证书生成： 1、生成RSA密钥的方法 openssl genrsa -des3 -out key.pem 2048 这个命令会生成一个2048位的密钥，同时有一个des3方法加密的密码，如果你不想要每次都输入密码，可以改成： openssl genrsa -out key.pem 2048 建议用2048位密钥，少于此可能会不安全或很快将不安全。 2、生成一个证书请求 openssl req -new -key key.pem -out cert.csr 这个命令将会生成一个证书请求，当然，用到了前面生成的密钥key.pem文件 这里将生成一个新的文件cert.csr，即一个证书请求文件，你可以拿着这个文件去数字证书颁发机构（即CA）申请一个数字证书。CA会给你一个新的文件cert.pem，那才是你的数字证书。 如果是自己做测试，那么证书的申请机构和颁发机构都是自己。就可以用下面这个命令来生成证书： openssl req -new -x509 -key key.pem -out cert.pem -days 1095 这个命令将用上面生成的密钥key.pem生成一个数字证书cert.pem 3、使用数字证书和密钥 有了key.pem和cert.pem文件后就可以在自己的程序中使用了，比如做一个加密通讯的服务器 上述是讲解的详情，如果我们要生成私钥用于测试本地https(该命令来自nodejs文档https部分):
+openssl req -x509 -newkey rsa:2048 -nodes -sha256 -subj &amp;#39;/CN=localhost&amp;#39; \  -keyout key.pem -out cert.pem 然后将cert.pem(公钥)，key.pem(私钥)放到index.js或nginx.conf目录即可：
+const http2 = require(&amp;#39;http2&amp;#39;); const fs = require(&amp;#39;fs&amp;#39;); const server = http2.</description>
+      <content>&lt;h3 id=&#34;httpsssltls&#34;&gt;HTTPS/SSL/TLS&lt;/h3&gt;
+&lt;p&gt;需要使用加密的http连接，就需要证书和私钥
+私钥服务器持有，证书(公钥)分发出去
+然后公钥加密对称加密的秘钥(生成的一串随机数)
+最后双方通信使用对称加密。两边都持有对称加密的秘钥&lt;/p&gt;
+&lt;h4 id=&#34;https证书生成&#34;&gt;https证书生成：&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;1、生成RSA密钥的方法 
+openssl genrsa -des3 -out key.pem 2048 
+这个命令会生成一个2048位的密钥，同时有一个des3方法加密的密码，如果你不想要每次都输入密码，可以改成： 
+openssl genrsa -out key.pem 2048 
+建议用2048位密钥，少于此可能会不安全或很快将不安全。 
+
+2、生成一个证书请求 
+openssl req -new -key key.pem -out cert.csr 
+这个命令将会生成一个证书请求，当然，用到了前面生成的密钥key.pem文件 
+这里将生成一个新的文件cert.csr，即一个证书请求文件，你可以拿着这个文件去数字证书颁发机构（即CA）申请一个数字证书。CA会给你一个新的文件cert.pem，那才是你的数字证书。 
+
+如果是自己做测试，那么证书的申请机构和颁发机构都是自己。就可以用下面这个命令来生成证书： 
+openssl req -new -x509 -key key.pem -out cert.pem -days 1095 
+这个命令将用上面生成的密钥key.pem生成一个数字证书cert.pem 
+
+3、使用数字证书和密钥 
+有了key.pem和cert.pem文件后就可以在自己的程序中使用了，比如做一个加密通讯的服务器
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;上述是讲解的详情，如果我们要生成私钥用于测试本地https(该命令来自nodejs文档https部分):&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;openssl req -x509 -newkey rsa:2048 -nodes -sha256 -subj &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;/CN=localhost&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;\
+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;  -keyout key.pem -out cert.pem
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;然后将cert.pem(公钥)，key.pem(私钥)放到index.js或nginx.conf目录即可：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;http2&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;require&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;http2&amp;#39;&lt;/span&gt;);
+&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;fs&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;require&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;fs&amp;#39;&lt;/span&gt;);
+
+&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;server&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;http2&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;createSecureServer&lt;/span&gt;({
+    &lt;span style=&#34;color:#a6e22e&#34;&gt;key&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;fs&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;readFileSync&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;key.pem&amp;#39;&lt;/span&gt;),
+    &lt;span style=&#34;color:#a6e22e&#34;&gt;cert&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;fs&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;readFileSync&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;cert.pem&amp;#39;&lt;/span&gt;)
+});
+&lt;span style=&#34;color:#a6e22e&#34;&gt;server&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;on&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;error&amp;#39;&lt;/span&gt;, (&lt;span style=&#34;color:#a6e22e&#34;&gt;err&lt;/span&gt;) =&amp;gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;console&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;error&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;err&lt;/span&gt;));
+
+&lt;span style=&#34;color:#a6e22e&#34;&gt;server&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;on&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;stream&amp;#39;&lt;/span&gt;, (&lt;span style=&#34;color:#a6e22e&#34;&gt;stream&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;headers&lt;/span&gt;) =&amp;gt; {
+    &lt;span style=&#34;color:#75715e&#34;&gt;// 流是一个双工流。
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#a6e22e&#34;&gt;stream&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;respond&lt;/span&gt;({
+        &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;content-type&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;text/html; charset=utf-8&amp;#39;&lt;/span&gt;,
+        &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;:status&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;200&lt;/span&gt;
+    });
+    &lt;span style=&#34;color:#a6e22e&#34;&gt;stream&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;end&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&amp;lt;h1&amp;gt;你好世界&amp;lt;/h1&amp;gt;&amp;#39;&lt;/span&gt;);
+});
+
+&lt;span style=&#34;color:#a6e22e&#34;&gt;server&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;listen&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;8443&lt;/span&gt;);
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;对于nginx.conf，这里以http2为例，因为http2强制使用https:&lt;/p&gt;
+&lt;p&gt;值得一提的是http2依然可以proxy到http1.1的服务器&lt;/p&gt;
+&lt;p&gt;(因为http2解决了队头阻塞问题和二进制传输，所以只要客户端和网关间建立http2连接即可,不必内部完全是http2,nginx暂时持有http2 frame，最后组成http文本头传给服务器)&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;server {
+    listen       443 ssl http2;
+    server_name  hostname.com;
+
+    ssl_certificate   cert/cert.pem;
+    ssl_certificate_key  cert/key.pem;
+
+    location / {
+        proxy_pass http://localhost:12345;
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;chrome不受信任的连接问题&#34;&gt;chrome不受信任的连接问题&lt;/h4&gt;
+&lt;p&gt;根据TLS(安全传输层)原理，客户端必须有证书。&lt;/p&gt;
+&lt;p&gt;mac系统里，打开钥匙链app(keychain access)，然后file-&amp;gt;import item来导入cert.pem&lt;/p&gt;
+&lt;p&gt;导入后，双击该证书，设置信任该证书。&lt;/p&gt;
+&lt;p&gt;然后访问https://localhost即可。&lt;/p&gt;
+&lt;h4 id=&#34;自动https支持auto-tls&#34;&gt;自动HTTPS支持：auto TLS&lt;/h4&gt;
+&lt;p&gt;caddy&lt;/p&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>Inspiration</title>
+      <link>/posts/inspiration/page/</link>
+      <pubDate>Thu, 22 Apr 2021 07:48:16 +0800</pubDate>
+      
+      <guid>/posts/inspiration/page/</guid>
+      <description>  从知否看传统文化
+  谈教育
+  </description>
+      <content>&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;/posts/inspiration/zhifou&#34;&gt;从知否看传统文化&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;/posts/inspiration/education&#34;&gt;谈教育&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>Life</title>
+      <link>/posts/life/page/</link>
+      <pubDate>Thu, 22 Apr 2021 07:48:16 +0800</pubDate>
+      
+      <guid>/posts/life/page/</guid>
+      <description>  游戏:黎明杀机
+  游戏:风之旅人
+  关于感情
+  </description>
+      <content>&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;/posts/life/deadbydaylight&#34;&gt;游戏:黎明杀机&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;/posts/life/journey&#34;&gt;游戏:风之旅人&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;/posts/life/love&#34;&gt;关于感情&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>Love</title>
+      <link>/posts/life/love/</link>
+      <pubDate>Thu, 22 Apr 2021 07:48:16 +0800</pubDate>
+      
+      <guid>/posts/life/love/</guid>
+      <description> 呦呦鹿鸣，食野之苹，我有嘉宾，鼓瑟吹笙。
+ </description>
+      <content>&lt;blockquote&gt;
+&lt;p&gt;呦呦鹿鸣，食野之苹，我有嘉宾，鼓瑟吹笙。&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>Rust探索</title>
+      <link>/posts/tech/rust/</link>
+      <pubDate>Thu, 22 Apr 2021 07:48:16 +0800</pubDate>
+      
+      <guid>/posts/tech/rust/</guid>
+      <description>install install according to rust-lang.org instructions
+# install curl --proto &amp;#39;=https&amp;#39; --tlsv1.2 -sSf https://sh.rustup.rs | sh # update rust rustup update # build/run/test cargo build/run/test # version, cargo is like npm or maven, used to manage deps, build project... cargo --version hello, world hello.rs
+fn main() { println!(&amp;#34;hello, world&amp;#34;) } compile
+rustc hello.rs -o hello.out ./hello.out vim plugin syntax highlighting/ formatting&amp;hellip;
+Plug &amp;#39;rust-lang/rust.vim&amp;#39;auto complete :)
+rustup component add rls rust-analysis rust-src :CocInstall coc-rls cargo hello cargo new xx cd xx cargo run simple http server actix web framework, to say the truth, it feels like a bit disgusting,</description>
+      <content>&lt;h3 id=&#34;install&#34;&gt;install&lt;/h3&gt;
+&lt;p&gt;install according to rust-lang.org instructions&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# install&lt;/span&gt;
+curl --proto &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;=https&amp;#39;&lt;/span&gt; --tlsv1.2 -sSf https://sh.rustup.rs | sh
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# update rust&lt;/span&gt;
+rustup update
+&lt;span style=&#34;color:#75715e&#34;&gt;# build/run/test&lt;/span&gt;
+cargo build/run/test
+&lt;span style=&#34;color:#75715e&#34;&gt;# version, cargo is like npm or maven, used to manage deps, build project...&lt;/span&gt;
+cargo --version
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;hello-world&#34;&gt;hello, world&lt;/h3&gt;
+&lt;p&gt;hello.rs&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-rust&#34; data-lang=&#34;rust&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;fn&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;main&lt;/span&gt;() {
+    println&lt;span style=&#34;color:#f92672&#34;&gt;!&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;hello, world&amp;#34;&lt;/span&gt;)
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;compile&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;rustc hello.rs -o hello.out
+./hello.out
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;vim-plugin&#34;&gt;vim plugin&lt;/h3&gt;
+&lt;p&gt;syntax highlighting/ formatting&amp;hellip;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-vimrc&#34; data-lang=&#34;vimrc&#34;&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;Plug&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;rust-lang/rust.vim&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;auto complete :)&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;rustup component add rls rust-analysis rust-src
+:CocInstall coc-rls
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;cargo-hello&#34;&gt;cargo hello&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;cargo new xx
+cd xx
+cargo run
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;simple-http-server&#34;&gt;simple http server&lt;/h3&gt;
+&lt;p&gt;actix web framework,
+to say the truth, it feels like a bit disgusting,&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-rust&#34; data-lang=&#34;rust&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// initialize server
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#[actix_web::main]&lt;/span&gt;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;async&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;fn&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;main&lt;/span&gt;() -&amp;gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;std&lt;/span&gt;::io::Result&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;()&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; {
+    HttpServer::new(&lt;span style=&#34;color:#f92672&#34;&gt;||&lt;/span&gt; {
+        App::new()
+            .service(hello)
+            .service(echo)
+            .route(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;/hey&amp;#34;&lt;/span&gt;, web::get().to(manual_hello))
+    })
+    .bind(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;127.0.0.1:8080&amp;#34;&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;?&lt;/span&gt;
+    .run()
+    .&lt;span style=&#34;color:#66d9ef&#34;&gt;await&lt;/span&gt;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-rust&#34; data-lang=&#34;rust&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// request handler
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#[get(&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;/&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;)]&lt;/span&gt;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;async&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;fn&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;hello&lt;/span&gt;() -&amp;gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;impl&lt;/span&gt; Responder {
+    HttpResponse::Ok().body(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Hello world!&amp;#34;&lt;/span&gt;)
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;I find another alternative: Rocket.
+Oh, that&amp;rsquo;s what I want, It&amp;rsquo;s Rust version Spring.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# rust need nightly version of rust&lt;/span&gt;
+rustup override set nightly
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-rust&#34; data-lang=&#34;rust&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;mod&lt;/span&gt; other {
+    &lt;span style=&#34;color:#75715e&#34;&gt;#[get(&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;/world&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;)]&lt;/span&gt;
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;pub&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;fn&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;world&lt;/span&gt;() -&amp;gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;&amp;amp;&lt;/span&gt;&amp;#39;static &lt;span style=&#34;color:#66d9ef&#34;&gt;str&lt;/span&gt; {
+        &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Hello, world!&amp;#34;&lt;/span&gt;
+    }
+}
+
+&lt;span style=&#34;color:#75715e&#34;&gt;#[get(&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;/hello&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;)]&lt;/span&gt;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;pub&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;fn&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;hello&lt;/span&gt;() -&amp;gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;&amp;amp;&lt;/span&gt;&amp;#39;static &lt;span style=&#34;color:#66d9ef&#34;&gt;str&lt;/span&gt; {
+    &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Hello, outside world!&amp;#34;&lt;/span&gt;
+}
+
+&lt;span style=&#34;color:#66d9ef&#34;&gt;use&lt;/span&gt; other::world;
+
+&lt;span style=&#34;color:#66d9ef&#34;&gt;fn&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;main&lt;/span&gt;() {
+    rocket::ignite().mount(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;/hello&amp;#34;&lt;/span&gt;, routes&lt;span style=&#34;color:#f92672&#34;&gt;!&lt;/span&gt;[hello, world]);
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h1 id=&#34;heading&#34;&gt;&lt;/h1&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>Tech</title>
+      <link>/posts/tech/page/</link>
+      <pubDate>Thu, 22 Apr 2021 07:48:16 +0800</pubDate>
+      
+      <guid>/posts/tech/page/</guid>
+      <description>  Rust探索
+  网络
+  </description>
+      <content>&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;/posts/tech/rust&#34;&gt;Rust探索&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;/posts/tech/network&#34;&gt;网络&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>知否里看</title>
+      <link>/posts/inspiration/zhifou/</link>
+      <pubDate>Thu, 22 Apr 2021 07:48:16 +0800</pubDate>
+      
+      <guid>/posts/inspiration/zhifou/</guid>
+      <description>zhi</description>
+      <content>&lt;p&gt;zhi&lt;/p&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>色彩设计</title>
+      <link>/posts/art/color/</link>
+      <pubDate>Thu, 22 Apr 2021 07:48:16 +0800</pubDate>
+      
+      <guid>/posts/art/color/</guid>
+      <description>color</description>
+      <content>&lt;p&gt;color&lt;/p&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>谈教育</title>
+      <link>/posts/inspiration/education/</link>
+      <pubDate>Thu, 22 Apr 2021 07:48:16 +0800</pubDate>
+      
+      <guid>/posts/inspiration/education/</guid>
+      <description>education</description>
+      <content>&lt;p&gt;education&lt;/p&gt;
+</content>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/posts/life/deadbydaylight/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/life/deadbydaylight/</guid>
+      <description>d</description>
+      <content>&lt;p&gt;d&lt;/p&gt;
+</content>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/posts/life/journey/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/life/journey/</guid>
+      <description>j</description>
+      <content>&lt;p&gt;j&lt;/p&gt;
+</content>
+    </item>
+    
+  </channel>
+</rss>
