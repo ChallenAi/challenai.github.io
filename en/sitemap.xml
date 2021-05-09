@@ -2,6 +2,44 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>/</loc>
+    <lastmod>2021-04-23T07:19:12+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="cn"
+                href="/cn/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/"
+                />
+  </url><url>
+    <loc>/tags/editor/</loc>
+    <lastmod>2021-04-23T07:19:12+08:00</lastmod>
+  </url><url>
+    <loc>/posts/</loc>
+    <lastmod>2021-04-23T07:19:12+08:00</lastmod>
+  </url><url>
+    <loc>/tags/</loc>
+    <lastmod>2021-04-23T07:19:12+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="cn"
+                href="/cn/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/tags/"
+                />
+  </url><url>
+    <loc>/tags/vim/</loc>
+    <lastmod>2021-04-23T07:19:12+08:00</lastmod>
+  </url><url>
+    <loc>/posts/life/vim/</loc>
+    <lastmod>2021-04-23T07:19:12+08:00</lastmod>
+  </url><url>
     <loc>/posts/art/page/</loc>
     <lastmod>2021-04-22T07:48:16+08:00</lastmod>
   </url><url>
@@ -17,19 +55,6 @@
     <loc>/tags/cargo/</loc>
     <lastmod>2021-04-22T07:48:16+08:00</lastmod>
   </url><url>
-    <loc>/</loc>
-    <lastmod>2021-04-22T07:48:16+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="cn"
-                href="/cn/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/"
-                />
-  </url><url>
     <loc>/tags/color/</loc>
     <lastmod>2021-04-22T07:48:16+08:00</lastmod>
   </url><url>
@@ -42,7 +67,7 @@
     <loc>/tags/https/</loc>
     <lastmod>2021-04-22T07:48:16+08:00</lastmod>
   </url><url>
-    <loc>/posts/tech/network/</loc>
+    <loc>/posts/tech/https/</loc>
     <lastmod>2021-04-22T07:48:16+08:00</lastmod>
   </url><url>
     <loc>/posts/inspiration/page/</loc>
@@ -63,27 +88,11 @@
     <loc>/tags/love/</loc>
     <lastmod>2021-04-22T07:48:16+08:00</lastmod>
   </url><url>
-    <loc>/posts/</loc>
-    <lastmod>2021-04-22T07:48:16+08:00</lastmod>
-  </url><url>
     <loc>/tags/rust/</loc>
     <lastmod>2021-04-22T07:48:16+08:00</lastmod>
   </url><url>
     <loc>/posts/tech/rust/</loc>
     <lastmod>2021-04-22T07:48:16+08:00</lastmod>
-  </url><url>
-    <loc>/tags/</loc>
-    <lastmod>2021-04-22T07:48:16+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="cn"
-                href="/cn/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/tags/"
-                />
   </url><url>
     <loc>/posts/tech/page/</loc>
     <lastmod>2021-04-22T07:48:16+08:00</lastmod>
@@ -109,6 +118,9 @@
     <loc>/about/</loc>
     <lastmod>2021-04-22T07:18:58+08:00</lastmod>
   </url><url>
+    <loc>/tags/about/</loc>
+    <lastmod>2021-04-22T07:18:58+08:00</lastmod>
+  </url><url>
     <loc>/tags/github/</loc>
     <lastmod>2021-04-22T07:18:58+08:00</lastmod>
   </url><url>
@@ -118,9 +130,23 @@
     <loc>/tagslist/</loc>
     <lastmod>2021-04-22T07:18:58+08:00</lastmod>
   </url><url>
+    <loc>/posts/inspiration/cloudy/</loc>
+  </url><url>
+    <loc>/posts/inspiration/dance/</loc>
+  </url><url>
+    <loc>/posts/inspiration/justice/</loc>
+  </url><url>
+    <loc>/posts/inspiration/meng/</loc>
+  </url><url>
+    <loc>/posts/inspiration/rain/</loc>
+  </url><url>
+    <loc>/posts/life/blog/</loc>
+  </url><url>
     <loc>/posts/life/deadbydaylight/</loc>
   </url><url>
     <loc>/posts/life/journey/</loc>
+  </url><url>
+    <loc>/posts/tech/docker/</loc>
   </url><url>
     <loc>/categories/</loc>
     <xhtml:link

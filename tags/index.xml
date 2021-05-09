@@ -7,7 +7,27 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>ChallenAi</copyright>
-    <lastBuildDate>Thu, 22 Apr 2021 07:48:16 +0800</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 23 Apr 2021 07:19:12 +0800</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>editor</title>
+      <link>/tags/editor/</link>
+      <pubDate>Fri, 23 Apr 2021 07:19:12 +0800</pubDate>
+      
+      <guid>/tags/editor/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>vim</title>
+      <link>/tags/vim/</link>
+      <pubDate>Fri, 23 Apr 2021 07:19:12 +0800</pubDate>
+      
+      <guid>/tags/vim/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
     <item>
       <title>art</title>
       <link>/tags/art/</link>
@@ -144,6 +164,16 @@
       <pubDate>Thu, 22 Apr 2021 07:48:16 +0800</pubDate>
       
       <guid>/tags/%E7%9F%A5%E5%90%A6%E7%9F%A5%E5%90%A6%E5%BA%94%E6%98%AF%E7%BB%BF%E8%82%A5%E7%BA%A2%E7%98%A6/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>about</title>
+      <link>/tags/about/</link>
+      <pubDate>Thu, 22 Apr 2021 07:18:58 +0800</pubDate>
+      
+      <guid>/tags/about/</guid>
       <description></description>
       <content></content>
     </item>

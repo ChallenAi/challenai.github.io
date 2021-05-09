@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>about on Challen</title>
+    <link>/tags/about/</link>
+    <description>Recent content in about on Challen</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>ChallenAi</copyright>
+    <lastBuildDate>Thu, 22 Apr 2021 07:18:58 +0800</lastBuildDate><atom:link href="/tags/about/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>/about/</link>
+      <pubDate>Thu, 22 Apr 2021 07:18:58 +0800</pubDate>
+      
+      <guid>/about/</guid>
+      <description>Hi, my name is Challen.
+I&amp;rsquo;m currently a software engineer in Shanghai, China.
+connect me:
+medium: https://challenai.medium.com/
+github: https://github.com/ChallenAi
+twitter: https://twitter.com/challenai</description>
+      <content>&lt;p&gt;Hi, my name is Challen.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m currently a software engineer in Shanghai, China.&lt;/p&gt;
+&lt;p&gt;connect me:&lt;/p&gt;
+&lt;p&gt;medium: &lt;a href=&#34;https://challenai.medium.com/&#34;&gt;https://challenai.medium.com/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;github: &lt;a href=&#34;https://github.com/ChallenAi&#34;&gt;https://github.com/ChallenAi&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;twitter: &lt;a href=&#34;https://twitter.com/challenai&#34;&gt;https://twitter.com/challenai&lt;/a&gt;&lt;/p&gt;
+</content>
+    </item>
+    
+  </channel>
+</rss>

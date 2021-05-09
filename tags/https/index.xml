@@ -10,10 +10,10 @@
     <lastBuildDate>Thu, 22 Apr 2021 07:48:16 +0800</lastBuildDate><atom:link href="/tags/https/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>HTTPS/SSL/TLS</title>
-      <link>/posts/tech/network/</link>
+      <link>/posts/tech/https/</link>
       <pubDate>Thu, 22 Apr 2021 07:48:16 +0800</pubDate>
       
-      <guid>/posts/tech/network/</guid>
+      <guid>/posts/tech/https/</guid>
       <description>HTTPS/SSL/TLS 需要使用加密的http连接，就需要证书和私钥 私钥服务器持有，证书(公钥)分发出去 然后公钥加密对称加密的秘钥(生成的一串随机数) 最后双方通信使用对称加密。两边都持有对称加密的秘钥
 https证书生成： 1、生成RSA密钥的方法 openssl genrsa -des3 -out key.pem 2048 这个命令会生成一个2048位的密钥，同时有一个des3方法加密的密码，如果你不想要每次都输入密码，可以改成： openssl genrsa -out key.pem 2048 建议用2048位密钥，少于此可能会不安全或很快将不安全。 2、生成一个证书请求 openssl req -new -key key.pem -out cert.csr 这个命令将会生成一个证书请求，当然，用到了前面生成的密钥key.pem文件 这里将生成一个新的文件cert.csr，即一个证书请求文件，你可以拿着这个文件去数字证书颁发机构（即CA）申请一个数字证书。CA会给你一个新的文件cert.pem，那才是你的数字证书。 如果是自己做测试，那么证书的申请机构和颁发机构都是自己。就可以用下面这个命令来生成证书： openssl req -new -x509 -key key.pem -out cert.pem -days 1095 这个命令将用上面生成的密钥key.pem生成一个数字证书cert.pem 3、使用数字证书和密钥 有了key.pem和cert.pem文件后就可以在自己的程序中使用了，比如做一个加密通讯的服务器 上述是讲解的详情，如果我们要生成私钥用于测试本地https(该命令来自nodejs文档https部分):
 openssl req -x509 -newkey rsa:2048 -nodes -sha256 -subj &amp;#39;/CN=localhost&amp;#39; \  -keyout key.pem -out cert.pem 然后将cert.pem(公钥)，key.pem(私钥)放到index.js或nginx.conf目录即可：
