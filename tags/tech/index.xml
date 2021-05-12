@@ -180,19 +180,19 @@ rustup override set nightly
       <pubDate>Thu, 22 Apr 2021 07:48:16 +0800</pubDate>
       
       <guid>/posts/tech/page/</guid>
-      <description>  Rust exploration
-  HTTP/HTTPS
-  Docker notes
+      <description>  Rust 探索
+  关于 HTTP/HTTPS
+  Docker 笔记
   </description>
       <content>&lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;/posts/tech/rust&#34;&gt;Rust exploration&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;/posts/tech/rust&#34;&gt;Rust 探索&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;/posts/tech/https&#34;&gt;HTTP/HTTPS&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;/posts/tech/https&#34;&gt;关于 HTTP/HTTPS&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;/posts/tech/docker&#34;&gt;Docker notes&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;/posts/tech/docker&#34;&gt;Docker 笔记&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 </content>

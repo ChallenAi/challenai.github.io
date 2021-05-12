@@ -22,7 +22,8 @@
   快速跳到字母 按 f
   强调 远程开发时，vim 插件要运行与远程服务器。
 我的本地的 vimrc syntax onset termguicolorsfiletype plugin indent onset nu &amp;#34;显示行号set relativenumberset showcmd &amp;#34;显示命令set showmatch &amp;#34;显示匹配括号set cindent &amp;#34;c/c++分格缩进set backspace=indent,eol,startset hidden &amp;#34;退出不会提示，buffer has not changed.</description>
-      <content>&lt;h3 id=&#34;vim-是什么&#34;&gt;vim 是什么&lt;/h3&gt;
+      <content>&lt;p&gt;&lt;img src=&#34;../../vendor/images/vim.png&#34; alt=&#34;本地vim配置&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;vim-是什么&#34;&gt;vim 是什么&lt;/h3&gt;
 &lt;p&gt;vim 是一种编辑方式，编辑唯一的要求是定位光标，比如调到某函数，修改该函数的参数。
 vim 本身也可以打造出 IDE。&lt;/p&gt;
 &lt;h3 id=&#34;为什么用或不用-vim&#34;&gt;为什么用或不用 vim?&lt;/h3&gt;
@@ -350,7 +351,7 @@ shift+a 创建球和环，环 s 缩小，点击屏幕中上吸附，吸附选项
 &lt;p&gt;shift+a 创建球和环，环 s 缩小，点击屏幕中上吸附，吸附选项设置为面（项目中的元素、自动旋转），那么环就会自动旋转，吸附到球表面&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;3d-角色&#34;&gt;3d 角色&lt;/h3&gt;
+&lt;h3 id=&#34;3d-角色模型参考&#34;&gt;3d 角色模型参考&lt;/h3&gt;
 &lt;p&gt;&lt;img src=&#34;../../vendor/images/anime.jpeg&#34; alt=&#34;动漫人物&#34;&gt;&lt;/p&gt;
 </content>
     </item>
@@ -441,20 +442,14 @@ openssl req -new -x509 -key key.pem -out cert.pem -days 1095
       <pubDate>Thu, 22 Apr 2021 07:48:16 +0800</pubDate>
       
       <guid>/posts/inspiration/page/</guid>
-      <description>  (tomigrate)traditional Chinese culture from Series ZhiFou
-  (tomigrate)education
-  poem: meng
+      <description>  poem: meng
   poem: rain watcher
-  (tomigrate)poem of cloudy weather: JP vs CN
   justice 笔记
+  (tomigrate)traditional Chinese culture from Series ZhiFou
+  (tomigrate)education
+  (tomigrate)poem of cloudy weather: JP vs CN
   </description>
       <content>&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;/posts/inspiration/zhifou&#34;&gt;(tomigrate)traditional Chinese culture from Series ZhiFou&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;/posts/inspiration/education&#34;&gt;(tomigrate)education&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;a href=&#34;/posts/inspiration/meng&#34;&gt;poem: meng&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
@@ -462,10 +457,16 @@ openssl req -new -x509 -key key.pem -out cert.pem -days 1095
 &lt;p&gt;&lt;a href=&#34;/posts/inspiration/rain&#34;&gt;poem: rain watcher&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;/posts/inspiration/cloudy&#34;&gt;(tomigrate)poem of cloudy weather: JP vs CN&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;/posts/inspiration/justice&#34;&gt;justice 笔记&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;/posts/inspiration/justice&#34;&gt;justice 笔记&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;/posts/inspiration/zhifou&#34;&gt;(tomigrate)traditional Chinese culture from Series ZhiFou&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;/posts/inspiration/education&#34;&gt;(tomigrate)education&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;/posts/inspiration/cloudy&#34;&gt;(tomigrate)poem of cloudy weather: JP vs CN&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 </content>
@@ -477,12 +478,15 @@ openssl req -new -x509 -key key.pem -out cert.pem -days 1095
       <pubDate>Thu, 22 Apr 2021 07:48:16 +0800</pubDate>
       
       <guid>/posts/life/page/</guid>
-      <description>  (tomigrate)游戏:黎明杀机
+      <description>  vim 和我的配置
+  (tomigrate)游戏:黎明杀机
   (tomigrate)游戏:风之旅人
   (tomigrate)关于感情
-  vim 和我的配置
   </description>
       <content>&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;/posts/life/vim&#34;&gt;vim 和我的配置&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;a href=&#34;/posts/life/deadbydaylight&#34;&gt;(tomigrate)游戏:黎明杀机&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
@@ -491,9 +495,6 @@ openssl req -new -x509 -key key.pem -out cert.pem -days 1095
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;a href=&#34;/posts/life/love&#34;&gt;(tomigrate)关于感情&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;/posts/life/vim&#34;&gt;vim 和我的配置&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 </content>
@@ -605,19 +606,19 @@ rustup override set nightly
       <pubDate>Thu, 22 Apr 2021 07:48:16 +0800</pubDate>
       
       <guid>/posts/tech/page/</guid>
-      <description>  Rust exploration
-  HTTP/HTTPS
-  Docker notes
+      <description>  Rust 探索
+  关于 HTTP/HTTPS
+  Docker 笔记
   </description>
       <content>&lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;/posts/tech/rust&#34;&gt;Rust exploration&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;/posts/tech/rust&#34;&gt;Rust 探索&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;/posts/tech/https&#34;&gt;HTTP/HTTPS&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;/posts/tech/https&#34;&gt;关于 HTTP/HTTPS&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;/posts/tech/docker&#34;&gt;Docker notes&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;/posts/tech/docker&#34;&gt;Docker 笔记&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 </content>
@@ -665,14 +666,20 @@ rustup override set nightly
       <description>Hi, my name is Challen.
 I&amp;rsquo;m currently a software engineer in Shanghai, China.
 connect me:
-medium: https://challenai.medium.com/
+gmail: fengyiai@gmail.com
+leetcode: https://leetcode.com/challenai/
 github: https://github.com/ChallenAi
+blog: https://challenai.github.io/
+medium: https://challenai.medium.com/
 twitter: https://twitter.com/challenai</description>
       <content>&lt;p&gt;Hi, my name is Challen.&lt;/p&gt;
 &lt;p&gt;I&amp;rsquo;m currently a software engineer in Shanghai, China.&lt;/p&gt;
 &lt;p&gt;connect me:&lt;/p&gt;
-&lt;p&gt;medium: &lt;a href=&#34;https://challenai.medium.com/&#34;&gt;https://challenai.medium.com/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;gmail: &lt;a href=&#34;mailto:fengyiai@gmail.com&#34;&gt;fengyiai@gmail.com&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;leetcode: &lt;a href=&#34;https://leetcode.com/challenai/&#34;&gt;https://leetcode.com/challenai/&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;github: &lt;a href=&#34;https://github.com/ChallenAi&#34;&gt;https://github.com/ChallenAi&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;blog: &lt;a href=&#34;https://challenai.github.io/&#34;&gt;https://challenai.github.io/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;medium: &lt;a href=&#34;https://challenai.medium.com/&#34;&gt;https://challenai.medium.com/&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;twitter: &lt;a href=&#34;https://twitter.com/challenai&#34;&gt;https://twitter.com/challenai&lt;/a&gt;&lt;/p&gt;
 </content>
     </item>
@@ -863,9 +870,6 @@ my hair has partly turned white.
 God seems has no emotion about our sadness and happiness, leave or reunion.
 I hear the rain from dusk to dawn, one drop by another.&lt;/p&gt;
 &lt;h2 id=&#34;a-simple-mordern-version&#34;&gt;A simple mordern version&lt;/h2&gt;
-&lt;blockquote&gt;
-&lt;p&gt;limited by the productiviy in acient society,&lt;/p&gt;
-&lt;/blockquote&gt;
 &lt;p&gt;When I&amp;rsquo;m young, I enjoy the party, the indulging atmosphere makes me crazy.&lt;/p&gt;
 &lt;p&gt;When I&amp;rsquo;m an adult, I leave home to find better oppotunity, I have ambition when I&amp;rsquo;m on the way to future.&lt;/p&gt;
 &lt;p&gt;Now that I have experienced too much,

@@ -22,7 +22,8 @@
   快速跳到字母 按 f
   强调 远程开发时，vim 插件要运行与远程服务器。
 我的本地的 vimrc syntax onset termguicolorsfiletype plugin indent onset nu &amp;#34;显示行号set relativenumberset showcmd &amp;#34;显示命令set showmatch &amp;#34;显示匹配括号set cindent &amp;#34;c/c++分格缩进set backspace=indent,eol,startset hidden &amp;#34;退出不会提示，buffer has not changed.</description>
-      <content>&lt;h3 id=&#34;vim-是什么&#34;&gt;vim 是什么&lt;/h3&gt;
+      <content>&lt;p&gt;&lt;img src=&#34;../../vendor/images/vim.png&#34; alt=&#34;本地vim配置&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;vim-是什么&#34;&gt;vim 是什么&lt;/h3&gt;
 &lt;p&gt;vim 是一种编辑方式，编辑唯一的要求是定位光标，比如调到某函数，修改该函数的参数。
 vim 本身也可以打造出 IDE。&lt;/p&gt;
 &lt;h3 id=&#34;为什么用或不用-vim&#34;&gt;为什么用或不用 vim?&lt;/h3&gt;
