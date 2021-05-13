@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>/</loc>
-    <lastmod>2021-04-23T07:19:12+08:00</lastmod>
+    <lastmod>2021-05-14T02:26:16+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="cn"
@@ -15,14 +15,14 @@
                 href="/"
                 />
   </url><url>
-    <loc>/tags/editor/</loc>
-    <lastmod>2021-04-23T07:19:12+08:00</lastmod>
+    <loc>/tags/nickname/</loc>
+    <lastmod>2021-05-14T02:26:16+08:00</lastmod>
   </url><url>
     <loc>/posts/</loc>
-    <lastmod>2021-04-23T07:19:12+08:00</lastmod>
+    <lastmod>2021-05-14T02:26:16+08:00</lastmod>
   </url><url>
     <loc>/tags/</loc>
-    <lastmod>2021-04-23T07:19:12+08:00</lastmod>
+    <lastmod>2021-05-14T02:26:16+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="cn"
@@ -33,6 +33,27 @@
                 hreflang="en"
                 href="/tags/"
                 />
+  </url><url>
+    <loc>/tags/%E8%89%BE%E9%A3%8E%E9%80%B8/</loc>
+    <lastmod>2021-05-14T02:26:16+08:00</lastmod>
+  </url><url>
+    <loc>/posts/inspiration/name/</loc>
+    <lastmod>2021-05-14T02:26:16+08:00</lastmod>
+  </url><url>
+    <loc>/tags/asia/</loc>
+    <lastmod>2021-05-12T01:28:16+08:00</lastmod>
+  </url><url>
+    <loc>/posts/inspiration/meng/</loc>
+    <lastmod>2021-05-12T01:28:16+08:00</lastmod>
+  </url><url>
+    <loc>/posts/inspiration/rain/</loc>
+    <lastmod>2021-05-12T01:28:16+08:00</lastmod>
+  </url><url>
+    <loc>/tags/poem/</loc>
+    <lastmod>2021-05-12T01:28:16+08:00</lastmod>
+  </url><url>
+    <loc>/tags/editor/</loc>
+    <lastmod>2021-04-23T07:19:12+08:00</lastmod>
   </url><url>
     <loc>/tags/vim/</loc>
     <lastmod>2021-04-23T07:19:12+08:00</lastmod>
@@ -135,12 +156,6 @@
     <loc>/posts/inspiration/dance/</loc>
   </url><url>
     <loc>/posts/inspiration/justice/</loc>
-  </url><url>
-    <loc>/posts/inspiration/meng/</loc>
-  </url><url>
-    <loc>/posts/inspiration/rain/</loc>
-  </url><url>
-    <loc>/posts/life/blog/</loc>
   </url><url>
     <loc>/posts/life/deadbydaylight/</loc>
   </url><url>
