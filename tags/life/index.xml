@@ -15,7 +15,7 @@
       
       <guid>/posts/life/page/</guid>
       <description>  vim 和我的配置
-  use hugo generate blog
+  Use Hugo Generate Blog
   (tomigrate)游戏:黎明杀机
   (tomigrate)游戏:风之旅人
   (tomigrate)关于感情
@@ -25,7 +25,7 @@
 &lt;p&gt;&lt;a href=&#34;/posts/life/vim&#34;&gt;vim 和我的配置&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;/posts/life/blog&#34;&gt;use hugo generate blog&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;/posts/life/blog&#34;&gt;Use Hugo Generate Blog&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;a href=&#34;/posts/life/deadbydaylight&#34;&gt;(tomigrate)游戏:黎明杀机&lt;/a&gt;&lt;/p&gt;

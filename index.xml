@@ -596,7 +596,7 @@ openssl req -new -x509 -key key.pem -out cert.pem -days 1095
       <guid>/posts/inspiration/page/</guid>
       <description>  Asia Poem: Meng
   Asia Poem: Rain Watcher
-  justice 笔记
+  Justice 笔记
   艾风逸: 名字的故事
   (tomigrate)poem of cloudy weather: JP vs CN
   (tomigrate)traditional Chinese culture from Series ZhiFou
@@ -610,7 +610,7 @@ openssl req -new -x509 -key key.pem -out cert.pem -days 1095
 &lt;p&gt;&lt;a href=&#34;/posts/inspiration/rain&#34;&gt;Asia Poem: Rain Watcher&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;/posts/inspiration/justice&#34;&gt;justice 笔记&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;/posts/inspiration/justice&#34;&gt;Justice 笔记&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;a href=&#34;/posts/inspiration/name&#34;&gt;艾风逸: 名字的故事&lt;/a&gt;&lt;/p&gt;
@@ -635,7 +635,7 @@ openssl req -new -x509 -key key.pem -out cert.pem -days 1095
       
       <guid>/posts/life/page/</guid>
       <description>  vim 和我的配置
-  use hugo generate blog
+  Use Hugo Generate Blog
   (tomigrate)游戏:黎明杀机
   (tomigrate)游戏:风之旅人
   (tomigrate)关于感情
@@ -645,7 +645,7 @@ openssl req -new -x509 -key key.pem -out cert.pem -days 1095
 &lt;p&gt;&lt;a href=&#34;/posts/life/vim&#34;&gt;vim 和我的配置&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;/posts/life/blog&#34;&gt;use hugo generate blog&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;/posts/life/blog&#34;&gt;Use Hugo Generate Blog&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;a href=&#34;/posts/life/deadbydaylight&#34;&gt;(tomigrate)游戏:黎明杀机&lt;/a&gt;&lt;/p&gt;
