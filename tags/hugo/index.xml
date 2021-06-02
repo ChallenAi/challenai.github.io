@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>hugo on Challen</title>
+    <link>/tags/hugo/</link>
+    <description>Recent content in hugo on Challen</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>ChallenAi</copyright>
+    <lastBuildDate>Fri, 14 May 2021 07:48:16 +0800</lastBuildDate><atom:link href="/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Create a Beatiful Blog with Hugo</title>
+      <link>/posts/life/blog/</link>
+      <pubDate>Fri, 14 May 2021 07:48:16 +0800</pubDate>
+      
+      <guid>/posts/life/blog/</guid>
+      <description>what I need?   migrate blog to github
+  easy to maintain
+  use markdown
+  minimalism
+  hugo hugo is a static site generator. Why choose hugo ? It&amp;rsquo;s the most popular static site generator in github. I just need one, the only requirement is easy to use, that means it won&amp;rsquo;t waste my time in config.
+theme: terminal minimalist
+get start the main steps are listed in documentation of hugo.</description>
+      <content>&lt;h3 id=&#34;what-i-need&#34;&gt;what I need?&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;migrate blog to github&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;easy to maintain&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;use markdown&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;minimalism&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;hugo&#34;&gt;hugo&lt;/h3&gt;
+&lt;p&gt;hugo is a static site generator.
+Why choose hugo ?
+It&amp;rsquo;s the most popular static site generator in github.
+I just need one, the only requirement is easy to use, that means it won&amp;rsquo;t waste my time in config.&lt;/p&gt;
+&lt;h3 id=&#34;theme-terminal&#34;&gt;theme: terminal&lt;/h3&gt;
+&lt;p&gt;minimalist&lt;/p&gt;
+&lt;h3 id=&#34;get-start&#34;&gt;get start&lt;/h3&gt;
+&lt;p&gt;the main steps are listed in documentation of hugo.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;install hugo
+use port install hugo&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;port install hugo
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;or we use brew, or download binary in realise page&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;brew install hugo
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;create site
+hugo new site challen&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;install theme
+hint: If you want to update the theme, you can clone the repo, but I dont.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;go to &lt;code&gt;https://github.com/panr/hugo-theme-terminal/&lt;/code&gt; download&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;extract zipfile and move it to theme folder&lt;code&gt;mv hugo-theme-terminal-master theme/terminal&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;config site
+this config is copy from the theme terminal default config in README.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-toml&#34; data-lang=&#34;toml&#34;&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;nil&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;add first page
+hugo new helloworld.md&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;run the local server
+&lt;code&gt;hugo server -D&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;generate the static file
+&lt;code&gt;hugo -D&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;test static file
+&lt;code&gt;cd public &amp;amp; python -m SimpleHTTPServer 3000&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    </item>
+    
+  </channel>
+</rss>

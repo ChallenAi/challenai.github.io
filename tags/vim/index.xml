@@ -75,11 +75,13 @@ vim 本身也可以打造出 IDE。&lt;/p&gt;
 &lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;imap&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;jk&lt;/span&gt; &amp;lt;&lt;span style=&#34;color:#a6e22e&#34;&gt;ESC&lt;/span&gt;&amp;gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;
 &lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;我的开发环境-vimrc&#34;&gt;我的开发环境 vimrc&lt;/h3&gt;
-&lt;p&gt;如果要使用 vim 做开发，那么应该配置在远程服务器上，
-(自己的项目可以在阿里云上买个服务器)
-然后通过 ssh + tmux 连上，运行 vim 命令就有效果了。
-既然本地没有开发环境，那么本地 vim 也就同样不需要开发插件了，
+&lt;blockquote&gt;
+&lt;p&gt;如果要使用 vim 做开发，那么应该配置在远程服务器上，&lt;br&gt;
+(自己的项目可以在阿里云上买个服务器)&lt;br&gt;
+然后通过 ssh + tmux 连上，运行 vim 命令就有效果了。&lt;br&gt;
+既然本地没有开发环境，那么本地 vim 也就同样不需要开发插件了，&lt;br&gt;
 顶多开个 markdown 或者基本高亮。&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-vimrc&#34; data-lang=&#34;vimrc&#34;&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;syntax&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;on&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;
 &lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;set&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;termguicolors&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;
 &lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;filetype&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;plugin&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;indent&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;on&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;

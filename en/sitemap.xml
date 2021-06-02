@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>/</loc>
-    <lastmod>2021-05-14T02:26:16+08:00</lastmod>
+    <lastmod>2021-05-15T07:48:16+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="cn"
@@ -15,14 +15,20 @@
                 href="/"
                 />
   </url><url>
-    <loc>/tags/nickname/</loc>
-    <lastmod>2021-05-14T02:26:16+08:00</lastmod>
+    <loc>/tags/database/</loc>
+    <lastmod>2021-05-15T07:48:16+08:00</lastmod>
   </url><url>
     <loc>/posts/</loc>
-    <lastmod>2021-05-14T02:26:16+08:00</lastmod>
+    <lastmod>2021-05-15T07:48:16+08:00</lastmod>
+  </url><url>
+    <loc>/tags/raft/</loc>
+    <lastmod>2021-05-15T07:48:16+08:00</lastmod>
+  </url><url>
+    <loc>/tags/shard/</loc>
+    <lastmod>2021-05-15T07:48:16+08:00</lastmod>
   </url><url>
     <loc>/tags/</loc>
-    <lastmod>2021-05-14T02:26:16+08:00</lastmod>
+    <lastmod>2021-05-15T07:48:16+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="cn"
@@ -33,6 +39,21 @@
                 hreflang="en"
                 href="/tags/"
                 />
+  </url><url>
+    <loc>/posts/tech/kvstore/</loc>
+    <lastmod>2021-05-15T07:48:16+08:00</lastmod>
+  </url><url>
+    <loc>/tags/blog/</loc>
+    <lastmod>2021-05-14T07:48:16+08:00</lastmod>
+  </url><url>
+    <loc>/posts/life/blog/</loc>
+    <lastmod>2021-05-14T07:48:16+08:00</lastmod>
+  </url><url>
+    <loc>/tags/hugo/</loc>
+    <lastmod>2021-05-14T07:48:16+08:00</lastmod>
+  </url><url>
+    <loc>/tags/nickname/</loc>
+    <lastmod>2021-05-14T02:26:16+08:00</lastmod>
   </url><url>
     <loc>/tags/%E8%89%BE%E9%A3%8E%E9%80%B8/</loc>
     <lastmod>2021-05-14T02:26:16+08:00</lastmod>

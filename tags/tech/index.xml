@@ -183,6 +183,7 @@ rustup override set nightly
       <description>  Rust 探索
   关于 HTTP/HTTPS
   Docker 笔记
+  一个分布式数据库的设计和实现
   </description>
       <content>&lt;ul&gt;
 &lt;li&gt;
@@ -193,6 +194,9 @@ rustup override set nightly
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;a href=&#34;/posts/tech/docker&#34;&gt;Docker 笔记&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;/posts/tech/kvstore&#34;&gt;一个分布式数据库的设计和实现&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 </content>
