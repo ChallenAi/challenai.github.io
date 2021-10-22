@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>algorithm on Challen</title>
+    <link>/tags/algorithm/</link>
+    <description>Recent content in algorithm on Challen</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>ChallenAi</copyright>
+    <lastBuildDate>Fri, 22 Oct 2021 21:48:16 +0800</lastBuildDate><atom:link href="/tags/algorithm/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>有趣的算法题: 嵌套字段解析</title>
+      <link>/posts/tech/embedfield/</link>
+      <pubDate>Fri, 22 Oct 2021 21:48:16 +0800</pubDate>
+      
+      <guid>/posts/tech/embedfield/</guid>
+      <description>算法题: 嵌套解析 题目如下： 解析一个文件，
+文件格式是一行一行，
+每行有字段，字段可以加引号。
+字段里可以套字段。
+如果被嵌套的字段有引号，引号要变成双重的，表示转义，
+比如 &amp;ldquo;hello&amp;rdquo;，要变成 &amp;ldquo;&amp;hellip;&amp;ldquo;&amp;ldquo;hello&amp;rdquo;&amp;rdquo;&amp;hellip;.&amp;rdquo;
+2,John,45,&amp;#34;足球,摄影&amp;#34;,New York 3,Carter Job,33,&amp;#34;&amp;#34;&amp;#34;健身&amp;#34;&amp;#34;,远足&amp;#34;,&amp;#34;河北,石家庄&amp;#34; 4,Steve,33,&amp;#34;大屏幕164&amp;#34;&amp;#34;&amp;#34;,&amp;#34;DC&amp;#34;&amp;#34;Home&amp;#34;&amp;#34;&amp;#34; 5,&amp;#34;Jul,y&amp;#34;,&amp;#34;&amp;#34;,,Canada John,33,&amp;#34;足球,摄影&amp;#34;,New York John,33,&amp;#34;足球,&amp;#34;&amp;#34;摄影&amp;#34;,New York 要解析成如下
+2 | John | 45 | 足球,摄影 | New York 3 | Carter Job | 33 | &amp;#34;健身&amp;#34;,远足 | 河北,石家庄 4 | Steve | 33 | 大屏幕164 | DC&amp;#34;Home&amp;#34; 5 | Jul,y | | | Canada John | 33 | 足球,摄影 | New York John | 33 | 足球,摄影 | New York 这个题目没啥现实意义。</description>
+      <content>&lt;h3 id=&#34;算法题-嵌套解析&#34;&gt;算法题: 嵌套解析&lt;/h3&gt;
+&lt;p&gt;题目如下：
+解析一个文件，&lt;br&gt;
+文件格式是一行一行，&lt;br&gt;
+每行有字段，字段可以加引号。&lt;br&gt;
+字段里可以套字段。&lt;br&gt;
+如果被嵌套的字段有引号，引号要变成双重的，表示转义，&lt;br&gt;
+比如 &amp;ldquo;hello&amp;rdquo;，要变成 &amp;ldquo;&amp;hellip;&amp;ldquo;&amp;ldquo;hello&amp;rdquo;&amp;rdquo;&amp;hellip;.&amp;rdquo;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;2,John,45,&amp;#34;足球,摄影&amp;#34;,New York
+3,Carter Job,33,&amp;#34;&amp;#34;&amp;#34;健身&amp;#34;&amp;#34;,远足&amp;#34;,&amp;#34;河北,石家庄&amp;#34;
+4,Steve,33,&amp;#34;大屏幕164&amp;#34;&amp;#34;&amp;#34;,&amp;#34;DC&amp;#34;&amp;#34;Home&amp;#34;&amp;#34;&amp;#34;
+5,&amp;#34;Jul,y&amp;#34;,&amp;#34;&amp;#34;,,Canada
+John,33,&amp;#34;足球,摄影&amp;#34;,New York
+John,33,&amp;#34;足球,&amp;#34;&amp;#34;摄影&amp;#34;,New York
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;要解析成如下&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;2 | John | 45 | 足球,摄影 | New York
+3 | Carter Job | 33 | &amp;#34;健身&amp;#34;,远足 | 河北,石家庄
+4 | Steve | 33 | 大屏幕164 | DC&amp;#34;Home&amp;#34;
+5 | Jul,y |  |  | Canada
+John | 33 | 足球,摄影 | New York
+John | 33 | 足球,摄影 | New York
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;这个题目没啥现实意义。&lt;br&gt;
+但是解答的时候却很有启发。&lt;/p&gt;
+&lt;p&gt;看懂了题目后，第一时间我想到的是栈，&lt;br&gt;
+因为嵌套结构，那么标识符号一定是成对的，所以push/pop刚好可以解决。&lt;br&gt;
+管他套几层括号转义，那还不等价于一个括号对嘛。&lt;br&gt;
+结果&lt;code&gt;if else&lt;/code&gt;写了一堆，&lt;br&gt;
+然后我意识到一个问题，解析的时候应该分成几层状态，&lt;br&gt;
+一层是没引号的普通字段，一层是进入括号了，最后一层是进入嵌套括号了。&lt;/p&gt;
+&lt;p&gt;写完后忽然意识到，这是个自动机，以前写算法从没写过这种。&lt;br&gt;
+但是以前实现HTTP协议解析，也是这么搞的，&lt;br&gt;
+nats源码里，基于CRLF的状态解析，也是这么搞的。&lt;/p&gt;
+&lt;p&gt;其间，第一种解法，写到一半，20分钟已经过去了，可能好久没写算法了，也可能是水平不行。&lt;br&gt;
+一个教训就是，通常想到一个解法，即使写到一般，发现这样不够简单优雅，也要写下去。 &lt;br&gt;
+不然时间不一定够。  这时候新解法的很多细节其实还没想清楚。&lt;/p&gt;
+&lt;p&gt;以下是解答:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-go&#34; data-lang=&#34;go&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;package&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;main&lt;/span&gt;
+
+&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; (
+	&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;bufio&amp;#34;&lt;/span&gt;
+	&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;fmt&amp;#34;&lt;/span&gt;
+	&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;io&amp;#34;&lt;/span&gt;
+	&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;os&amp;#34;&lt;/span&gt;
+	&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;strings&amp;#34;&lt;/span&gt;
+)
+
+&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; (
+	&lt;span style=&#34;color:#a6e22e&#34;&gt;CR&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;\r&amp;#34;&lt;/span&gt;
+	&lt;span style=&#34;color:#a6e22e&#34;&gt;LF&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;\n&amp;#34;&lt;/span&gt;
+)
+
+&lt;span style=&#34;color:#66d9ef&#34;&gt;func&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;main&lt;/span&gt;() {
+	&lt;span style=&#34;color:#a6e22e&#34;&gt;src&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;err&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;:=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;os&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;Open&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;src.txt&amp;#34;&lt;/span&gt;)
+	&lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;err&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;!=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;nil&lt;/span&gt; {
+		panic(&lt;span style=&#34;color:#a6e22e&#34;&gt;err&lt;/span&gt;)
+	}
+	&lt;span style=&#34;color:#66d9ef&#34;&gt;defer&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;src&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;Close&lt;/span&gt;()
+	&lt;span style=&#34;color:#a6e22e&#34;&gt;dst&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;err&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;:=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;os&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;Create&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;dst.txt&amp;#34;&lt;/span&gt;)
+	&lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;err&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;!=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;nil&lt;/span&gt; {
+		panic(&lt;span style=&#34;color:#a6e22e&#34;&gt;err&lt;/span&gt;)
+	}
+	&lt;span style=&#34;color:#66d9ef&#34;&gt;defer&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;dst&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;Close&lt;/span&gt;()
+	&lt;span style=&#34;color:#a6e22e&#34;&gt;parseFile&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;src&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;dst&lt;/span&gt;)
+}
+
+&lt;span style=&#34;color:#66d9ef&#34;&gt;func&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;parseFile&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;r&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;io&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;Reader&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;w&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;io&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;Writer&lt;/span&gt;) {
+	&lt;span style=&#34;color:#a6e22e&#34;&gt;scanner&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;:=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;bufio&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;NewScanner&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;r&lt;/span&gt;)
+	&lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;scanner&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;Scan&lt;/span&gt;() {
+		&lt;span style=&#34;color:#a6e22e&#34;&gt;fields&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;:=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;parseLine&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;scanner&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;Text&lt;/span&gt;())
+		&lt;span style=&#34;color:#a6e22e&#34;&gt;resu&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;:=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;strings&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;Join&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;fields&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;CR&lt;/span&gt;)
+		&lt;span style=&#34;color:#a6e22e&#34;&gt;fmt&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;Println&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;strings&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;Join&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;fields&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34; | &amp;#34;&lt;/span&gt;))
+		&lt;span style=&#34;color:#a6e22e&#34;&gt;w&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;Write&lt;/span&gt;([]byte(&lt;span style=&#34;color:#a6e22e&#34;&gt;resu&lt;/span&gt;))
+		&lt;span style=&#34;color:#a6e22e&#34;&gt;w&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;Write&lt;/span&gt;([]byte(&lt;span style=&#34;color:#a6e22e&#34;&gt;LF&lt;/span&gt;))
+	}
+	&lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;err&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;:=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;scanner&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;Err&lt;/span&gt;(); &lt;span style=&#34;color:#a6e22e&#34;&gt;err&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;!=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;nil&lt;/span&gt; {
+		&lt;span style=&#34;color:#a6e22e&#34;&gt;fmt&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;Fprintln&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;os&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;Stderr&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;读取错误:&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;err&lt;/span&gt;)
+	}
+}
+
+&lt;span style=&#34;color:#66d9ef&#34;&gt;func&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;parseLine&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;s&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;string&lt;/span&gt;) []&lt;span style=&#34;color:#66d9ef&#34;&gt;string&lt;/span&gt; {
+
+	&lt;span style=&#34;color:#75715e&#34;&gt;// 输出结果
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;	&lt;span style=&#34;color:#a6e22e&#34;&gt;rsu&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;:=&lt;/span&gt; []&lt;span style=&#34;color:#66d9ef&#34;&gt;string&lt;/span&gt;{}
+
+	&lt;span style=&#34;color:#75715e&#34;&gt;// field的头指针。
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;	&lt;span style=&#34;color:#a6e22e&#34;&gt;start&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;:=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;
+
+	&lt;span style=&#34;color:#75715e&#34;&gt;// 当前解析的状态
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;	&lt;span style=&#34;color:#75715e&#34;&gt;// -1 表示没有开始解析，或者解析结束了。
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;	&lt;span style=&#34;color:#75715e&#34;&gt;// 0 表示 这个 field 没有 `&amp;#34;` 开头
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;	&lt;span style=&#34;color:#75715e&#34;&gt;// 1 表示 这个 field 有 `&amp;#34;` 开头
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;	&lt;span style=&#34;color:#75715e&#34;&gt;// 2 表示 这个 field 处在 子field中, 类似这种: `&amp;#34;abc&amp;#34;&amp;#34;dd`
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;	&lt;span style=&#34;color:#a6e22e&#34;&gt;status&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;:=&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;// 0 没有&amp;#34;开头， 1，有&amp;#34;开头但是不在字段中， 2. 在子field中
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;	&lt;span style=&#34;color:#75715e&#34;&gt;// 可以用 go 里的蹩脚 枚举，哈哈哈
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;
+	&lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;i&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;:=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;; &lt;span style=&#34;color:#a6e22e&#34;&gt;i&lt;/span&gt; &amp;lt; len(&lt;span style=&#34;color:#a6e22e&#34;&gt;s&lt;/span&gt;); &lt;span style=&#34;color:#a6e22e&#34;&gt;i&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;++&lt;/span&gt; {
+		&lt;span style=&#34;color:#66d9ef&#34;&gt;switch&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;status&lt;/span&gt; {
+		&lt;span style=&#34;color:#66d9ef&#34;&gt;case&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;:
+			&lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;i&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;start&lt;/span&gt; {
+				&lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;s&lt;/span&gt;[&lt;span style=&#34;color:#a6e22e&#34;&gt;i&lt;/span&gt;] &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&amp;#34;&amp;#39;&lt;/span&gt; {
+					&lt;span style=&#34;color:#a6e22e&#34;&gt;start&lt;/span&gt; = &lt;span style=&#34;color:#a6e22e&#34;&gt;i&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;
+					&lt;span style=&#34;color:#a6e22e&#34;&gt;status&lt;/span&gt; = &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;
+				} &lt;span style=&#34;color:#66d9ef&#34;&gt;else&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;s&lt;/span&gt;[&lt;span style=&#34;color:#a6e22e&#34;&gt;i&lt;/span&gt;] &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;,&amp;#39;&lt;/span&gt; {
+					&lt;span style=&#34;color:#75715e&#34;&gt;// 防止空字段。
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;					&lt;span style=&#34;color:#a6e22e&#34;&gt;status&lt;/span&gt; = &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;
+					&lt;span style=&#34;color:#a6e22e&#34;&gt;start&lt;/span&gt; = &lt;span style=&#34;color:#a6e22e&#34;&gt;i&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;
+				} &lt;span style=&#34;color:#66d9ef&#34;&gt;else&lt;/span&gt; {
+					&lt;span style=&#34;color:#a6e22e&#34;&gt;status&lt;/span&gt; = &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;
+				}
+				&lt;span style=&#34;color:#a6e22e&#34;&gt;rsu&lt;/span&gt; = append(&lt;span style=&#34;color:#a6e22e&#34;&gt;rsu&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;)
+			}
+		&lt;span style=&#34;color:#66d9ef&#34;&gt;case&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;:
+			&lt;span style=&#34;color:#75715e&#34;&gt;// ,xxx,
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;			&lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;s&lt;/span&gt;[&lt;span style=&#34;color:#a6e22e&#34;&gt;i&lt;/span&gt;] &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;,&amp;#39;&lt;/span&gt; {
+				&lt;span style=&#34;color:#a6e22e&#34;&gt;rsu&lt;/span&gt;[len(&lt;span style=&#34;color:#a6e22e&#34;&gt;rsu&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;] &lt;span style=&#34;color:#f92672&#34;&gt;+=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;s&lt;/span&gt;[&lt;span style=&#34;color:#a6e22e&#34;&gt;start&lt;/span&gt;:&lt;span style=&#34;color:#a6e22e&#34;&gt;i&lt;/span&gt;]
+				&lt;span style=&#34;color:#a6e22e&#34;&gt;start&lt;/span&gt; = &lt;span style=&#34;color:#a6e22e&#34;&gt;i&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;
+				&lt;span style=&#34;color:#a6e22e&#34;&gt;status&lt;/span&gt; = &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;
+				&lt;span style=&#34;color:#66d9ef&#34;&gt;continue&lt;/span&gt;
+			}
+			&lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;i&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; len(&lt;span style=&#34;color:#a6e22e&#34;&gt;s&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; {
+				&lt;span style=&#34;color:#a6e22e&#34;&gt;rsu&lt;/span&gt;[len(&lt;span style=&#34;color:#a6e22e&#34;&gt;rsu&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;] &lt;span style=&#34;color:#f92672&#34;&gt;+=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;s&lt;/span&gt;[&lt;span style=&#34;color:#a6e22e&#34;&gt;start&lt;/span&gt;:]
+			}
+			&lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;s&lt;/span&gt;[&lt;span style=&#34;color:#a6e22e&#34;&gt;i&lt;/span&gt;] &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&amp;#34;&amp;#39;&lt;/span&gt; {
+				&lt;span style=&#34;color:#75715e&#34;&gt;// panic(&amp;#34;文件错误&amp;#34;)
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;			}
+		&lt;span style=&#34;color:#66d9ef&#34;&gt;case&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;:
+			&lt;span style=&#34;color:#75715e&#34;&gt;// &amp;#34;xxxx&amp;#34;
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;			&lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;s&lt;/span&gt;[&lt;span style=&#34;color:#a6e22e&#34;&gt;i&lt;/span&gt;] &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&amp;#34;&amp;#39;&lt;/span&gt; {
+				&lt;span style=&#34;color:#75715e&#34;&gt;// &amp;#34;xxxx&amp;#34;&amp;#34;
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;				&lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;i&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; &amp;lt; len(&lt;span style=&#34;color:#a6e22e&#34;&gt;s&lt;/span&gt;) &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;s&lt;/span&gt;[&lt;span style=&#34;color:#a6e22e&#34;&gt;i&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;] &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&amp;#34;&amp;#39;&lt;/span&gt; {
+					&lt;span style=&#34;color:#a6e22e&#34;&gt;status&lt;/span&gt; = &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;
+				}
+				&lt;span style=&#34;color:#75715e&#34;&gt;// &amp;#34;xxxx&amp;#34;,
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;				&lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;i&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; &amp;lt; len(&lt;span style=&#34;color:#a6e22e&#34;&gt;s&lt;/span&gt;) &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;s&lt;/span&gt;[&lt;span style=&#34;color:#a6e22e&#34;&gt;i&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;] &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;,&amp;#39;&lt;/span&gt;) &lt;span style=&#34;color:#f92672&#34;&gt;||&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;i&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; len(&lt;span style=&#34;color:#a6e22e&#34;&gt;s&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; {
+					&lt;span style=&#34;color:#a6e22e&#34;&gt;status&lt;/span&gt; = &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;
+				}
+				&lt;span style=&#34;color:#a6e22e&#34;&gt;rsu&lt;/span&gt;[len(&lt;span style=&#34;color:#a6e22e&#34;&gt;rsu&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;] &lt;span style=&#34;color:#f92672&#34;&gt;+=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;s&lt;/span&gt;[&lt;span style=&#34;color:#a6e22e&#34;&gt;start&lt;/span&gt;:&lt;span style=&#34;color:#a6e22e&#34;&gt;i&lt;/span&gt;]
+				&lt;span style=&#34;color:#75715e&#34;&gt;// 不管是 `&amp;#34;,` 还是 `&amp;#34;&amp;#34;` 都跳过
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;				&lt;span style=&#34;color:#a6e22e&#34;&gt;start&lt;/span&gt; = &lt;span style=&#34;color:#a6e22e&#34;&gt;i&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;
+				&lt;span style=&#34;color:#a6e22e&#34;&gt;i&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;++&lt;/span&gt;
+			}
+		&lt;span style=&#34;color:#66d9ef&#34;&gt;case&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;:
+			&lt;span style=&#34;color:#75715e&#34;&gt;// &amp;#34;xx&amp;#34;&amp;#34;xxx&amp;#34;&amp;#34;
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;			&lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;s&lt;/span&gt;[&lt;span style=&#34;color:#a6e22e&#34;&gt;i&lt;/span&gt;] &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&amp;#34;&amp;#39;&lt;/span&gt; {
+				&lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;i&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; &amp;lt; len(&lt;span style=&#34;color:#a6e22e&#34;&gt;s&lt;/span&gt;) &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;s&lt;/span&gt;[&lt;span style=&#34;color:#a6e22e&#34;&gt;i&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;] &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&amp;#34;&amp;#39;&lt;/span&gt; {
+					&lt;span style=&#34;color:#a6e22e&#34;&gt;status&lt;/span&gt; = &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;
+					&lt;span style=&#34;color:#a6e22e&#34;&gt;rsu&lt;/span&gt;[len(&lt;span style=&#34;color:#a6e22e&#34;&gt;rsu&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;] &lt;span style=&#34;color:#f92672&#34;&gt;+=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;s&lt;/span&gt;[&lt;span style=&#34;color:#a6e22e&#34;&gt;start&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; : &lt;span style=&#34;color:#a6e22e&#34;&gt;i&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;]
+				}
+				&lt;span style=&#34;color:#75715e&#34;&gt;// &amp;#34;xx&amp;#34;&amp;#34;xxx&amp;#34;,
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;				&lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;i&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; &amp;lt; len(&lt;span style=&#34;color:#a6e22e&#34;&gt;s&lt;/span&gt;) &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;s&lt;/span&gt;[&lt;span style=&#34;color:#a6e22e&#34;&gt;i&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;] &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;,&amp;#39;&lt;/span&gt;) &lt;span style=&#34;color:#f92672&#34;&gt;||&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;i&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; len(&lt;span style=&#34;color:#a6e22e&#34;&gt;s&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; {
+					&lt;span style=&#34;color:#a6e22e&#34;&gt;status&lt;/span&gt; = &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;
+					&lt;span style=&#34;color:#a6e22e&#34;&gt;rsu&lt;/span&gt;[len(&lt;span style=&#34;color:#a6e22e&#34;&gt;rsu&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;] &lt;span style=&#34;color:#f92672&#34;&gt;+=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;s&lt;/span&gt;[&lt;span style=&#34;color:#a6e22e&#34;&gt;start&lt;/span&gt;:&lt;span style=&#34;color:#a6e22e&#34;&gt;i&lt;/span&gt;]
+				}
+				&lt;span style=&#34;color:#a6e22e&#34;&gt;start&lt;/span&gt; = &lt;span style=&#34;color:#a6e22e&#34;&gt;i&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;
+				&lt;span style=&#34;color:#a6e22e&#34;&gt;i&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;++&lt;/span&gt;
+			}
+		}
+	}
+	&lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;rsu&lt;/span&gt;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;题外话&#34;&gt;题外话&lt;/h3&gt;
+&lt;p&gt;之前投加拿大的岗，一说人在上海，要提供工签，没一个理的。&lt;br&gt;
+根本就没几个面试机会，国外找工作靠networking，但是没去哪里来的network，死循环。
+今天投了更新了简历，然后一群HR联系，惊呆了，国内go开发的坑好多啊(虽然不及java岗的1/10 xD)。&lt;/p&gt;
+</content>
+    </item>
+    
+  </channel>
+</rss>

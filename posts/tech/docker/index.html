@@ -278,6 +278,11 @@ CMD <span style="color:#f92672">[</span><span style="color:#e6db74">&#34;npm&#34
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">docker-compose build
 
 docker-compose up/down
+</code></pre></div><h3 id="docker-网络互联">Docker 网络互联<a href="#docker-网络互联" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<p>docker run 里的&ndash;network 选项有 bridge,host,自定义的名字等
+同一个 network 下面可以互联，默认是 bridge，自定义的名字就像一个 namespace 一样，可以直接相互连接。</p>
+<p>比如，在 connected 这个网络空间中，运行容器</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">docker run -d -p 3001:3001 --network connected --name post post
 </code></pre></div>
       </div></div>
 
