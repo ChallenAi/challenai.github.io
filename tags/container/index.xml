@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>container on Challen</title>
+    <link>/tags/container/</link>
+    <description>Recent content in container on Challen</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>ChallenAi</copyright>
+    <lastBuildDate>Fri, 23 Apr 2021 07:48:16 +0800</lastBuildDate><atom:link href="/tags/container/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>docker 命令</title>
+      <link>/posts/tech/docker/</link>
+      <pubDate>Fri, 23 Apr 2021 07:48:16 +0800</pubDate>
+      
+      <guid>/posts/tech/docker/</guid>
+      <description>docker 工作流 编写 Dockerfile -&amp;gt; 构建新镜像 build -&amp;gt; run -&amp;gt; stop -&amp;gt; rm
+构建新镜像 docker build -t statusbarimg . 启动容器 -d 后台， -p 暴露给外部的(宿主):内部监听的端口(容器) &amp;ndash;name 别名
+docker run --name statusbarcontainer -d -p 80:8000 statusbarimg 交互模式启动 docker run -it --name statusbarcontainer -p 80:8000 statusbarimg 启动/停止/重启 docker start/stop/restart statusbarcontainer/container_id 删除容器 docker rm statusbarcontainer 删除镜像 docker rmi 连接容器 link db:db 连接到名为 db 的 容器上，并且用 db 指代该容器 -e DATABASE_HOST=db 将环境变量 DATABASE_HOST 设置为 db
+docker run -it -p 8123:8123 --link db:db -e DATABASE_HOST=DB users-service 在 xx 容器中执行命令 docker exec statusbarimg cat /etc/hosts 关闭 docker kill container_id 查看容器 docker ps # -l(最近一次运行的)/-a(所有的) 查看镜像 注意，运行着或运行过的镜像为容器，删镜像要先删容器，包括运行过的, 流： ps -a 看容器 id -&amp;gt; rm 删容器 -&amp;gt; images 看镜像 -&amp;gt; 删镜像</description>
+      <content>&lt;h2 id=&#34;docker&#34;&gt;docker&lt;/h2&gt;
+&lt;h3 id=&#34;工作流&#34;&gt;工作流&lt;/h3&gt;
+&lt;p&gt;编写 Dockerfile -&amp;gt; 构建新镜像 build -&amp;gt; run -&amp;gt; stop -&amp;gt; rm&lt;/p&gt;
+&lt;h3 id=&#34;构建新镜像&#34;&gt;构建新镜像&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;docker build -t statusbarimg .
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;启动容器&#34;&gt;启动容器&lt;/h3&gt;
+&lt;p&gt;-d 后台， -p 暴露给外部的(宿主):内部监听的端口(容器) &amp;ndash;name 别名&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;docker run --name statusbarcontainer -d -p 80:8000 statusbarimg
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;交互模式启动&#34;&gt;交互模式启动&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;docker run -it --name statusbarcontainer -p 80:8000 statusbarimg
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;启动停止重启&#34;&gt;启动/停止/重启&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;docker start/stop/restart statusbarcontainer/container_id
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;删除容器&#34;&gt;删除容器&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;docker rm statusbarcontainer
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;删除镜像&#34;&gt;删除镜像&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;docker rmi
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;连接容器&#34;&gt;连接容器&lt;/h3&gt;
+&lt;p&gt;link db:db 连接到名为 db 的 容器上，并且用 db 指代该容器 -e DATABASE_HOST=db 将环境变量 DATABASE_HOST 设置为 db&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;docker run -it -p 8123:8123 --link db:db -e DATABASE_HOST&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;DB users-service
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;在-xx-容器中执行命令&#34;&gt;在 xx 容器中执行命令&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;docker exec statusbarimg cat /etc/hosts
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;关闭&#34;&gt;关闭&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;docker kill container_id
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;查看容器&#34;&gt;查看容器&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;docker ps &lt;span style=&#34;color:#75715e&#34;&gt;# -l(最近一次运行的)/-a(所有的)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;查看镜像&#34;&gt;查看镜像&lt;/h3&gt;
+&lt;p&gt;注意，运行着或运行过的镜像为容器，删镜像要先删容器，包括运行过的, 流： ps -a 看容器 id -&amp;gt; rm 删容器 -&amp;gt; images 看镜像 -&amp;gt; 删镜像&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;docker images
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;拉取推送搜索&#34;&gt;拉取/推送/搜索&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;docker pull/push/search
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;tag&#34;&gt;tag&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;docker tag 195eb90b5349 seanlook/ubuntu:rm_test
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;提交对-image-的改动没理解具体流&#34;&gt;提交对 image 的改动(没理解具体流)&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;docker commit -m &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;some tools installed&amp;#34;&lt;/span&gt; fcbd0a5348ca seanlook/ubuntu:14.10_tutorial
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;进入正在后台运行的容器使用-attach-后-exit-会导致容器关闭&#34;&gt;进入正在后台运行的容器(使用 attach 后 exit 会导致容器关闭)&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;docker exec -it 6057024435c4 /bin/sh
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;其他参考:http://blog.csdn.net/permike/article/details/51879578&lt;/p&gt;
+&lt;h3 id=&#34;复制文件到容器&#34;&gt;复制文件到容器&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;docker cp  ./peatio cf152a690090:/root
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;dockerfile-示例&#34;&gt;.Dockerfile 示例&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# 设置基础镜像 和 维护者&lt;/span&gt;
+
+FROM daocloud.io/node:8
+
+MAINTAINER me@yanbingbing.com
+
+&lt;span style=&#34;color:#75715e&#34;&gt;# 设置env环境&lt;/span&gt;
+
+ENV HTTP_PORT &lt;span style=&#34;color:#ae81ff&#34;&gt;8000&lt;/span&gt;
+
+&lt;span style=&#34;color:#75715e&#34;&gt;# 设置工作目录 和 复制本地镜像到容器中&lt;/span&gt;
+
+COPY . /app
+
+WORKDIR /app
+
+npm install
+
+RUN npm install --registry&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;https://registry.npm.taobao.org
+
+&lt;span style=&#34;color:#75715e&#34;&gt;# 暴露的端口&lt;/span&gt;
+
+EXPOSE &lt;span style=&#34;color:#ae81ff&#34;&gt;8000&lt;/span&gt;
+
+&lt;span style=&#34;color:#75715e&#34;&gt;# 命令&lt;/span&gt;
+
+CMD &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;npm&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;start&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;docker-composer&#34;&gt;Docker Composer&lt;/h3&gt;
+&lt;p&gt;Docker Composer 允许用户创建一个文件，在其中定义系统里的每个容器，容器间的关系，并且构建或者运行它们。&lt;/p&gt;
+&lt;p&gt;就是一下子跑数据库，app 和 nginx,并排好他们的连接关系，启动顺序，自动执行&lt;/p&gt;
+&lt;h3 id=&#34;docker-composer-工作流&#34;&gt;Docker Composer 工作流&lt;/h3&gt;
+&lt;p&gt;写 docker-compose.yml -&amp;gt; build -&amp;gt; up -&amp;gt; down&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;docker-compose build
+
+docker-compose up/down
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;docker-网络互联&#34;&gt;Docker 网络互联&lt;/h3&gt;
+&lt;p&gt;docker run 里的&amp;ndash;network 选项有 bridge,host,自定义的名字等
+同一个 network 下面可以互联，默认是 bridge，自定义的名字就像一个 namespace 一样，可以直接相互连接。&lt;/p&gt;
+&lt;p&gt;比如，在 connected 这个网络空间中，运行容器&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;docker run -d -p 3001:3001 --network connected --name post post
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content>
+    </item>
+    
+  </channel>
+</rss>

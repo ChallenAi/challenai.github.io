@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>architect on Challen</title>
+    <link>/tags/architect/</link>
+    <description>Recent content in architect on Challen</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>ChallenAi</copyright>
+    <lastBuildDate>Wed, 12 May 2021 07:48:16 +0800</lastBuildDate><atom:link href="/tags/architect/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DDIA 读书笔记</title>
+      <link>/posts/tech/ddia/</link>
+      <pubDate>Wed, 12 May 2021 07:48:16 +0800</pubDate>
+      
+      <guid>/posts/tech/ddia/</guid>
+      <description>DDIA 读书笔记 前言 分布式系统考虑的要点：
+可扩展/高可用即 多个节点
+失败优先，假设所有节点都会失败，默认会失败，这样就必须考虑某个节点失败了如何处理，由此衍生出所谓单点问题，keepalive 等
+网络不可靠，比如请求失败.
+CAP：复制节点的一致性问题,可用还是强一致？
+  第一部分：基础
+ 可靠性、可扩展等: 可以稍微看一下几个指标，其中有个 twitter 扇读的例子，可以重读 模型和查询语言: 讲述了 sql 语言和 mapreduce 查询语言，关系型和非关系型，不建议重读 存储和检索: 讲述 b 树和 lsm 树，强烈建议多次重读，又读过一遍后:超级建议反复读，讲了存储模型 b 和 lsm，也讲了行存和列存，列存不等于列族存，比如 bigtable，同时也讲了聚集索引就是索引上直接存数据，也讲了为什么 OLTP 和 OLAP 不同，同时为什么列存更适合用于分析。 编码和演化：比较了 json 和二进制编码 protobuf, thrift, avro 等编码方式和 grpc 等 rpc，不建议重读    第二部分: 数据分布
+ 复制  复制原来干嘛的： 容错(防止丢数据)，扩展性(3 台机器抗压力)，降低延迟(复制副本到离用户近的地方，比如微信朋友圈在三地三副本，就近处理请求) 复制算法分类： 无领导者，单领导者，多领导者 单领导者/主从复制： 热备就是一个简单的从。举例：mysql, pg, mongodb, kafka, rabbitMQ, bigtable  同步/异步/半同步： 同步就是所有写入时写入成功所有节点才返回，半同步就是写入一个从和自己成功即返回&amp;hellip; 异步超简单主库写入成功就返回，就当从库不存在 从库进度缓慢/新增从库： 通过 snapshot+replication log 的 id 来同步，举例: mysql innobackupex+binlog coordinates，日志号在 pg 中叫 LSN 崩溃和宕机： 从宕机-&amp;gt;追赶进度。 主宕机-&amp;gt;故障转移，所谓故障转移是指重新选主，然后客户端更新主路由，从同步新主数据的过程 脑裂： 上述的新主出现了，如果老主节点网络恢复了，那么就可可能出现两个主机同时接受写入。。。因为不是所有主都是 raft 那样被大部分节点投票产生的.</description>
+      <content>&lt;h2 id=&#34;ddia-读书笔记&#34;&gt;DDIA 读书笔记&lt;/h2&gt;
+&lt;h3 id=&#34;前言&#34;&gt;前言&lt;/h3&gt;
+&lt;p&gt;分布式系统考虑的要点：&lt;/p&gt;
+&lt;p&gt;可扩展/高可用即 多个节点&lt;/p&gt;
+&lt;p&gt;失败优先，假设所有节点都会失败，默认会失败，这样就必须考虑某个节点失败了如何处理，由此衍生出所谓单点问题，keepalive 等&lt;/p&gt;
+&lt;p&gt;网络不可靠，比如请求失败.&lt;/p&gt;
+&lt;p&gt;CAP：复制节点的一致性问题,可用还是强一致？&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;第一部分：基础&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;可靠性、可扩展等: 可以稍微看一下几个指标，其中有个 twitter 扇读的例子，可以重读&lt;/li&gt;
+&lt;li&gt;模型和查询语言: 讲述了 sql 语言和 mapreduce 查询语言，关系型和非关系型，不建议重读&lt;/li&gt;
+&lt;li&gt;存储和检索: 讲述 b 树和 lsm 树，强烈建议多次重读，又读过一遍后:超级建议反复读，讲了存储模型 b 和 lsm，也讲了行存和列存，列存不等于列族存，比如 bigtable，同时也讲了聚集索引就是索引上直接存数据，也讲了为什么 OLTP 和 OLAP 不同，同时为什么列存更适合用于分析。&lt;/li&gt;
+&lt;li&gt;编码和演化：比较了 json 和二进制编码 protobuf, thrift, avro 等编码方式和 grpc 等 rpc，不建议重读&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;第二部分: 数据分布&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;复制
+&lt;ul&gt;
+&lt;li&gt;复制原来干嘛的： 容错(防止丢数据)，扩展性(3 台机器抗压力)，降低延迟(复制副本到离用户近的地方，比如微信朋友圈在三地三副本，就近处理请求)&lt;/li&gt;
+&lt;li&gt;复制算法分类： 无领导者，单领导者，多领导者&lt;/li&gt;
+&lt;li&gt;单领导者/主从复制： 热备就是一个简单的从。举例：mysql, pg, mongodb, kafka, rabbitMQ, bigtable
+&lt;ul&gt;
+&lt;li&gt;同步/异步/半同步： 同步就是所有写入时写入成功所有节点才返回，半同步就是写入一个从和自己成功即返回&amp;hellip; 异步超简单主库写入成功就返回，就当从库不存在&lt;/li&gt;
+&lt;li&gt;从库进度缓慢/新增从库： 通过 snapshot+replication log 的 id 来同步，举例: mysql innobackupex+binlog coordinates，日志号在 pg 中叫 LSN&lt;/li&gt;
+&lt;li&gt;崩溃和宕机： 从宕机-&amp;gt;追赶进度。 主宕机-&amp;gt;故障转移，所谓故障转移是指重新选主，然后客户端更新主路由，从同步新主数据的过程&lt;/li&gt;
+&lt;li&gt;脑裂： 上述的新主出现了，如果老主节点网络恢复了，那么就可可能出现两个主机同时接受写入。。。因为不是所有主都是 raft 那样被大部分节点投票产生的.&lt;/li&gt;
+&lt;li&gt;复制日志的实现： 可以理解成 raft 日志的形式，通常有三种，一种基于语句，基于语句因为并发事务和非确定性函数(比如 now)而很少用 mysql5 以前使用，另一种基于行，即新增增加了哪几行？统一存入日志，即包含一行或几行的详细信息，同时多行被封装成一个事务。这种方式好的地方是，外部数据源也可以解析数据，他是一行的实际信息，并不是字节改动或语句&lt;/li&gt;
+&lt;li&gt;WAL 原理和使用场景：最后一种复制 WAL，原理每次写都会写到一个仅 append 日志，日志包含磁盘里哪些字节变化了而不是实际语句，场景是 LSM 的存储方案，另一个是大部分 RDB 数据库写入，或者 B 树分裂。对于复制日志，会在网络上传输 WAL，通常不同版本 db 有不同的 WAL 结构，导致需要宕机升级数据库&lt;/li&gt;
+&lt;li&gt;手动复制: 触发器，比如需要数据变更的一个子集。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;分区&lt;/li&gt;
+&lt;li&gt;事务&lt;/li&gt;
+&lt;li&gt;分布式系统的问题&lt;/li&gt;
+&lt;li&gt;一致性问题&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;第三部分：非请求响应数据
+(原标题是衍生数据,所谓衍生数据是指 不是处理用户实时请求的数据，
+比如 kafka 作为数据连接器将数据从 mysql 同步到 es，又或者 mq 削峰, 在本书中这类被称作流处理
+比如大多数定时任务，汇集赞的定时任务，推荐系统(计算每个人的推荐 items 然后写入 hbase)就是批处理
+简单理解的话，我们可以把批处理当成定时任务，流处理当成队列处理
+)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;批处理&lt;/li&gt;
+&lt;li&gt;流处理&lt;/li&gt;
+&lt;li&gt;未来&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    </item>
+    
+  </channel>
+</rss>

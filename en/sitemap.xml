@@ -70,6 +70,18 @@
     <loc>/posts/inspiration/name/</loc>
     <lastmod>2021-05-14T02:26:16+08:00</lastmod>
   </url><url>
+    <loc>/tags/architect/</loc>
+    <lastmod>2021-05-12T07:48:16+08:00</lastmod>
+  </url><url>
+    <loc>/tags/ddia/</loc>
+    <lastmod>2021-05-12T07:48:16+08:00</lastmod>
+  </url><url>
+    <loc>/posts/tech/ddia/</loc>
+    <lastmod>2021-05-12T07:48:16+08:00</lastmod>
+  </url><url>
+    <loc>/tags/system-design/</loc>
+    <lastmod>2021-05-12T07:48:16+08:00</lastmod>
+  </url><url>
     <loc>/tags/asia/</loc>
     <lastmod>2021-05-12T01:28:16+08:00</lastmod>
   </url><url>
@@ -81,6 +93,15 @@
   </url><url>
     <loc>/tags/poem/</loc>
     <lastmod>2021-05-12T01:28:16+08:00</lastmod>
+  </url><url>
+    <loc>/tags/container/</loc>
+    <lastmod>2021-04-23T07:48:16+08:00</lastmod>
+  </url><url>
+    <loc>/tags/docker/</loc>
+    <lastmod>2021-04-23T07:48:16+08:00</lastmod>
+  </url><url>
+    <loc>/posts/tech/docker/</loc>
+    <lastmod>2021-04-23T07:48:16+08:00</lastmod>
   </url><url>
     <loc>/tags/editor/</loc>
     <lastmod>2021-04-23T07:19:12+08:00</lastmod>
@@ -190,8 +211,6 @@
     <loc>/posts/life/deadbydaylight/</loc>
   </url><url>
     <loc>/posts/life/journey/</loc>
-  </url><url>
-    <loc>/posts/tech/docker/</loc>
   </url><url>
     <loc>/categories/</loc>
     <xhtml:link

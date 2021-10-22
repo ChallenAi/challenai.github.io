@@ -183,6 +183,7 @@ rustup override set nightly
       <description>  有趣的算法题: 嵌套字段解析
   Rust 探索
   关于 HTTP/HTTPS
+  DDIA 读书笔记
   Docker 笔记
   一个分布式数据库的设计和实现
   </description>
@@ -195,6 +196,9 @@ rustup override set nightly
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;a href=&#34;/posts/tech/https&#34;&gt;关于 HTTP/HTTPS&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;/posts/tech/ddia&#34;&gt;DDIA 读书笔记&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;a href=&#34;/posts/tech/docker&#34;&gt;Docker 笔记&lt;/a&gt;&lt;/p&gt;
