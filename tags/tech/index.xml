@@ -180,12 +180,16 @@ rustup override set nightly
       <pubDate>Thu, 22 Apr 2021 07:48:16 +0800</pubDate>
       
       <guid>/posts/tech/page/</guid>
-      <description>  Rust 探索
+      <description>  有趣的算法题: 嵌套字段解析
+  Rust 探索
   关于 HTTP/HTTPS
   Docker 笔记
   一个分布式数据库的设计和实现
   </description>
       <content>&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;/posts/tech/embedfield&#34;&gt;有趣的算法题: 嵌套字段解析&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;a href=&#34;/posts/tech/rust&#34;&gt;Rust 探索&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
