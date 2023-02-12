@@ -1,351 +1,37 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Challen</title>
+    <title>Tags on Lun Jiang</title>
     <link>/tags/</link>
-    <description>Recent content in Tags on Challen</description>
+    <description>Recent content in Tags on Lun Jiang</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>ChallenAi</copyright>
-    <lastBuildDate>Fri, 22 Oct 2021 21:48:16 +0800</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Thu, 02 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>algorithm</title>
-      <link>/tags/algorithm/</link>
-      <pubDate>Fri, 22 Oct 2021 21:48:16 +0800</pubDate>
+      <title>ipsum</title>
+      <link>/tags/ipsum/</link>
+      <pubDate>Thu, 02 Feb 2023 00:00:00 +0000</pubDate>
       
-      <guid>/tags/algorithm/</guid>
+      <guid>/tags/ipsum/</guid>
       <description></description>
-      <content></content>
     </item>
     
     <item>
-      <title>state machine</title>
-      <link>/tags/state-machine/</link>
-      <pubDate>Fri, 22 Oct 2021 21:48:16 +0800</pubDate>
+      <title>lorem</title>
+      <link>/tags/lorem/</link>
+      <pubDate>Thu, 02 Feb 2023 00:00:00 +0000</pubDate>
       
-      <guid>/tags/state-machine/</guid>
+      <guid>/tags/lorem/</guid>
       <description></description>
-      <content></content>
     </item>
     
     <item>
-      <title>database</title>
-      <link>/tags/database/</link>
-      <pubDate>Sat, 15 May 2021 07:48:16 +0800</pubDate>
+      <title>post</title>
+      <link>/tags/post/</link>
+      <pubDate>Thu, 02 Feb 2023 00:00:00 +0000</pubDate>
       
-      <guid>/tags/database/</guid>
+      <guid>/tags/post/</guid>
       <description></description>
-      <content></content>
-    </item>
-    
-    <item>
-      <title>raft</title>
-      <link>/tags/raft/</link>
-      <pubDate>Sat, 15 May 2021 07:48:16 +0800</pubDate>
-      
-      <guid>/tags/raft/</guid>
-      <description></description>
-      <content></content>
-    </item>
-    
-    <item>
-      <title>shard</title>
-      <link>/tags/shard/</link>
-      <pubDate>Sat, 15 May 2021 07:48:16 +0800</pubDate>
-      
-      <guid>/tags/shard/</guid>
-      <description></description>
-      <content></content>
-    </item>
-    
-    <item>
-      <title>blog</title>
-      <link>/tags/blog/</link>
-      <pubDate>Fri, 14 May 2021 07:48:16 +0800</pubDate>
-      
-      <guid>/tags/blog/</guid>
-      <description></description>
-      <content></content>
-    </item>
-    
-    <item>
-      <title>hugo</title>
-      <link>/tags/hugo/</link>
-      <pubDate>Fri, 14 May 2021 07:48:16 +0800</pubDate>
-      
-      <guid>/tags/hugo/</guid>
-      <description></description>
-      <content></content>
-    </item>
-    
-    <item>
-      <title>nickname</title>
-      <link>/tags/nickname/</link>
-      <pubDate>Fri, 14 May 2021 02:26:16 +0800</pubDate>
-      
-      <guid>/tags/nickname/</guid>
-      <description></description>
-      <content></content>
-    </item>
-    
-    <item>
-      <title>艾风逸</title>
-      <link>/tags/%E8%89%BE%E9%A3%8E%E9%80%B8/</link>
-      <pubDate>Fri, 14 May 2021 02:26:16 +0800</pubDate>
-      
-      <guid>/tags/%E8%89%BE%E9%A3%8E%E9%80%B8/</guid>
-      <description></description>
-      <content></content>
-    </item>
-    
-    <item>
-      <title>architect</title>
-      <link>/tags/architect/</link>
-      <pubDate>Wed, 12 May 2021 07:48:16 +0800</pubDate>
-      
-      <guid>/tags/architect/</guid>
-      <description></description>
-      <content></content>
-    </item>
-    
-    <item>
-      <title>ddia</title>
-      <link>/tags/ddia/</link>
-      <pubDate>Wed, 12 May 2021 07:48:16 +0800</pubDate>
-      
-      <guid>/tags/ddia/</guid>
-      <description></description>
-      <content></content>
-    </item>
-    
-    <item>
-      <title>system design</title>
-      <link>/tags/system-design/</link>
-      <pubDate>Wed, 12 May 2021 07:48:16 +0800</pubDate>
-      
-      <guid>/tags/system-design/</guid>
-      <description></description>
-      <content></content>
-    </item>
-    
-    <item>
-      <title>Asia</title>
-      <link>/tags/asia/</link>
-      <pubDate>Wed, 12 May 2021 01:28:16 +0800</pubDate>
-      
-      <guid>/tags/asia/</guid>
-      <description></description>
-      <content></content>
-    </item>
-    
-    <item>
-      <title>poem</title>
-      <link>/tags/poem/</link>
-      <pubDate>Wed, 12 May 2021 01:28:16 +0800</pubDate>
-      
-      <guid>/tags/poem/</guid>
-      <description></description>
-      <content></content>
-    </item>
-    
-    <item>
-      <title>container</title>
-      <link>/tags/container/</link>
-      <pubDate>Fri, 23 Apr 2021 07:48:16 +0800</pubDate>
-      
-      <guid>/tags/container/</guid>
-      <description></description>
-      <content></content>
-    </item>
-    
-    <item>
-      <title>docker</title>
-      <link>/tags/docker/</link>
-      <pubDate>Fri, 23 Apr 2021 07:48:16 +0800</pubDate>
-      
-      <guid>/tags/docker/</guid>
-      <description></description>
-      <content></content>
-    </item>
-    
-    <item>
-      <title>editor</title>
-      <link>/tags/editor/</link>
-      <pubDate>Fri, 23 Apr 2021 07:19:12 +0800</pubDate>
-      
-      <guid>/tags/editor/</guid>
-      <description></description>
-      <content></content>
-    </item>
-    
-    <item>
-      <title>vim</title>
-      <link>/tags/vim/</link>
-      <pubDate>Fri, 23 Apr 2021 07:19:12 +0800</pubDate>
-      
-      <guid>/tags/vim/</guid>
-      <description></description>
-      <content></content>
-    </item>
-    
-    <item>
-      <title>art</title>
-      <link>/tags/art/</link>
-      <pubDate>Thu, 22 Apr 2021 07:48:16 +0800</pubDate>
-      
-      <guid>/tags/art/</guid>
-      <description></description>
-      <content></content>
-    </item>
-    
-    <item>
-      <title>blender</title>
-      <link>/tags/blender/</link>
-      <pubDate>Thu, 22 Apr 2021 07:48:16 +0800</pubDate>
-      
-      <guid>/tags/blender/</guid>
-      <description></description>
-      <content></content>
-    </item>
-    
-    <item>
-      <title>cargo</title>
-      <link>/tags/cargo/</link>
-      <pubDate>Thu, 22 Apr 2021 07:48:16 +0800</pubDate>
-      
-      <guid>/tags/cargo/</guid>
-      <description></description>
-      <content></content>
-    </item>
-    
-    <item>
-      <title>color</title>
-      <link>/tags/color/</link>
-      <pubDate>Thu, 22 Apr 2021 07:48:16 +0800</pubDate>
-      
-      <guid>/tags/color/</guid>
-      <description></description>
-      <content></content>
-    </item>
-    
-    <item>
-      <title>design</title>
-      <link>/tags/design/</link>
-      <pubDate>Thu, 22 Apr 2021 07:48:16 +0800</pubDate>
-      
-      <guid>/tags/design/</guid>
-      <description></description>
-      <content></content>
-    </item>
-    
-    <item>
-      <title>education</title>
-      <link>/tags/education/</link>
-      <pubDate>Thu, 22 Apr 2021 07:48:16 +0800</pubDate>
-      
-      <guid>/tags/education/</guid>
-      <description></description>
-      <content></content>
-    </item>
-    
-    <item>
-      <title>HTTPS</title>
-      <link>/tags/https/</link>
-      <pubDate>Thu, 22 Apr 2021 07:48:16 +0800</pubDate>
-      
-      <guid>/tags/https/</guid>
-      <description></description>
-      <content></content>
-    </item>
-    
-    <item>
-      <title>inspiration</title>
-      <link>/tags/inspiration/</link>
-      <pubDate>Thu, 22 Apr 2021 07:48:16 +0800</pubDate>
-      
-      <guid>/tags/inspiration/</guid>
-      <description></description>
-      <content></content>
-    </item>
-    
-    <item>
-      <title>life</title>
-      <link>/tags/life/</link>
-      <pubDate>Thu, 22 Apr 2021 07:48:16 +0800</pubDate>
-      
-      <guid>/tags/life/</guid>
-      <description></description>
-      <content></content>
-    </item>
-    
-    <item>
-      <title>love</title>
-      <link>/tags/love/</link>
-      <pubDate>Thu, 22 Apr 2021 07:48:16 +0800</pubDate>
-      
-      <guid>/tags/love/</guid>
-      <description></description>
-      <content></content>
-    </item>
-    
-    <item>
-      <title>rust</title>
-      <link>/tags/rust/</link>
-      <pubDate>Thu, 22 Apr 2021 07:48:16 +0800</pubDate>
-      
-      <guid>/tags/rust/</guid>
-      <description></description>
-      <content></content>
-    </item>
-    
-    <item>
-      <title>tech</title>
-      <link>/tags/tech/</link>
-      <pubDate>Thu, 22 Apr 2021 07:48:16 +0800</pubDate>
-      
-      <guid>/tags/tech/</guid>
-      <description></description>
-      <content></content>
-    </item>
-    
-    <item>
-      <title>TLS</title>
-      <link>/tags/tls/</link>
-      <pubDate>Thu, 22 Apr 2021 07:48:16 +0800</pubDate>
-      
-      <guid>/tags/tls/</guid>
-      <description></description>
-      <content></content>
-    </item>
-    
-    <item>
-      <title>知否知否应是绿肥红瘦</title>
-      <link>/tags/%E7%9F%A5%E5%90%A6%E7%9F%A5%E5%90%A6%E5%BA%94%E6%98%AF%E7%BB%BF%E8%82%A5%E7%BA%A2%E7%98%A6/</link>
-      <pubDate>Thu, 22 Apr 2021 07:48:16 +0800</pubDate>
-      
-      <guid>/tags/%E7%9F%A5%E5%90%A6%E7%9F%A5%E5%90%A6%E5%BA%94%E6%98%AF%E7%BB%BF%E8%82%A5%E7%BA%A2%E7%98%A6/</guid>
-      <description></description>
-      <content></content>
-    </item>
-    
-    <item>
-      <title>about</title>
-      <link>/tags/about/</link>
-      <pubDate>Thu, 22 Apr 2021 07:18:58 +0800</pubDate>
-      
-      <guid>/tags/about/</guid>
-      <description></description>
-      <content></content>
-    </item>
-    
-    <item>
-      <title>github</title>
-      <link>/tags/github/</link>
-      <pubDate>Thu, 22 Apr 2021 07:18:58 +0800</pubDate>
-      
-      <guid>/tags/github/</guid>
-      <description></description>
-      <content></content>
     </item>
     
   </channel>
