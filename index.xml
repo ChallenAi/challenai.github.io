@@ -18,6 +18,16 @@
     </item>
     
     <item>
+      <title>(cn) How to Learn Something</title>
+      <link>/inspiration/acquisition/</link>
+      <pubDate>Mon, 13 Feb 2023 18:08:19 +0800</pubDate>
+      
+      <guid>/inspiration/acquisition/</guid>
+      <description>learn is painful</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="/inspiration/acquisition/cover.png" />
+    </item>
+    
+    <item>
       <title>Paper: Virtual Machine Fault Tolerant</title>
       <link>/paper/vmft/</link>
       <pubDate>Mon, 13 Feb 2023 18:08:19 +0800</pubDate>
@@ -85,6 +95,16 @@
       <guid>/contribute/queue/</guid>
       <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in eleifend justo, vestibulum congue lacus. Quisque est libero, lacinia sed placerat ac, interdum id urna.</description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="/contribute/queue/cover.png" />
+    </item>
+    
+    <item>
+      <title>(cn) 艾风逸: 名字的故事</title>
+      <link>/inspiration/name/</link>
+      <pubDate>Mon, 08 Apr 2019 21:07:05 +0800</pubDate>
+      
+      <guid>/inspiration/name/</guid>
+      <description>每个人大概都一定程度上不喜欢自己的出身，名字，历史，那些不能掌控的初值。小时候一直想给自己取个新名字，是一种抱怨，无能的人才会抱怨，表达对既定的不满又无力改变；也是一种期盼，包含对的美好祝福。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="/inspiration/name/cover.png" />
     </item>
     
   </channel>

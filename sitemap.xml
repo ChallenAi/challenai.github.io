@@ -103,6 +103,42 @@
   
     
       <url>
+            <loc>/inspiration/acquisition/</loc>
+            <lastmod>2023-02-13T18:08:19+08:00</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+      <url>
+            <loc>/tags/inspiration/</loc>
+            <lastmod>2023-02-13T18:08:19+08:00</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+      <url>
+            <loc>/tags/learn/</loc>
+            <lastmod>2023-02-13T18:08:19+08:00</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+      <url>
+            <loc>/tags/live/</loc>
+            <lastmod>2023-02-13T18:08:19+08:00</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+      <url>
             <loc>/paper/vmft/</loc>
             <lastmod>2023-02-13T18:08:19+08:00</lastmod>
             <changefreq>daily</changefreq>
@@ -238,8 +274,71 @@
   
     
       <url>
+            <loc>/inspiration/</loc>
+            <lastmod>2022-06-13T20:55:37+08:00</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+      <url>
             <loc>/paper/</loc>
             <lastmod>2022-06-13T20:55:37+08:00</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+      <url>
+            <loc>/inspiration/name/</loc>
+            <lastmod>2019-04-08T21:07:05+08:00</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+      <url>
+            <loc>/tags/about/</loc>
+            <lastmod>2019-04-08T21:07:05+08:00</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+      <url>
+            <loc>/tags/culture/</loc>
+            <lastmod>2019-04-08T21:07:05+08:00</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+      <url>
+            <loc>/tags/japanese/</loc>
+            <lastmod>2019-04-08T21:07:05+08:00</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+      <url>
+            <loc>/tags/name/</loc>
+            <lastmod>2019-04-08T21:07:05+08:00</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+      <url>
+            <loc>/tags/story/</loc>
+            <lastmod>2019-04-08T21:07:05+08:00</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
           </url>
