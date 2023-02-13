@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>block storage on Lun Jiang</title>
+    <link>/tags/block-storage/</link>
+    <description>Recent content in block storage on Lun Jiang</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 12 Feb 2023 12:08:19 +0800</lastBuildDate><atom:link href="/tags/block-storage/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Paper: Google File System</title>
+      <link>/paper/gfs/</link>
+      <pubDate>Sun, 12 Feb 2023 12:08:19 +0800</pubDate>
+      
+      <guid>/paper/gfs/</guid>
+      <description>A successful file system for large scale storage with cheap fragile machines. The way from scale up to scale out.</description>
+    </item>
+    
+  </channel>
+</rss>

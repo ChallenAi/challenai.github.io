@@ -67,28 +67,28 @@
   
   
   <meta property="og:title" content="Paper: Google File System" />
-<meta property="og:description" content="" />
+<meta property="og:description" content="A successful file system for large scale storage with cheap fragile machines. The way from scale up to scale out." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/paper/gfs/" /><meta property="og:image" content="/paper/gfs/cover.png"/><meta property="article:section" content="paper" />
-<meta property="article:published_time" content="2023-02-12T15:08:19+00:00" />
-<meta property="article:modified_time" content="2023-02-12T15:08:19+00:00" /><meta property="og:site_name" content="Lun Jiang" />
+<meta property="article:published_time" content="2023-02-12T12:08:19+08:00" />
+<meta property="article:modified_time" content="2023-02-12T12:08:19+08:00" /><meta property="og:site_name" content="Lun Jiang" />
 
 
   <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="/paper/gfs/cover.png"/>
 <meta name="twitter:title" content="Paper: Google File System"/>
-<meta name="twitter:description" content=""/>
+<meta name="twitter:description" content="A successful file system for large scale storage with cheap fragile machines. The way from scale up to scale out."/>
 
   
   <script type="application/ld+json">
   [{
     "@context": "https://schema.org",
     "@type": "Article",
-    "articleSection": "Posts",
+    "articleSection": "Papers",
     "name": "Paper: Google File System",
     "headline": "Paper: Google File System",
     
-    
+    "abstract": "A successful file system for large scale storage with cheap fragile machines. The way from scale up to scale out.",
     "inLanguage": "en",
     "url" : "\/paper\/gfs\/",
     "author" : {
@@ -96,15 +96,15 @@
       "name": "Lun Jiang"
     },
     "copyrightYear": "2023",
-    "dateCreated": "2023-02-12T15:08:19\u002b00:00",
-    "datePublished": "2023-02-12T15:08:19\u002b00:00",
+    "dateCreated": "2023-02-12T12:08:19\u002b08:00",
+    "datePublished": "2023-02-12T12:08:19\u002b08:00",
     
-    "dateModified": "2023-02-12T15:08:19\u002b00:00",
+    "dateModified": "2023-02-12T12:08:19\u002b08:00",
     
-    
+    "keywords": ["replicate","consistency","distributed system","storage","paper","block storage","google","master-slave"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "0"
+    "wordCount": "17"
   }]
   </script>
 
@@ -181,7 +181,7 @@
                 Code
             </a>
             
-            <a href="/paper/"  class="text-base font-medium text-gray-500 hover:text-gray-900" title="Posts">
+            <a href="/paper/"  class="text-base font-medium text-gray-500 hover:text-gray-900" title="Papers">
                 
 
 
@@ -387,7 +387,7 @@
                     
                     <li class="mb-1">
                         <a  class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2"
-                            href="/paper/" title="Posts">
+                            href="/paper/" title="Papers">
                             <span class="inline-block align-text-bottom">
 
 </span>
@@ -535,7 +535,7 @@
     <a
       class="hover:underline decoration-neutral-300 dark:underline-neutral-600"
       href="/paper/"
-      >Posts</a
+      >Papers</a
     ><span class="px-1 text-primary-500">/</span>
   </li>
 
@@ -589,10 +589,14 @@
 
 
 
+
+
+
+
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2023-02-12 15:08:19 &#43;0000 UTC">12 February 2023</time>
+  <time datetime="2023-02-12 12:08:19 &#43;0800 &#43;0800">12 February 2023</time><span class="px-2 text-primary-500">&middot;</span><span>17 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">1 min</span>
   
 
   
@@ -617,11 +621,60 @@
     </div>
   </header>
   <section class="flex flex-col max-w-full mt-0 prose dark:prose-invert lg:flex-row">
-    
+     
+    <div class="order-first sm:max-w-prose lg:ml-auto px-0 lg:order-last lg:max-w-xs ltr:lg:pl-8 rtl:lg:pr-8">
+      <div class="toc ltr:pl-5 rtl:pr-5 print:hidden lg:sticky  lg:top-[140px] ">
+        <details open class="mt-0 overflow-hidden rounded-lg ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 hidden lg:block">
+  <summary
+    class="block py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden"
+  >
+    Table of Contents
+  </summary>
+  <div
+    class="min-w-[220px] py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600"
+  >
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduce">introduce</a></li>
+  </ul>
+</nav>
+  </div>
+</details>
+<details class="mt-0 overflow-hidden rounded-lg ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 lg:hidden">
+  <summary
+    class="py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden"
+  >
+    Table of Contents
+  </summary>
+  <div
+    class="py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600"
+  >
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduce">introduce</a></li>
+  </ul>
+</nav>
+  </div>
+</details>
+
+      </div>
+      </div>
+      
       <div class="min-w-0 min-h-0 max-w-prose">
         
 
-        
+        <blockquote>
+<p>Original: &ldquo;The Google File System&rdquo;<br>
+Authors: Sanjay Ghemawat, Howard Gobioff, and Shun-Tak Leung (Google)</p>
+</blockquote>
+<div id="introduce" class="anchor">introduce></div>
+<h2 class="relative group">introduce 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#introduce" aria-label="Anchor">#</a></span>        
+    
+</h2>
         </br></br>
         
 
@@ -889,28 +942,6 @@
       <div class="flex justify-between pt-3">
         <span>
           
-            <a class="flex group mr-3" href="/paper/raft/">
-              <span
-                class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
-                >&larr;</span
-              >
-              <span
-                class="ml-3 text-neutral-700 group-hover:text-primary-600 ltr:hidden rtl:inline dark:text-neutral dark:group-hover:text-primary-400"
-                >&rarr;</span
-              >
-              <span class="flex flex-col">
-                <span
-                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-                  >Paper: Raft Consensus Algorithm</span
-                >
-                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
-                  
-                    <time datetime="2022-09-04 00:00:00 &#43;0000 UTC">4 September 2022</time>
-                  
-                </span>
-              </span>
-            </a>
-          
         </span>
         <span>
           
@@ -946,6 +977,14 @@
   </footer>
 </article>
 
+      
+      <div class="pointer-events-none absolute top-[100vh] bottom-0 w-12 ltr:right-0 rtl:left-0">
+        <a href="#the-top"
+          class="pointer-events-auto sticky top-[calc(100vh-5.5rem)] flex h-12 w-12 mb-16 items-center justify-center rounded-full bg-neutral/50 text-xl text-neutral-700 backdrop-blur hover:text-primary-600 dark:bg-neutral-800/50 dark:text-neutral dark:hover:text-primary-400"
+          aria-label="" title="">
+          &uarr;
+        </a>
+      </div>
       
     </main><footer class="py-10 print:hidden">
   

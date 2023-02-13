@@ -6,7 +6,17 @@
     <description>Recent content on Lun Jiang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 13 Feb 2023 18:08:19 +0800</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 13 Feb 2023 19:08:19 +0800</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Paper: Raft Consensus Algorithm</title>
+      <link>/paper/raft/</link>
+      <pubDate>Mon, 13 Feb 2023 19:08:19 +0800</pubDate>
+      
+      <guid>/paper/raft/</guid>
+      <description>Replicate is a common topic in distributed system, algorithms like paxos and its variants are difficult to understand, lack of details, but raft can help</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="/paper/raft/cover.png" />
+    </item>
+    
     <item>
       <title>Paper: Virtual Machine Fault Tolerant</title>
       <link>/paper/vmft/</link>
@@ -25,16 +35,6 @@
       <guid>/about/</guid>
       <description></description>
       
-    </item>
-    
-    <item>
-      <title>Paper: Google File System</title>
-      <link>/paper/gfs/</link>
-      <pubDate>Sun, 12 Feb 2023 15:08:19 +0000</pubDate>
-      
-      <guid>/paper/gfs/</guid>
-      <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="/paper/gfs/cover.png" />
     </item>
     
     <item>
@@ -68,6 +68,16 @@
     </item>
     
     <item>
+      <title>Paper: Google File System</title>
+      <link>/paper/gfs/</link>
+      <pubDate>Sun, 12 Feb 2023 12:08:19 +0800</pubDate>
+      
+      <guid>/paper/gfs/</guid>
+      <description>A successful file system for large scale storage with cheap fragile machines. The way from scale up to scale out.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="/paper/gfs/cover.png" />
+    </item>
+    
+    <item>
       <title>Queue: Nats, NSQ, Kafka</title>
       <link>/contribute/queue/</link>
       <pubDate>Thu, 02 Feb 2023 00:00:00 +0000</pubDate>
@@ -75,26 +85,6 @@
       <guid>/contribute/queue/</guid>
       <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in eleifend justo, vestibulum congue lacus. Quisque est libero, lacinia sed placerat ac, interdum id urna.</description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="/contribute/queue/cover.png" />
-    </item>
-    
-    <item>
-      <title>Paper: Raft Consensus Algorithm</title>
-      <link>/paper/raft/</link>
-      <pubDate>Sun, 04 Sep 2022 00:00:00 +0000</pubDate>
-      
-      <guid>/paper/raft/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in eleifend justo, vestibulum congue lacus. Quisque est libero, lacinia sed placerat ac, interdum id urna.</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="/paper/raft/cover.png" />
-    </item>
-    
-    <item>
-      <title>Super cool article that I wrote</title>
-      <link>/paper/testph/</link>
-      <pubDate>Sat, 04 Sep 2021 00:00:00 +0000</pubDate>
-      
-      <guid>/paper/testph/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in eleifend justo, vestibulum congue lacus. Quisque est libero, lacinia sed placerat ac, interdum id urna.</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="/paper/testph/cover1.png" />
     </item>
     
   </channel>

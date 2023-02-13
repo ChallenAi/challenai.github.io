@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>consistency on Lun Jiang</title>
+    <link>/tags/consistency/</link>
+    <description>Recent content in consistency on Lun Jiang</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 13 Feb 2023 19:08:19 +0800</lastBuildDate><atom:link href="/tags/consistency/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Paper: Raft Consensus Algorithm</title>
+      <link>/paper/raft/</link>
+      <pubDate>Mon, 13 Feb 2023 19:08:19 +0800</pubDate>
+      
+      <guid>/paper/raft/</guid>
+      <description>Replicate is a common topic in distributed system, algorithms like paxos and its variants are difficult to understand, lack of details, but raft can help</description>
+    </item>
+    
+    <item>
+      <title>Paper: Google File System</title>
+      <link>/paper/gfs/</link>
+      <pubDate>Sun, 12 Feb 2023 12:08:19 +0800</pubDate>
+      
+      <guid>/paper/gfs/</guid>
+      <description>A successful file system for large scale storage with cheap fragile machines. The way from scale up to scale out.</description>
+    </item>
+    
+  </channel>
+</rss>

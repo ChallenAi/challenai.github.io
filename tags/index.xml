@@ -6,20 +6,29 @@
     <description>Recent content in Tags on Lun Jiang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 13 Feb 2023 18:08:19 +0800</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 13 Feb 2023 19:08:19 +0800</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>consensus</title>
       <link>/tags/consensus/</link>
-      <pubDate>Mon, 13 Feb 2023 18:08:19 +0800</pubDate>
+      <pubDate>Mon, 13 Feb 2023 19:08:19 +0800</pubDate>
       
       <guid>/tags/consensus/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>consistency</title>
+      <link>/tags/consistency/</link>
+      <pubDate>Mon, 13 Feb 2023 19:08:19 +0800</pubDate>
+      
+      <guid>/tags/consistency/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>distributed system</title>
       <link>/tags/distributed-system/</link>
-      <pubDate>Mon, 13 Feb 2023 18:08:19 +0800</pubDate>
+      <pubDate>Mon, 13 Feb 2023 19:08:19 +0800</pubDate>
       
       <guid>/tags/distributed-system/</guid>
       <description></description>
@@ -28,7 +37,7 @@
     <item>
       <title>fault tolerant</title>
       <link>/tags/fault-tolerant/</link>
-      <pubDate>Mon, 13 Feb 2023 18:08:19 +0800</pubDate>
+      <pubDate>Mon, 13 Feb 2023 19:08:19 +0800</pubDate>
       
       <guid>/tags/fault-tolerant/</guid>
       <description></description>
@@ -37,18 +46,72 @@
     <item>
       <title>paper</title>
       <link>/tags/paper/</link>
-      <pubDate>Mon, 13 Feb 2023 18:08:19 +0800</pubDate>
+      <pubDate>Mon, 13 Feb 2023 19:08:19 +0800</pubDate>
       
       <guid>/tags/paper/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>protocol</title>
+      <link>/tags/protocol/</link>
+      <pubDate>Mon, 13 Feb 2023 19:08:19 +0800</pubDate>
+      
+      <guid>/tags/protocol/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>raft</title>
+      <link>/tags/raft/</link>
+      <pubDate>Mon, 13 Feb 2023 19:08:19 +0800</pubDate>
+      
+      <guid>/tags/raft/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>replicate</title>
       <link>/tags/replicate/</link>
-      <pubDate>Mon, 13 Feb 2023 18:08:19 +0800</pubDate>
+      <pubDate>Mon, 13 Feb 2023 19:08:19 +0800</pubDate>
       
       <guid>/tags/replicate/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>block storage</title>
+      <link>/tags/block-storage/</link>
+      <pubDate>Sun, 12 Feb 2023 12:08:19 +0800</pubDate>
+      
+      <guid>/tags/block-storage/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>google</title>
+      <link>/tags/google/</link>
+      <pubDate>Sun, 12 Feb 2023 12:08:19 +0800</pubDate>
+      
+      <guid>/tags/google/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>master-slave</title>
+      <link>/tags/master-slave/</link>
+      <pubDate>Sun, 12 Feb 2023 12:08:19 +0800</pubDate>
+      
+      <guid>/tags/master-slave/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>storage</title>
+      <link>/tags/storage/</link>
+      <pubDate>Sun, 12 Feb 2023 12:08:19 +0800</pubDate>
+      
+      <guid>/tags/storage/</guid>
       <description></description>
     </item>
     
