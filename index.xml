@@ -38,7 +38,7 @@
     </item>
     
     <item>
-      <title>About</title>
+      <title>About me</title>
       <link>/about/</link>
       <pubDate>Sun, 12 Feb 2023 15:10:51 +0000</pubDate>
       
@@ -95,6 +95,16 @@
       <guid>/contribute/queue/</guid>
       <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in eleifend justo, vestibulum congue lacus. Quisque est libero, lacinia sed placerat ac, interdum id urna.</description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="/contribute/queue/cover.png" />
+    </item>
+    
+    <item>
+      <title>Chinese Poem from 1500 Years Ago: An attractive man</title>
+      <link>/inspiration/meng/</link>
+      <pubDate>Tue, 27 Oct 2020 13:17:05 +0800</pubDate>
+      
+      <guid>/inspiration/meng/</guid>
+      <description>Love is always the topic for us all. It repeats again and again during thousands of years of our journey. It&amp;rsquo;s simple like that, fall in love, together and apart. maybe happy, maybe painful, kinda experience.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="/inspiration/meng/cover.png" />
     </item>
     
     <item>

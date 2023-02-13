@@ -104,7 +104,7 @@
     "keywords": ["fault tolerant","consensus","replicate","distributed system","paper"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "999"
+    "wordCount": "1000"
   }]
   </script>
 
@@ -205,7 +205,7 @@
                 Tags
             </a>
             
-            <a href="/about/"  class="text-base font-medium text-gray-500 hover:text-gray-900" title="About">
+            <a href="/about/"  class="text-base font-medium text-gray-500 hover:text-gray-900" title="About me">
                 
 
 
@@ -428,7 +428,7 @@
                     
                     <li class="mb-1">
                         <a  class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2"
-                            href="/about/" title="About">
+                            href="/about/" title="About me">
                             <span class="inline-block align-text-bottom">
 
 </span>
@@ -615,7 +615,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2023-02-13 18:08:19 &#43;0800 &#43;0800">13 February 2023</time><span class="px-2 text-primary-500">&middot;</span><span>999 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">5 mins</span>
+  <time datetime="2023-02-13 18:08:19 &#43;0800 &#43;0800">13 February 2023</time><span class="px-2 text-primary-500">&middot;</span><span>1000 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">5 mins</span>
   
 
   
@@ -704,8 +704,8 @@ Authors: Daniel J. Scales, Mike Nelson, and Ganesh Venkitachalam (VMware, Inc{sc
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
             style="text-decoration-line: none !important;" href="#background" aria-label="Anchor">#</a></span>        
     
-</h2><p>The background of this paper is to design a fault tolerant virtual machine service, and the most common idea for fault tolerant is to replicate, so they talk about how to replicate computation.<br>
-If these terminology sounds a bit scare, like what the f**k they are? can you just say something more understandable like what a human can figure out, don&rsquo;t worry, it&rsquo;s really easy, assume you have a windows os, you don&rsquo;t want it to stop running while losing power connection or want it to survive even from an earthquake. so you just run 2 windows in different computers simultaneously. Now we have 2 running windows os, if one of them stops, the other one will still keep running, thus our excel application can survive, however, we want these 2 windows run the same excel, handle the same row, the critical part becomes how to synchronize the state between 2 windows, the problem is what we called replicated state machine.<br>
+</h2><p>The background of this paper is to design a fault tolerant virtual machine service, and the most common idea for fault tolerant is to <strong>replicate</strong>, so they talk about how to replicate computation.<br>
+If these terminology sounds a bit scare, like what the f**k they are? can you just say something more understandable like what a human can figure out, don&rsquo;t worry, it&rsquo;s really easy, assume you have a windows os, you don&rsquo;t want it to stop running while losing power connection or want it to survive even from an earthquake. so you just run 2 windows in different computers simultaneously. Now we have 2 running windows os, if one of them stops, the other one will still keep running, thus our excel application can survive, however, we want these 2 windows run the same excel, handle the same row, the critical part becomes how to synchronize the state between 2 windows, the problem is what we called <strong>replicated state machine</strong>.<br>
 The nature is how to replicate state sequence, and the result is a fault tolerant computation system.</p>
 <div id="what-we-have" class="anchor">what we have></div>
 <h2 class="relative group">what we have 
@@ -715,7 +715,7 @@ The nature is how to replicate state sequence, and the result is a fault toleran
             style="text-decoration-line: none !important;" href="#what-we-have" aria-label="Anchor">#</a></span>        
     
 </h2><p>We have 2 instances(virtual machines, image it as windows).<br>
-One called primary, the other one called backup.<br>
+One called <strong>primary</strong>, the other one called <strong>backup</strong>.<br>
 They are connected via network, they shared a net disk.</p>
 <div id="what-to-replicate" class="anchor">what to replicate></div>
 <h2 class="relative group">what to replicate 
@@ -727,7 +727,7 @@ They are connected via network, they shared a net disk.</p>
 </h2><p>But the first problem is what to replicate?</p>
 <ul>
 <li>the sequence of the current result. include the registers, memory bytes, and all what we have modified. That&rsquo;s not a good idea, because the data is too large.</li>
-<li>the sequence of the operation. like we clicked some place. The real operation is the underlying instructions in the execution stack I guess. It doesn&rsquo;t matter if our interests is just try to understand the replication instead of virtual machine. A terrible thing is operating system has some uncertain events like time and IO interrupt, as the result, this uncertain things need to be translated to certain things. They have a professional terminology called deterministic state machine to describe this uncertain operation, a common example is now function, assume you want to replicate the data between 2 database, set and get operation is certain, but now system call is uncertain.</li>
+<li>the sequence of the <strong>operation</strong>. like we clicked some place. The real operation is the underlying instructions in the execution stack I guess. It doesn&rsquo;t matter if our interests is just try to understand the replication instead of virtual machine. A terrible thing is operating system has some uncertain events like time and IO interrupt, as the result, this uncertain things need to be translated to certain things. They have a professional terminology called deterministic state machine to describe this uncertain operation, a common example is now function, assume you want to replicate the data between 2 database, set and get operation is certain, but now system call is uncertain.</li>
 </ul>
 <div id="how-to-replicate-which-called-protocol" class="anchor">how to replicate (which called protocol)></div>
 <h2 class="relative group">how to replicate (which called protocol) 
@@ -737,24 +737,24 @@ They are connected via network, they shared a net disk.</p>
             style="text-decoration-line: none !important;" href="#how-to-replicate-which-called-protocol" aria-label="Anchor">#</a></span>        
     
 </h2><p>The whole progress looks like this:</p>
-<p>The Clients send requests to the primary,<br>
+<p>The clients send requests to the primary,<br>
 primary translate it to a couple of certain operations,<br>
 primary send it to the backup,<br>
-backup response ack,<br>
+backup <strong>responds ack</strong>,<br>
 primary execute the request and response client,<br>
 done.</p>
 <p>We have some problems here,<br>
-The first one is what if primary runs really fast, the backup falls behind a lot. sounds like after the primary respond, the backup found it will take him 2 days to catch up with the primary, that means if our primary stops running, we will lose our recent 2 days work!<br>
-The idea is to create a fixed length buffer to store the operations. We can assume the buffer can store 1 minutes work at most, if it&rsquo;s full, the primary should pause and wait the backup to catch up with him. it&rsquo;s like a block queue in inter process communication or a fixed length channel instance in golang. The purpose is to synchronize the speed of both sides.</p>
-<p>Another problem is what if primary fails. If some machine fails, fault tolerant design starts work.<br>
+The first one is what if primary runs really fast, the backup <strong>falls behind</strong> a lot. sounds like after the primary respond, the backup found it will take him 2 days to catch up with the primary, that means if our primary stops running, we will lose our recent 2 days work!<br>
+The idea is to create a fixed length <strong>buffer</strong> to store the operations. We can assume the buffer can store 1 minutes work at most, if it&rsquo;s full, the primary should pause and wait the backup to catch up with him. it&rsquo;s like a block queue in inter process communication or a fixed length channel instance in golang. The purpose is to synchronize the speed of both sides.</p>
+<p>Another problem is what if primary fails. If some machine fails, <strong>fault tolerant</strong> design starts work.<br>
 If the backup stops, everything seems still work, we fallback to the common scene: we have only one computer, it runs windows, it works.<br>
 If the primary stops, we want to shift to backup, but first, how does the backup recognize the primary has stopped. Just build a heartbeat to sense each other. If the primary find no heartbeat from backup, it can create a new backup. If the backup find no heartbeat, it try to become the primary, and repeat the behavior of the primary.<br>
-The progress of becoming a primary is usually called election in some consensus algorithm, vmft use a simple method to elect, use a cas(compare and set/swap) operation to write to a shared net disk. The winner of election is called primary, leader, master, main&hellip;</p>
+The progress of becoming a primary is usually called <strong>election</strong> in some consensus algorithm, vmft use a simple method to elect, use a cas(compare and set/swap) operation to write to a shared net disk. The winner of election is called primary, leader, master, main&hellip;</p>
 <p>By the way, to discover to the broken nodes in a system,<br>
 we use heartbeat,<br>
 if we have only 2 nodes, they can heartbeat each other,<br>
 if we have 3 or 5 nodes for a certain usage, we can create full connection among them,<br>
-if we have unknown numbers of nodes, we can create a third party monitor service, to probe all of the nodes.</p>
+if we have unknown numbers of nodes, we can create a third party <strong>monitor service</strong> to probe all of the nodes.</p>
 <div id="compare-with-other-system" class="anchor">compare with other system></div>
 <h2 class="relative group">compare with other system 
     <span
@@ -763,8 +763,8 @@ if we have unknown numbers of nodes, we can create a third party monitor service
             style="text-decoration-line: none !important;" href="#compare-with-other-system" aria-label="Anchor">#</a></span>        
     
 </h2><p>GFS:</p>
-<p>vmft uses a more underlying model to replicate, it directly replicate the virtual machine, it theoretically means it can replicate all application run in the virtual machine like excel, database, game, but noticed that it must runs in low performance too.<br>
-GFS is used to replicate bytes block specifically, that means it replicate in the application level. however, it provides no consistency promise while vmft says it will return only the primary and the backup persist successfully.<br>
+<p>vmft uses a more underlying model to replicate, it directly replicate the virtual machine, it theoretically means it can replicate <strong>all application</strong> run in the virtual machine like excel, database, game, but noticed that it must runs in low performance too.<br>
+GFS is used to replicate bytes block specifically, that means it replicate in the application level. however, it provides <strong>no consistency promise</strong> while vmft says it will return only the primary and the backup persist successfully.<br>
 That means the data stored in GFS could be not the same at all, but application runs in vmft will always keep the same.</p>
 <div id="something-else" class="anchor">something else></div>
 <h2 class="relative group">something else 
@@ -774,7 +774,7 @@ That means the data stored in GFS could be not the same at all, but application 
             style="text-decoration-line: none !important;" href="#something-else" aria-label="Anchor">#</a></span>        
     
 </h2><p>There are bunch of things we don&rsquo;t care about, like the virtual machines specific improvement. Our interest focus on the general replication.</p>
-<p>Replicate the computation is not a good idea in some ways. because computation itself is expensive and it takes a lot of resources include not only the CPU, but also expensive memory, IO bandwidth. Calculate separately and replicate the result of a short period would be competitive.</p>
+<p>Replicate the computation is not a good idea in some ways. because computation itself is expensive and it takes a lot of resources include not only the CPU, but also expensive memory, IO bandwidth. Calculate separately and replicate the result of a short period would be more competitive.</p>
 
         </br></br>
         
