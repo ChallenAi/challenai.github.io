@@ -13,33 +13,6 @@
   
     
       <url>
-            <loc>/tags/consensus/</loc>
-            <lastmod>2023-02-12T15:08:19+00:00</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-          </url>
-    
-  
-    
-      <url>
-            <loc>/tags/distributed-system/</loc>
-            <lastmod>2023-02-12T15:08:19+00:00</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-          </url>
-    
-  
-    
-      <url>
-            <loc>/tags/fault-tolerant/</loc>
-            <lastmod>2023-02-12T15:08:19+00:00</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-          </url>
-    
-  
-    
-      <url>
             <loc>/</loc>
             <lastmod>2023-02-12T15:08:19+00:00</lastmod>
             <changefreq>daily</changefreq>
@@ -50,33 +23,6 @@
     
       <url>
             <loc>/paper/gfs/</loc>
-            <lastmod>2023-02-12T15:08:19+00:00</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-          </url>
-    
-  
-    
-      <url>
-            <loc>/paper/vmft/</loc>
-            <lastmod>2023-02-12T15:08:19+00:00</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-          </url>
-    
-  
-    
-      <url>
-            <loc>/tags/replicate/</loc>
-            <lastmod>2023-02-12T15:08:19+00:00</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-          </url>
-    
-  
-    
-      <url>
-            <loc>/tags/</loc>
             <lastmod>2023-02-12T15:08:19+00:00</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
@@ -176,6 +122,15 @@
     
       <url>
             <loc>/contribute/queue/</loc>
+            <lastmod>2023-02-02T00:00:00+00:00</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+      <url>
+            <loc>/tags/</loc>
             <lastmod>2023-02-02T00:00:00+00:00</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>

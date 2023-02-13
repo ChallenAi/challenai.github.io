@@ -28,16 +28,6 @@
     </item>
     
     <item>
-      <title>Paper: Virtual Machine Fault Tolerant</title>
-      <link>/paper/vmft/</link>
-      <pubDate>Sun, 12 Feb 2023 15:08:19 +0000</pubDate>
-      
-      <guid>/paper/vmft/</guid>
-      <description>replicate computation is complex, paper vmft try to introduce their work</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="/paper/vmft/cover.png" />
-    </item>
-    
-    <item>
       <title>Scheduler</title>
       <link>/contribute/kube/scheduler/</link>
       <pubDate>Sun, 12 Feb 2023 15:07:47 +0000</pubDate>
@@ -94,7 +84,7 @@
       
       <guid>/paper/testph/</guid>
       <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in eleifend justo, vestibulum congue lacus. Quisque est libero, lacinia sed placerat ac, interdum id urna.</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="/paper/testph/cover.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="/paper/testph/cover1.png" />
     </item>
     
   </channel>
