@@ -17,6 +17,15 @@
     </item>
     
     <item>
+      <title>Paper: Paxos Consensus Algorithm and its Variants</title>
+      <link>https://challenai.github.io/paper/paxos/</link>
+      <pubDate>Mon, 13 Feb 2023 18:08:19 +0800</pubDate>
+      
+      <guid>https://challenai.github.io/paper/paxos/</guid>
+      <description>none</description>
+    </item>
+    
+    <item>
       <title>Paper: Virtual Machine Fault Tolerant</title>
       <link>https://challenai.github.io/paper/vmft/</link>
       <pubDate>Mon, 13 Feb 2023 18:08:19 +0800</pubDate>

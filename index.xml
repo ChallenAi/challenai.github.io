@@ -33,7 +33,7 @@
       <pubDate>Mon, 13 Feb 2023 18:08:19 +0800</pubDate>
       
       <guid>https://challenai.github.io/contribute/kube/apiserver/</guid>
-      <description>none</description>
+      <description>placeholder</description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://challenai.github.io/contribute/kube/apiserver/cover.png" />
     </item>
     
@@ -43,8 +43,18 @@
       <pubDate>Mon, 13 Feb 2023 18:08:19 +0800</pubDate>
       
       <guid>https://challenai.github.io/contribute/kube/controller/</guid>
-      <description>none</description>
+      <description>placeholder</description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://challenai.github.io/contribute/kube/controller/cover.png" />
+    </item>
+    
+    <item>
+      <title>Paper: Paxos Consensus Algorithm and its Variants</title>
+      <link>https://challenai.github.io/paper/paxos/</link>
+      <pubDate>Mon, 13 Feb 2023 18:08:19 +0800</pubDate>
+      
+      <guid>https://challenai.github.io/paper/paxos/</guid>
+      <description>none</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://challenai.github.io/paper/paxos/cover.png" />
     </item>
     
     <item>
@@ -83,7 +93,7 @@
       <pubDate>Sun, 12 Feb 2023 12:08:19 +0800</pubDate>
       
       <guid>https://challenai.github.io/contribute/golang/</guid>
-      <description>none</description>
+      <description>Todo: Collate</description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://challenai.github.io/contribute/golang/cover.png" />
     </item>
     
@@ -93,7 +103,7 @@
       <pubDate>Sun, 12 Feb 2023 12:08:19 +0800</pubDate>
       
       <guid>https://challenai.github.io/contribute/kube/scheduler/</guid>
-      <description>none</description>
+      <description>placeholder</description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://challenai.github.io/contribute/kube/scheduler/cover.png" />
     </item>
     

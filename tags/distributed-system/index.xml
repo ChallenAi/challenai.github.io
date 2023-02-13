@@ -22,7 +22,7 @@
       <pubDate>Mon, 13 Feb 2023 18:08:19 +0800</pubDate>
       
       <guid>https://challenai.github.io/contribute/kube/apiserver/</guid>
-      <description>none</description>
+      <description>placeholder</description>
     </item>
     
     <item>
@@ -31,6 +31,15 @@
       <pubDate>Mon, 13 Feb 2023 18:08:19 +0800</pubDate>
       
       <guid>https://challenai.github.io/contribute/kube/controller/</guid>
+      <description>placeholder</description>
+    </item>
+    
+    <item>
+      <title>Paper: Paxos Consensus Algorithm and its Variants</title>
+      <link>https://challenai.github.io/paper/paxos/</link>
+      <pubDate>Mon, 13 Feb 2023 18:08:19 +0800</pubDate>
+      
+      <guid>https://challenai.github.io/paper/paxos/</guid>
       <description>none</description>
     </item>
     
@@ -49,7 +58,7 @@
       <pubDate>Sun, 12 Feb 2023 12:08:19 +0800</pubDate>
       
       <guid>https://challenai.github.io/contribute/kube/scheduler/</guid>
-      <description>none</description>
+      <description>placeholder</description>
     </item>
     
     <item>

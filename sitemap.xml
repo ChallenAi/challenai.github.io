@@ -220,6 +220,15 @@
   
     
       <url>
+            <loc>https://challenai.github.io/paper/paxos/</loc>
+            <lastmod>2023-02-13T18:08:19+08:00</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+      <url>
             <loc>https://challenai.github.io/paper/vmft/</loc>
             <lastmod>2023-02-13T18:08:19+08:00</lastmod>
             <changefreq>daily</changefreq>
@@ -230,6 +239,15 @@
     
       <url>
             <loc>https://challenai.github.io/tags/partition/</loc>
+            <lastmod>2023-02-13T18:08:19+08:00</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+      <url>
+            <loc>https://challenai.github.io/tags/paxos/</loc>
             <lastmod>2023-02-13T18:08:19+08:00</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
