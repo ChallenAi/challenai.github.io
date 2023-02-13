@@ -4,8 +4,26 @@
   
     
       <url>
-            <loc>/about/</loc>
-            <lastmod>2023-02-12T15:10:51+00:00</lastmod>
+            <loc>/tags/consensus/</loc>
+            <lastmod>2023-02-13T18:08:19+08:00</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+      <url>
+            <loc>/tags/distributed-system/</loc>
+            <lastmod>2023-02-13T18:08:19+08:00</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+      <url>
+            <loc>/tags/fault-tolerant/</loc>
+            <lastmod>2023-02-13T18:08:19+08:00</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
           </url>
@@ -14,7 +32,52 @@
     
       <url>
             <loc>/</loc>
-            <lastmod>2023-02-12T15:08:19+00:00</lastmod>
+            <lastmod>2023-02-13T18:08:19+08:00</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+      <url>
+            <loc>/tags/paper/</loc>
+            <lastmod>2023-02-13T18:08:19+08:00</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+      <url>
+            <loc>/paper/vmft/</loc>
+            <lastmod>2023-02-13T18:08:19+08:00</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+      <url>
+            <loc>/tags/replicate/</loc>
+            <lastmod>2023-02-13T18:08:19+08:00</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+      <url>
+            <loc>/tags/</loc>
+            <lastmod>2023-02-13T18:08:19+08:00</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+      <url>
+            <loc>/about/</loc>
+            <lastmod>2023-02-12T15:10:51+00:00</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
           </url>
@@ -67,24 +130,6 @@
   
     
       <url>
-            <loc>/categories/blog/</loc>
-            <lastmod>2023-02-02T00:00:00+00:00</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-          </url>
-    
-  
-    
-      <url>
-            <loc>/categories/</loc>
-            <lastmod>2023-02-02T00:00:00+00:00</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-          </url>
-    
-  
-    
-      <url>
             <loc>/tags/ipsum/</loc>
             <lastmod>2023-02-02T00:00:00+00:00</lastmod>
             <changefreq>daily</changefreq>
@@ -103,15 +148,6 @@
   
     
       <url>
-            <loc>/categories/post/</loc>
-            <lastmod>2023-02-02T00:00:00+00:00</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-          </url>
-    
-  
-    
-      <url>
             <loc>/tags/post/</loc>
             <lastmod>2023-02-02T00:00:00+00:00</lastmod>
             <changefreq>daily</changefreq>
@@ -122,15 +158,6 @@
     
       <url>
             <loc>/contribute/queue/</loc>
-            <lastmod>2023-02-02T00:00:00+00:00</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-          </url>
-    
-  
-    
-      <url>
-            <loc>/tags/</loc>
             <lastmod>2023-02-02T00:00:00+00:00</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>

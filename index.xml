@@ -6,7 +6,17 @@
     <description>Recent content on Lun Jiang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 12 Feb 2023 15:08:19 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 13 Feb 2023 18:08:19 +0800</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Paper: Virtual Machine Fault Tolerant</title>
+      <link>/paper/vmft/</link>
+      <pubDate>Mon, 13 Feb 2023 18:08:19 +0800</pubDate>
+      
+      <guid>/paper/vmft/</guid>
+      <description>replicate computation is complex, paper vmft try to introduce the work to replicate virtual machine</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="/paper/vmft/cover.png" />
+    </item>
+    
     <item>
       <title>About</title>
       <link>/about/</link>
