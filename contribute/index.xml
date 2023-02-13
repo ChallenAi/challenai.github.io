@@ -1,46 +1,55 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Contributes on Lun Jiang</title>
-    <link>/contribute/</link>
-    <description>Recent content in Contributes on Lun Jiang</description>
+    <title>Code Space on Lun Jiang</title>
+    <link>https://challenai.github.io/contribute/</link>
+    <description>Recent content in Code Space on Lun Jiang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 12 Feb 2023 15:07:47 +0000</lastBuildDate><atom:link href="/contribute/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 13 Jun 2022 20:55:37 +0800</lastBuildDate><atom:link href="https://challenai.github.io/contribute/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Scheduler</title>
-      <link>/contribute/kube/scheduler/</link>
-      <pubDate>Sun, 12 Feb 2023 15:07:47 +0000</pubDate>
+      <title>Kubernetes: API Server</title>
+      <link>https://challenai.github.io/contribute/kube/apiserver/</link>
+      <pubDate>Mon, 13 Feb 2023 18:08:19 +0800</pubDate>
       
-      <guid>/contribute/kube/scheduler/</guid>
-      <description></description>
+      <guid>https://challenai.github.io/contribute/kube/apiserver/</guid>
+      <description>none</description>
     </item>
     
     <item>
-      <title>Leetcode2</title>
-      <link>/contribute/algorithm/leetcode2/</link>
-      <pubDate>Sun, 12 Feb 2023 15:07:24 +0000</pubDate>
+      <title>Kubernetes: Controller</title>
+      <link>https://challenai.github.io/contribute/kube/controller/</link>
+      <pubDate>Mon, 13 Feb 2023 18:08:19 +0800</pubDate>
       
-      <guid>/contribute/algorithm/leetcode2/</guid>
-      <description></description>
+      <guid>https://challenai.github.io/contribute/kube/controller/</guid>
+      <description>none</description>
     </item>
     
     <item>
-      <title>Leetcode1</title>
-      <link>/contribute/algorithm/leetcode1/</link>
-      <pubDate>Sun, 12 Feb 2023 15:06:48 +0000</pubDate>
+      <title>Queue: Nats, NSQ and Kafka</title>
+      <link>https://challenai.github.io/contribute/queue/</link>
+      <pubDate>Mon, 13 Feb 2023 18:08:19 +0800</pubDate>
       
-      <guid>/contribute/algorithm/leetcode1/</guid>
-      <description></description>
+      <guid>https://challenai.github.io/contribute/queue/</guid>
+      <description>Message Queue is a separate server to store message with FIFO sequence.</description>
     </item>
     
     <item>
-      <title>Queue: Nats, NSQ, Kafka</title>
-      <link>/contribute/queue/</link>
-      <pubDate>Thu, 02 Feb 2023 00:00:00 +0000</pubDate>
+      <title>(cn) Golang Runtime Introduction</title>
+      <link>https://challenai.github.io/contribute/golang/</link>
+      <pubDate>Sun, 12 Feb 2023 12:08:19 +0800</pubDate>
       
-      <guid>/contribute/queue/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in eleifend justo, vestibulum congue lacus. Quisque est libero, lacinia sed placerat ac, interdum id urna.</description>
+      <guid>https://challenai.github.io/contribute/golang/</guid>
+      <description>none</description>
+    </item>
+    
+    <item>
+      <title>Kubernetes: Scheduler</title>
+      <link>https://challenai.github.io/contribute/kube/scheduler/</link>
+      <pubDate>Sun, 12 Feb 2023 12:08:19 +0800</pubDate>
+      
+      <guid>https://challenai.github.io/contribute/kube/scheduler/</guid>
+      <description>none</description>
     </item>
     
   </channel>

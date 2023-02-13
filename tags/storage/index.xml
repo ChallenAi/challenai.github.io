@@ -2,17 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>storage on Lun Jiang</title>
-    <link>/tags/storage/</link>
+    <link>https://challenai.github.io/tags/storage/</link>
     <description>Recent content in storage on Lun Jiang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 12 Feb 2023 12:08:19 +0800</lastBuildDate><atom:link href="/tags/storage/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 13 Feb 2023 18:08:19 +0800</lastBuildDate><atom:link href="https://challenai.github.io/tags/storage/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Queue: Nats, NSQ and Kafka</title>
+      <link>https://challenai.github.io/contribute/queue/</link>
+      <pubDate>Mon, 13 Feb 2023 18:08:19 +0800</pubDate>
+      
+      <guid>https://challenai.github.io/contribute/queue/</guid>
+      <description>Message Queue is a separate server to store message with FIFO sequence.</description>
+    </item>
+    
     <item>
       <title>Paper: Google File System</title>
-      <link>/paper/gfs/</link>
+      <link>https://challenai.github.io/paper/gfs/</link>
       <pubDate>Sun, 12 Feb 2023 12:08:19 +0800</pubDate>
       
-      <guid>/paper/gfs/</guid>
+      <guid>https://challenai.github.io/paper/gfs/</guid>
       <description>A successful file system for large scale storage with cheap fragile machines. The way from scale up to scale out.</description>
     </item>
     

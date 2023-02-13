@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>golang on Lun Jiang</title>
+    <link>https://challenai.github.io/tags/golang/</link>
+    <description>Recent content in golang on Lun Jiang</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 12 Feb 2023 12:08:19 +0800</lastBuildDate><atom:link href="https://challenai.github.io/tags/golang/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>(cn) Golang Runtime Introduction</title>
+      <link>https://challenai.github.io/contribute/golang/</link>
+      <pubDate>Sun, 12 Feb 2023 12:08:19 +0800</pubDate>
+      
+      <guid>https://challenai.github.io/contribute/golang/</guid>
+      <description>none</description>
+    </item>
+    
+  </channel>
+</rss>

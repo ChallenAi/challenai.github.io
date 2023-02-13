@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Authors on Lun Jiang</title>
-    <link>/authors/</link>
+    <link>https://challenai.github.io/authors/</link>
     <description>Recent content in Authors on Lun Jiang</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="/authors/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language><atom:link href="https://challenai.github.io/authors/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

@@ -2,224 +2,395 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Lun Jiang</title>
-    <link>/tags/</link>
+    <link>https://challenai.github.io/tags/</link>
     <description>Recent content in Tags on Lun Jiang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 13 Feb 2023 19:08:19 +0800</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 13 Feb 2023 19:08:19 +0800</lastBuildDate><atom:link href="https://challenai.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>consensus</title>
-      <link>/tags/consensus/</link>
+      <link>https://challenai.github.io/tags/consensus/</link>
       <pubDate>Mon, 13 Feb 2023 19:08:19 +0800</pubDate>
       
-      <guid>/tags/consensus/</guid>
+      <guid>https://challenai.github.io/tags/consensus/</guid>
       <description></description>
     </item>
     
     <item>
       <title>consistency</title>
-      <link>/tags/consistency/</link>
+      <link>https://challenai.github.io/tags/consistency/</link>
       <pubDate>Mon, 13 Feb 2023 19:08:19 +0800</pubDate>
       
-      <guid>/tags/consistency/</guid>
+      <guid>https://challenai.github.io/tags/consistency/</guid>
       <description></description>
     </item>
     
     <item>
       <title>distributed system</title>
-      <link>/tags/distributed-system/</link>
+      <link>https://challenai.github.io/tags/distributed-system/</link>
       <pubDate>Mon, 13 Feb 2023 19:08:19 +0800</pubDate>
       
-      <guid>/tags/distributed-system/</guid>
+      <guid>https://challenai.github.io/tags/distributed-system/</guid>
       <description></description>
     </item>
     
     <item>
       <title>fault tolerant</title>
-      <link>/tags/fault-tolerant/</link>
+      <link>https://challenai.github.io/tags/fault-tolerant/</link>
       <pubDate>Mon, 13 Feb 2023 19:08:19 +0800</pubDate>
       
-      <guid>/tags/fault-tolerant/</guid>
+      <guid>https://challenai.github.io/tags/fault-tolerant/</guid>
       <description></description>
     </item>
     
     <item>
       <title>paper</title>
-      <link>/tags/paper/</link>
+      <link>https://challenai.github.io/tags/paper/</link>
       <pubDate>Mon, 13 Feb 2023 19:08:19 +0800</pubDate>
       
-      <guid>/tags/paper/</guid>
+      <guid>https://challenai.github.io/tags/paper/</guid>
       <description></description>
     </item>
     
     <item>
       <title>protocol</title>
-      <link>/tags/protocol/</link>
+      <link>https://challenai.github.io/tags/protocol/</link>
       <pubDate>Mon, 13 Feb 2023 19:08:19 +0800</pubDate>
       
-      <guid>/tags/protocol/</guid>
+      <guid>https://challenai.github.io/tags/protocol/</guid>
       <description></description>
     </item>
     
     <item>
       <title>raft</title>
-      <link>/tags/raft/</link>
+      <link>https://challenai.github.io/tags/raft/</link>
       <pubDate>Mon, 13 Feb 2023 19:08:19 +0800</pubDate>
       
-      <guid>/tags/raft/</guid>
+      <guid>https://challenai.github.io/tags/raft/</guid>
       <description></description>
     </item>
     
     <item>
       <title>replicate</title>
-      <link>/tags/replicate/</link>
+      <link>https://challenai.github.io/tags/replicate/</link>
       <pubDate>Mon, 13 Feb 2023 19:08:19 +0800</pubDate>
       
-      <guid>/tags/replicate/</guid>
+      <guid>https://challenai.github.io/tags/replicate/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>cloud native</title>
+      <link>https://challenai.github.io/tags/cloud-native/</link>
+      <pubDate>Mon, 13 Feb 2023 18:08:19 +0800</pubDate>
+      
+      <guid>https://challenai.github.io/tags/cloud-native/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>control plane</title>
+      <link>https://challenai.github.io/tags/control-plane/</link>
+      <pubDate>Mon, 13 Feb 2023 18:08:19 +0800</pubDate>
+      
+      <guid>https://challenai.github.io/tags/control-plane/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>controller</title>
+      <link>https://challenai.github.io/tags/controller/</link>
+      <pubDate>Mon, 13 Feb 2023 18:08:19 +0800</pubDate>
+      
+      <guid>https://challenai.github.io/tags/controller/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>etcd</title>
+      <link>https://challenai.github.io/tags/etcd/</link>
+      <pubDate>Mon, 13 Feb 2023 18:08:19 +0800</pubDate>
+      
+      <guid>https://challenai.github.io/tags/etcd/</guid>
       <description></description>
     </item>
     
     <item>
       <title>inspiration</title>
-      <link>/tags/inspiration/</link>
+      <link>https://challenai.github.io/tags/inspiration/</link>
       <pubDate>Mon, 13 Feb 2023 18:08:19 +0800</pubDate>
       
-      <guid>/tags/inspiration/</guid>
+      <guid>https://challenai.github.io/tags/inspiration/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>kubernetes</title>
+      <link>https://challenai.github.io/tags/kubernetes/</link>
+      <pubDate>Mon, 13 Feb 2023 18:08:19 +0800</pubDate>
+      
+      <guid>https://challenai.github.io/tags/kubernetes/</guid>
       <description></description>
     </item>
     
     <item>
       <title>learn</title>
-      <link>/tags/learn/</link>
+      <link>https://challenai.github.io/tags/learn/</link>
       <pubDate>Mon, 13 Feb 2023 18:08:19 +0800</pubDate>
       
-      <guid>/tags/learn/</guid>
+      <guid>https://challenai.github.io/tags/learn/</guid>
       <description></description>
     </item>
     
     <item>
       <title>live</title>
-      <link>/tags/live/</link>
+      <link>https://challenai.github.io/tags/live/</link>
       <pubDate>Mon, 13 Feb 2023 18:08:19 +0800</pubDate>
       
-      <guid>/tags/live/</guid>
+      <guid>https://challenai.github.io/tags/live/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>block storage</title>
-      <link>/tags/block-storage/</link>
-      <pubDate>Sun, 12 Feb 2023 12:08:19 +0800</pubDate>
+      <title>message queue</title>
+      <link>https://challenai.github.io/tags/message-queue/</link>
+      <pubDate>Mon, 13 Feb 2023 18:08:19 +0800</pubDate>
       
-      <guid>/tags/block-storage/</guid>
+      <guid>https://challenai.github.io/tags/message-queue/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>google</title>
-      <link>/tags/google/</link>
-      <pubDate>Sun, 12 Feb 2023 12:08:19 +0800</pubDate>
+      <title>open source</title>
+      <link>https://challenai.github.io/tags/open-source/</link>
+      <pubDate>Mon, 13 Feb 2023 18:08:19 +0800</pubDate>
       
-      <guid>/tags/google/</guid>
+      <guid>https://challenai.github.io/tags/open-source/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>master-slave</title>
-      <link>/tags/master-slave/</link>
-      <pubDate>Sun, 12 Feb 2023 12:08:19 +0800</pubDate>
+      <title>partition</title>
+      <link>https://challenai.github.io/tags/partition/</link>
+      <pubDate>Mon, 13 Feb 2023 18:08:19 +0800</pubDate>
       
-      <guid>/tags/master-slave/</guid>
+      <guid>https://challenai.github.io/tags/partition/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>replication</title>
+      <link>https://challenai.github.io/tags/replication/</link>
+      <pubDate>Mon, 13 Feb 2023 18:08:19 +0800</pubDate>
+      
+      <guid>https://challenai.github.io/tags/replication/</guid>
       <description></description>
     </item>
     
     <item>
       <title>storage</title>
-      <link>/tags/storage/</link>
+      <link>https://challenai.github.io/tags/storage/</link>
+      <pubDate>Mon, 13 Feb 2023 18:08:19 +0800</pubDate>
+      
+      <guid>https://challenai.github.io/tags/storage/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>block storage</title>
+      <link>https://challenai.github.io/tags/block-storage/</link>
       <pubDate>Sun, 12 Feb 2023 12:08:19 +0800</pubDate>
       
-      <guid>/tags/storage/</guid>
+      <guid>https://challenai.github.io/tags/block-storage/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>ipsum</title>
-      <link>/tags/ipsum/</link>
-      <pubDate>Thu, 02 Feb 2023 00:00:00 +0000</pubDate>
+      <title>condition variable</title>
+      <link>https://challenai.github.io/tags/condition-variable/</link>
+      <pubDate>Sun, 12 Feb 2023 12:08:19 +0800</pubDate>
       
-      <guid>/tags/ipsum/</guid>
+      <guid>https://challenai.github.io/tags/condition-variable/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>lorem</title>
-      <link>/tags/lorem/</link>
-      <pubDate>Thu, 02 Feb 2023 00:00:00 +0000</pubDate>
+      <title>garbage collector</title>
+      <link>https://challenai.github.io/tags/garbage-collector/</link>
+      <pubDate>Sun, 12 Feb 2023 12:08:19 +0800</pubDate>
       
-      <guid>/tags/lorem/</guid>
+      <guid>https://challenai.github.io/tags/garbage-collector/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>post</title>
-      <link>/tags/post/</link>
-      <pubDate>Thu, 02 Feb 2023 00:00:00 +0000</pubDate>
+      <title>golang</title>
+      <link>https://challenai.github.io/tags/golang/</link>
+      <pubDate>Sun, 12 Feb 2023 12:08:19 +0800</pubDate>
       
-      <guid>/tags/post/</guid>
+      <guid>https://challenai.github.io/tags/golang/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>google</title>
+      <link>https://challenai.github.io/tags/google/</link>
+      <pubDate>Sun, 12 Feb 2023 12:08:19 +0800</pubDate>
+      
+      <guid>https://challenai.github.io/tags/google/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>goroutine</title>
+      <link>https://challenai.github.io/tags/goroutine/</link>
+      <pubDate>Sun, 12 Feb 2023 12:08:19 +0800</pubDate>
+      
+      <guid>https://challenai.github.io/tags/goroutine/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>language</title>
+      <link>https://challenai.github.io/tags/language/</link>
+      <pubDate>Sun, 12 Feb 2023 12:08:19 +0800</pubDate>
+      
+      <guid>https://challenai.github.io/tags/language/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>lock</title>
+      <link>https://challenai.github.io/tags/lock/</link>
+      <pubDate>Sun, 12 Feb 2023 12:08:19 +0800</pubDate>
+      
+      <guid>https://challenai.github.io/tags/lock/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>master-slave</title>
+      <link>https://challenai.github.io/tags/master-slave/</link>
+      <pubDate>Sun, 12 Feb 2023 12:08:19 +0800</pubDate>
+      
+      <guid>https://challenai.github.io/tags/master-slave/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>memory allocator</title>
+      <link>https://challenai.github.io/tags/memory-allocator/</link>
+      <pubDate>Sun, 12 Feb 2023 12:08:19 +0800</pubDate>
+      
+      <guid>https://challenai.github.io/tags/memory-allocator/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>multiplex</title>
+      <link>https://challenai.github.io/tags/multiplex/</link>
+      <pubDate>Sun, 12 Feb 2023 12:08:19 +0800</pubDate>
+      
+      <guid>https://challenai.github.io/tags/multiplex/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>policy</title>
+      <link>https://challenai.github.io/tags/policy/</link>
+      <pubDate>Sun, 12 Feb 2023 12:08:19 +0800</pubDate>
+      
+      <guid>https://challenai.github.io/tags/policy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>runtime</title>
+      <link>https://challenai.github.io/tags/runtime/</link>
+      <pubDate>Sun, 12 Feb 2023 12:08:19 +0800</pubDate>
+      
+      <guid>https://challenai.github.io/tags/runtime/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>scheduler</title>
+      <link>https://challenai.github.io/tags/scheduler/</link>
+      <pubDate>Sun, 12 Feb 2023 12:08:19 +0800</pubDate>
+      
+      <guid>https://challenai.github.io/tags/scheduler/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>semaphore</title>
+      <link>https://challenai.github.io/tags/semaphore/</link>
+      <pubDate>Sun, 12 Feb 2023 12:08:19 +0800</pubDate>
+      
+      <guid>https://challenai.github.io/tags/semaphore/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>thread</title>
+      <link>https://challenai.github.io/tags/thread/</link>
+      <pubDate>Sun, 12 Feb 2023 12:08:19 +0800</pubDate>
+      
+      <guid>https://challenai.github.io/tags/thread/</guid>
       <description></description>
     </item>
     
     <item>
       <title>culture</title>
-      <link>/tags/culture/</link>
+      <link>https://challenai.github.io/tags/culture/</link>
       <pubDate>Tue, 27 Oct 2020 13:17:05 +0800</pubDate>
       
-      <guid>/tags/culture/</guid>
+      <guid>https://challenai.github.io/tags/culture/</guid>
       <description></description>
     </item>
     
     <item>
       <title>poem</title>
-      <link>/tags/poem/</link>
+      <link>https://challenai.github.io/tags/poem/</link>
       <pubDate>Tue, 27 Oct 2020 13:17:05 +0800</pubDate>
       
-      <guid>/tags/poem/</guid>
+      <guid>https://challenai.github.io/tags/poem/</guid>
       <description></description>
     </item>
     
     <item>
       <title>story</title>
-      <link>/tags/story/</link>
+      <link>https://challenai.github.io/tags/story/</link>
       <pubDate>Tue, 27 Oct 2020 13:17:05 +0800</pubDate>
       
-      <guid>/tags/story/</guid>
+      <guid>https://challenai.github.io/tags/story/</guid>
       <description></description>
     </item>
     
     <item>
       <title>about</title>
-      <link>/tags/about/</link>
+      <link>https://challenai.github.io/tags/about/</link>
       <pubDate>Mon, 08 Apr 2019 21:07:05 +0800</pubDate>
       
-      <guid>/tags/about/</guid>
+      <guid>https://challenai.github.io/tags/about/</guid>
       <description></description>
     </item>
     
     <item>
       <title>japanese</title>
-      <link>/tags/japanese/</link>
+      <link>https://challenai.github.io/tags/japanese/</link>
       <pubDate>Mon, 08 Apr 2019 21:07:05 +0800</pubDate>
       
-      <guid>/tags/japanese/</guid>
+      <guid>https://challenai.github.io/tags/japanese/</guid>
       <description></description>
     </item>
     
     <item>
       <title>name</title>
-      <link>/tags/name/</link>
+      <link>https://challenai.github.io/tags/name/</link>
       <pubDate>Mon, 08 Apr 2019 21:07:05 +0800</pubDate>
       
-      <guid>/tags/name/</guid>
+      <guid>https://challenai.github.io/tags/name/</guid>
       <description></description>
     </item>
     

@@ -2,119 +2,129 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Lun Jiang</title>
-    <link>/</link>
+    <link>https://challenai.github.io/</link>
     <description>Recent content on Lun Jiang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 13 Feb 2023 19:08:19 +0800</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 13 Feb 2023 19:08:19 +0800</lastBuildDate><atom:link href="https://challenai.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Paper: Raft Consensus Algorithm</title>
-      <link>/paper/raft/</link>
+      <link>https://challenai.github.io/paper/raft/</link>
       <pubDate>Mon, 13 Feb 2023 19:08:19 +0800</pubDate>
       
-      <guid>/paper/raft/</guid>
+      <guid>https://challenai.github.io/paper/raft/</guid>
       <description>Replicate is a common topic in distributed system, algorithms like paxos and its variants are difficult to understand, lack of details, but raft can help</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="/paper/raft/cover.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://challenai.github.io/paper/raft/cover.png" />
     </item>
     
     <item>
       <title>(cn) How to Learn Something</title>
-      <link>/inspiration/acquisition/</link>
+      <link>https://challenai.github.io/inspiration/acquisition/</link>
       <pubDate>Mon, 13 Feb 2023 18:08:19 +0800</pubDate>
       
-      <guid>/inspiration/acquisition/</guid>
+      <guid>https://challenai.github.io/inspiration/acquisition/</guid>
       <description>learn is painful</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="/inspiration/acquisition/cover.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://challenai.github.io/inspiration/acquisition/cover.png" />
+    </item>
+    
+    <item>
+      <title>Kubernetes: API Server</title>
+      <link>https://challenai.github.io/contribute/kube/apiserver/</link>
+      <pubDate>Mon, 13 Feb 2023 18:08:19 +0800</pubDate>
+      
+      <guid>https://challenai.github.io/contribute/kube/apiserver/</guid>
+      <description>none</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://challenai.github.io/contribute/kube/apiserver/cover.png" />
+    </item>
+    
+    <item>
+      <title>Kubernetes: Controller</title>
+      <link>https://challenai.github.io/contribute/kube/controller/</link>
+      <pubDate>Mon, 13 Feb 2023 18:08:19 +0800</pubDate>
+      
+      <guid>https://challenai.github.io/contribute/kube/controller/</guid>
+      <description>none</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://challenai.github.io/contribute/kube/controller/cover.png" />
     </item>
     
     <item>
       <title>Paper: Virtual Machine Fault Tolerant</title>
-      <link>/paper/vmft/</link>
+      <link>https://challenai.github.io/paper/vmft/</link>
       <pubDate>Mon, 13 Feb 2023 18:08:19 +0800</pubDate>
       
-      <guid>/paper/vmft/</guid>
+      <guid>https://challenai.github.io/paper/vmft/</guid>
       <description>replicate computation is complex, paper vmft try to introduce the work to replicate virtual machine</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="/paper/vmft/cover.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://challenai.github.io/paper/vmft/cover.png" />
+    </item>
+    
+    <item>
+      <title>Queue: Nats, NSQ and Kafka</title>
+      <link>https://challenai.github.io/contribute/queue/</link>
+      <pubDate>Mon, 13 Feb 2023 18:08:19 +0800</pubDate>
+      
+      <guid>https://challenai.github.io/contribute/queue/</guid>
+      <description>Message Queue is a separate server to store message with FIFO sequence.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://challenai.github.io/contribute/queue/cover.png" />
     </item>
     
     <item>
       <title>About me</title>
-      <link>/about/</link>
+      <link>https://challenai.github.io/about/</link>
       <pubDate>Sun, 12 Feb 2023 15:10:51 +0000</pubDate>
       
-      <guid>/about/</guid>
+      <guid>https://challenai.github.io/about/</guid>
       <description></description>
       
     </item>
     
     <item>
-      <title>Scheduler</title>
-      <link>/contribute/kube/scheduler/</link>
-      <pubDate>Sun, 12 Feb 2023 15:07:47 +0000</pubDate>
+      <title>(cn) Golang Runtime Introduction</title>
+      <link>https://challenai.github.io/contribute/golang/</link>
+      <pubDate>Sun, 12 Feb 2023 12:08:19 +0800</pubDate>
       
-      <guid>/contribute/kube/scheduler/</guid>
-      <description></description>
-      
+      <guid>https://challenai.github.io/contribute/golang/</guid>
+      <description>none</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://challenai.github.io/contribute/golang/cover.png" />
     </item>
     
     <item>
-      <title>Leetcode2</title>
-      <link>/contribute/algorithm/leetcode2/</link>
-      <pubDate>Sun, 12 Feb 2023 15:07:24 +0000</pubDate>
+      <title>Kubernetes: Scheduler</title>
+      <link>https://challenai.github.io/contribute/kube/scheduler/</link>
+      <pubDate>Sun, 12 Feb 2023 12:08:19 +0800</pubDate>
       
-      <guid>/contribute/algorithm/leetcode2/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>Leetcode1</title>
-      <link>/contribute/algorithm/leetcode1/</link>
-      <pubDate>Sun, 12 Feb 2023 15:06:48 +0000</pubDate>
-      
-      <guid>/contribute/algorithm/leetcode1/</guid>
-      <description></description>
-      
+      <guid>https://challenai.github.io/contribute/kube/scheduler/</guid>
+      <description>none</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://challenai.github.io/contribute/kube/scheduler/cover.png" />
     </item>
     
     <item>
       <title>Paper: Google File System</title>
-      <link>/paper/gfs/</link>
+      <link>https://challenai.github.io/paper/gfs/</link>
       <pubDate>Sun, 12 Feb 2023 12:08:19 +0800</pubDate>
       
-      <guid>/paper/gfs/</guid>
+      <guid>https://challenai.github.io/paper/gfs/</guid>
       <description>A successful file system for large scale storage with cheap fragile machines. The way from scale up to scale out.</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="/paper/gfs/cover.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://challenai.github.io/paper/gfs/cover.png" />
     </item>
     
     <item>
-      <title>Queue: Nats, NSQ, Kafka</title>
-      <link>/contribute/queue/</link>
-      <pubDate>Thu, 02 Feb 2023 00:00:00 +0000</pubDate>
-      
-      <guid>/contribute/queue/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in eleifend justo, vestibulum congue lacus. Quisque est libero, lacinia sed placerat ac, interdum id urna.</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="/contribute/queue/cover.png" />
-    </item>
-    
-    <item>
-      <title>Chinese Poem from 1500 Years Ago: An attractive man</title>
-      <link>/inspiration/meng/</link>
+      <title>Chinese Poem from 1500 Years Ago: An Attractive Man</title>
+      <link>https://challenai.github.io/inspiration/meng/</link>
       <pubDate>Tue, 27 Oct 2020 13:17:05 +0800</pubDate>
       
-      <guid>/inspiration/meng/</guid>
+      <guid>https://challenai.github.io/inspiration/meng/</guid>
       <description>Love is always the topic for us all. It repeats again and again during thousands of years of our journey. It&amp;rsquo;s simple like that, fall in love, together and apart. maybe happy, maybe painful, kinda experience.</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="/inspiration/meng/cover.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://challenai.github.io/inspiration/meng/cover.png" />
     </item>
     
     <item>
       <title>(cn) 艾风逸: 名字的故事</title>
-      <link>/inspiration/name/</link>
+      <link>https://challenai.github.io/inspiration/name/</link>
       <pubDate>Mon, 08 Apr 2019 21:07:05 +0800</pubDate>
       
-      <guid>/inspiration/name/</guid>
+      <guid>https://challenai.github.io/inspiration/name/</guid>
       <description>每个人大概都一定程度上不喜欢自己的出身，名字，历史，那些不能掌控的初值。小时候一直想给自己取个新名字，是一种抱怨，无能的人才会抱怨，表达对既定的不满又无力改变；也是一种期盼，包含对的美好祝福。</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="/inspiration/name/cover.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://challenai.github.io/inspiration/name/cover.png" />
     </item>
     
   </channel>

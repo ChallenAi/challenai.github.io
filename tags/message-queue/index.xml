@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>message queue on Lun Jiang</title>
+    <link>https://challenai.github.io/tags/message-queue/</link>
+    <description>Recent content in message queue on Lun Jiang</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 13 Feb 2023 18:08:19 +0800</lastBuildDate><atom:link href="https://challenai.github.io/tags/message-queue/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Queue: Nats, NSQ and Kafka</title>
+      <link>https://challenai.github.io/contribute/queue/</link>
+      <pubDate>Mon, 13 Feb 2023 18:08:19 +0800</pubDate>
+      
+      <guid>https://challenai.github.io/contribute/queue/</guid>
+      <description>Message Queue is a separate server to store message with FIFO sequence.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>protocol on Lun Jiang</title>
-    <link>/tags/protocol/</link>
+    <link>https://challenai.github.io/tags/protocol/</link>
     <description>Recent content in protocol on Lun Jiang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 13 Feb 2023 19:08:19 +0800</lastBuildDate><atom:link href="/tags/protocol/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 13 Feb 2023 19:08:19 +0800</lastBuildDate><atom:link href="https://challenai.github.io/tags/protocol/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Paper: Raft Consensus Algorithm</title>
-      <link>/paper/raft/</link>
+      <link>https://challenai.github.io/paper/raft/</link>
       <pubDate>Mon, 13 Feb 2023 19:08:19 +0800</pubDate>
       
-      <guid>/paper/raft/</guid>
+      <guid>https://challenai.github.io/paper/raft/</guid>
       <description>Replicate is a common topic in distributed system, algorithms like paxos and its variants are difficult to understand, lack of details, but raft can help</description>
     </item>
     
