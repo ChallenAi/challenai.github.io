@@ -301,6 +301,24 @@
   
     
       <url>
+            <loc>https://challenai.github.io/inspiration/name/</loc>
+            <lastmod>2023-02-12T12:08:19+08:00</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+      <url>
+            <loc>https://challenai.github.io/tags/about/</loc>
+            <lastmod>2023-02-12T12:08:19+08:00</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+      <url>
             <loc>https://challenai.github.io/tags/block-storage/</loc>
             <lastmod>2023-02-12T12:08:19+08:00</lastmod>
             <changefreq>daily</changefreq>
@@ -310,7 +328,25 @@
   
     
       <url>
+            <loc>https://challenai.github.io/inspiration/meng/</loc>
+            <lastmod>2023-02-12T12:08:19+08:00</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+      <url>
             <loc>https://challenai.github.io/tags/condition-variable/</loc>
+            <lastmod>2023-02-12T12:08:19+08:00</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+      <url>
+            <loc>https://challenai.github.io/tags/culture/</loc>
             <lastmod>2023-02-12T12:08:19+08:00</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
@@ -347,6 +383,15 @@
     
       <url>
             <loc>https://challenai.github.io/tags/goroutine/</loc>
+            <lastmod>2023-02-12T12:08:19+08:00</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+      <url>
+            <loc>https://challenai.github.io/tags/japanese/</loc>
             <lastmod>2023-02-12T12:08:19+08:00</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
@@ -409,7 +454,25 @@
   
     
       <url>
+            <loc>https://challenai.github.io/tags/name/</loc>
+            <lastmod>2023-02-12T12:08:19+08:00</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+      <url>
             <loc>https://challenai.github.io/paper/gfs/</loc>
+            <lastmod>2023-02-12T12:08:19+08:00</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+      <url>
+            <loc>https://challenai.github.io/tags/poem/</loc>
             <lastmod>2023-02-12T12:08:19+08:00</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
@@ -454,6 +517,15 @@
   
     
       <url>
+            <loc>https://challenai.github.io/tags/story/</loc>
+            <lastmod>2023-02-12T12:08:19+08:00</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+      <url>
             <loc>https://challenai.github.io/tags/thread/</loc>
             <lastmod>2023-02-12T12:08:19+08:00</lastmod>
             <changefreq>daily</changefreq>
@@ -483,78 +555,6 @@
       <url>
             <loc>https://challenai.github.io/paper/</loc>
             <lastmod>2022-06-13T20:55:37+08:00</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-          </url>
-    
-  
-    
-      <url>
-            <loc>https://challenai.github.io/inspiration/meng/</loc>
-            <lastmod>2020-10-27T13:17:05+08:00</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-          </url>
-    
-  
-    
-      <url>
-            <loc>https://challenai.github.io/tags/culture/</loc>
-            <lastmod>2020-10-27T13:17:05+08:00</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-          </url>
-    
-  
-    
-      <url>
-            <loc>https://challenai.github.io/tags/poem/</loc>
-            <lastmod>2020-10-27T13:17:05+08:00</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-          </url>
-    
-  
-    
-      <url>
-            <loc>https://challenai.github.io/tags/story/</loc>
-            <lastmod>2020-10-27T13:17:05+08:00</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-          </url>
-    
-  
-    
-      <url>
-            <loc>https://challenai.github.io/inspiration/name/</loc>
-            <lastmod>2019-04-08T21:07:05+08:00</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-          </url>
-    
-  
-    
-      <url>
-            <loc>https://challenai.github.io/tags/about/</loc>
-            <lastmod>2019-04-08T21:07:05+08:00</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-          </url>
-    
-  
-    
-      <url>
-            <loc>https://challenai.github.io/tags/japanese/</loc>
-            <lastmod>2019-04-08T21:07:05+08:00</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-          </url>
-    
-  
-    
-      <url>
-            <loc>https://challenai.github.io/tags/name/</loc>
-            <lastmod>2019-04-08T21:07:05+08:00</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
           </url>
