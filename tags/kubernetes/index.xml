@@ -26,6 +26,15 @@
     </item>
     
     <item>
+      <title>Container: Namespace, Cgroups and Shipping</title>
+      <link>https://challenai.github.io/contribute/container/</link>
+      <pubDate>Sun, 12 Feb 2023 22:00:39 +0800</pubDate>
+      
+      <guid>https://challenai.github.io/contribute/container/</guid>
+      <description>work in progress</description>
+    </item>
+    
+    <item>
       <title>Kubernetes: Scheduler</title>
       <link>https://challenai.github.io/contribute/kube/scheduler/</link>
       <pubDate>Sun, 12 Feb 2023 12:08:19 +0800</pubDate>

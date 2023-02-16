@@ -6,7 +6,17 @@
     <description>Recent content on Lun Jiang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 16 Feb 2023 14:21:34 +0800</lastBuildDate><atom:link href="https://challenai.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 16 Feb 2023 22:00:39 +0800</lastBuildDate><atom:link href="https://challenai.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Storage Engine: from Primitives to Implementation</title>
+      <link>https://challenai.github.io/contribute/storage/</link>
+      <pubDate>Thu, 16 Feb 2023 22:00:39 +0800</pubDate>
+      
+      <guid>https://challenai.github.io/contribute/storage/</guid>
+      <description>work in progress</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://challenai.github.io/contribute/storage/cover.png" />
+    </item>
+    
     <item>
       <title>Paper: Raft Consensus Algorithm</title>
       <link>https://challenai.github.io/paper/raft/</link>
@@ -15,16 +25,6 @@
       <guid>https://challenai.github.io/paper/raft/</guid>
       <description>Replicate is a common topic in distributed system, algorithms like paxos and its variants are difficult to understand, lack of details, but raft can help</description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://challenai.github.io/paper/raft/cover.png" />
-    </item>
-    
-    <item>
-      <title>(cn) How to Learn Something</title>
-      <link>https://challenai.github.io/inspiration/acquisition/</link>
-      <pubDate>Mon, 13 Feb 2023 18:08:19 +0800</pubDate>
-      
-      <guid>https://challenai.github.io/inspiration/acquisition/</guid>
-      <description>learn is painful</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://challenai.github.io/inspiration/acquisition/cover.png" />
     </item>
     
     <item>
@@ -75,6 +75,16 @@
       <guid>https://challenai.github.io/about/</guid>
       <description></description>
       
+    </item>
+    
+    <item>
+      <title>Container: Namespace, Cgroups and Shipping</title>
+      <link>https://challenai.github.io/contribute/container/</link>
+      <pubDate>Sun, 12 Feb 2023 22:00:39 +0800</pubDate>
+      
+      <guid>https://challenai.github.io/contribute/container/</guid>
+      <description>work in progress</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://challenai.github.io/contribute/container/cover.png" />
     </item>
     
     <item>
