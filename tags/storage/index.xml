@@ -17,12 +17,30 @@
     </item>
     
     <item>
+      <title>Paper: CockroachDB</title>
+      <link>https://challenai.github.io/paper/cockroachdb/</link>
+      <pubDate>Sun, 12 Feb 2023 12:08:19 +0800</pubDate>
+      
+      <guid>https://challenai.github.io/paper/cockroachdb/</guid>
+      <description>placeholder</description>
+    </item>
+    
+    <item>
       <title>Paper: Google File System</title>
       <link>https://challenai.github.io/paper/gfs/</link>
       <pubDate>Sun, 12 Feb 2023 12:08:19 +0800</pubDate>
       
       <guid>https://challenai.github.io/paper/gfs/</guid>
-      <description>A successful file system for large scale storage with cheap fragile machines. The way from scale up to scale out.</description>
+      <description>placeholder</description>
+    </item>
+    
+    <item>
+      <title>Paper: Kafka Message Queue</title>
+      <link>https://challenai.github.io/paper/kafka/</link>
+      <pubDate>Sun, 12 Feb 2023 12:08:19 +0800</pubDate>
+      
+      <guid>https://challenai.github.io/paper/kafka/</guid>
+      <description>placeholder</description>
     </item>
     
   </channel>

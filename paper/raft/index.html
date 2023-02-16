@@ -70,8 +70,8 @@
 <meta property="og:description" content="Replicate is a common topic in distributed system, algorithms like paxos and its variants are difficult to understand, lack of details, but raft can help" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://challenai.github.io/paper/raft/" /><meta property="og:image" content="https://challenai.github.io/paper/raft/cover.png"/><meta property="article:section" content="paper" />
-<meta property="article:published_time" content="2023-02-13T19:08:19+08:00" />
-<meta property="article:modified_time" content="2023-02-13T19:08:19+08:00" /><meta property="og:site_name" content="Lun Jiang" />
+<meta property="article:published_time" content="2023-02-16T14:21:34+08:00" />
+<meta property="article:modified_time" content="2023-02-16T14:21:34+08:00" /><meta property="og:site_name" content="Lun Jiang" />
 
 
   <meta name="twitter:card" content="summary_large_image"/>
@@ -96,15 +96,15 @@
       "name": "Lun Jiang"
     },
     "copyrightYear": "2023",
-    "dateCreated": "2023-02-13T19:08:19\u002b08:00",
-    "datePublished": "2023-02-13T19:08:19\u002b08:00",
+    "dateCreated": "2023-02-16T14:21:34\u002b08:00",
+    "datePublished": "2023-02-16T14:21:34\u002b08:00",
     
-    "dateModified": "2023-02-13T19:08:19\u002b08:00",
+    "dateModified": "2023-02-16T14:21:34\u002b08:00",
     
     "keywords": ["fault tolerant","consensus","replicate","consistency","distributed system","paper","raft","protocol"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "21"
+    "wordCount": "1545"
   }]
   </script>
 
@@ -615,7 +615,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2023-02-13 19:08:19 &#43;0800 &#43;0800">13 February 2023</time><span class="px-2 text-primary-500">&middot;</span><span>21 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">1 min</span>
+  <time datetime="2023-02-16 14:21:34 &#43;0800 &#43;0800">16 February 2023</time><span class="px-2 text-primary-500">&middot;</span><span>1545 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">8 mins</span>
   
 
   
@@ -655,6 +655,12 @@
     <nav id="TableOfContents">
   <ul>
     <li><a href="#introduce">introduce</a></li>
+    <li><a href="#background">background</a></li>
+    <li><a href="#how-to-reach-consensus">how to reach consensus</a></li>
+    <li><a href="#but-where-is-our-leader">but where is our leader</a></li>
+    <li><a href="#how-leader-works">how leader works</a></li>
+    <li><a href="#what-if-the-leader-fails">what if the leader fails</a></li>
+    <li><a href="#the-whole-progress">the whole progress</a></li>
   </ul>
 </nav>
   </div>
@@ -671,6 +677,12 @@
     <nav id="TableOfContents">
   <ul>
     <li><a href="#introduce">introduce</a></li>
+    <li><a href="#background">background</a></li>
+    <li><a href="#how-to-reach-consensus">how to reach consensus</a></li>
+    <li><a href="#but-where-is-our-leader">but where is our leader</a></li>
+    <li><a href="#how-leader-works">how leader works</a></li>
+    <li><a href="#what-if-the-leader-fails">what if the leader fails</a></li>
+    <li><a href="#the-whole-progress">the whole progress</a></li>
   </ul>
 </nav>
   </div>
@@ -693,7 +705,89 @@ Authors: Diego Ongaro and John Ousterhout (Stanford University)</p>
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
             style="text-decoration-line: none !important;" href="#introduce" aria-label="Anchor">#</a></span>        
     
-</h2>
+</h2><p>Raft is a consensus algorithm widely used in industry. Another widely used available algorithm is called paxos, but the original paper &lsquo;paxos made simple&rsquo; doesn&rsquo;t provide enough details about how to handle stream replication problem(replicate state machine), it talks about the single decree problem which is mainly about how to decide a certain value among a couple of nodes.
+The real applied algorithm is called <strong>multi-paxos</strong>, however, the nature of multi paxos in my opinion is almost the same with raft, the main difference is in leader election.</p>
+<div id="background" class="anchor">background></div>
+<h2 class="relative group">background 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#background" aria-label="Anchor">#</a></span>        
+    
+</h2><p>We want to copy a stream to 3~5 nodes(which we called RSM, <strong>replicate state machine</strong> problem).<br>
+The critical point is all the nodes should keep the same sequence, that means <strong>same data unit</strong>, <strong>same order</strong>.
+For example, think about a stream of number 51348, every node should persist the same sequence 51348, 53148 and 51148 is wrong.</p>
+<p>According to some experience from building practical real world paxos application, we find multi paxos need to elect a leader to improve performance(limit the <strong>Round Trip</strong> of replication to 1).
+Diego catch up a great idea: why not split the leader election, the real replicate progress as different parts to make it much clear?
+That&rsquo;s raft, a practical version of multi paxos, which the author declare more understandable.</p>
+<p>The result is fault tolerant, which can tolerate less than half of the nodes fails.
+So every time we accept a request, we don&rsquo;t need to copy to all the nodes, we just replicate to majority of nodes and response immediately to improve performance.</p>
+<div id="how-to-reach-consensus" class="anchor">how to reach consensus></div>
+<h2 class="relative group">how to reach consensus 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#how-to-reach-consensus" aria-label="Anchor">#</a></span>        
+    
+</h2><p>First of all, which we called <strong>leader</strong>, <strong>primary</strong>, <strong>master</strong> is exactly the same thing.</p>
+<p>When we want to replicate a stream, it&rsquo;s always difficult to figure out how to reach a consensus for all the nodes in a specific issue, the problem is a stream includes a sequence of issues, that means a sequence of consensus need to be deal with, which sounds like a mess.</p>
+<p>However, if we have a leader, life becomes easier: all the nodes <strong>just follow the leader</strong>, replicate the stream element one by one according to leader, no coordination at all, if majority of follower nodes get the replica successfully, this replication turn has finished. An potential problem is the slow leader could become the bottleneck, which is a problem of raft.</p>
+<div id="but-where-is-our-leader" class="anchor">but where is our leader></div>
+<h2 class="relative group">but where is our leader 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#but-where-is-our-leader" aria-label="Anchor">#</a></span>        
+    
+</h2><p>Let&rsquo;s elect, everyone nominate himself as a <strong>leader</strong>, to make it more understandable, we called it president,
+everyone wants to be president, they all know the current term, for example, the current president is Baiden, the term is 47, in brief is Baiden is the 47th US president. If I want to be the next president, I will be the 48th president, so I nominate myself as 48th president, and someone like me is called the <strong>candidate</strong>.
+There is something to decide who can be the next president, in reality, it&rsquo;s the speech, in raft, it&rsquo;s who has more valid stream elements.
+Since it&rsquo;s a stream replicate system, we compare the length of streams in all the nodes, the longest one should be the leader, so we compared last log index, if the log index is 6, it should longer than log with index 5.
+In the other hand, for every term, we have only 1 president, a president could be 47th, 48th, but 47th president could not be Trump and Baiden. So we compare the president term at the same time. if a node has term 48 logs, it should has newer logs than a node has only term 20 logs.
+In conclusion, every node try to be the president, but only one of them could be the next president. they will tell the others his <strong>expect term</strong> and his <strong>last log</strong> information, the log info includes log <strong>index</strong> and the <strong>term</strong>. The node who has the latest log, will become the next president with his expected term. Since the leader replicate the data to <strong>majority of nodes</strong>, the candidate only need to win the majority of the nodes instead all the nodes to be chosen.</p>
+<div id="how-leader-works" class="anchor">how leader works></div>
+<h2 class="relative group">how leader works 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#how-leader-works" aria-label="Anchor">#</a></span>        
+    
+</h2><p>The president broadcast all request to the other nodes with its own term and the global sequential number, every log element has a term and an index number.
+In the real world, a president can propose a new act with his term and the act number, for every term there is only one president, which ensure if the term and index is the same, the log element could be the same, because a president could not say his 38th act is A, and his 38th act is also B. Notice that we could have more than president at the same time, but we have exact 1 president in the same term.
+If half of the nodes persist a specific element and response president, the president will say, ok, the act 38 starts work now, it&rsquo;s a <strong>consensus</strong>.</p>
+<div id="what-if-the-leader-fails" class="anchor">what if the leader fails></div>
+<h2 class="relative group">what if the leader fails 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#what-if-the-leader-fails" aria-label="Anchor">#</a></span>        
+    
+</h2><p>If the president dies, maybe a terrorist assault, a well-known scandal or a traffic accident, the other nodes would not get acts from president any more, they could not even hear the president, which we called &lsquo;lose the heartbeat&rsquo;, they would join the election, nominate themselves.
+However, how about the log sequence?
+The next president will find some nodes(like original leader) has longer log than him, some nodes has shorter log than him, but since he can become the leader, he must has all log which has become a consensus(accept by majority), so nothing lost if the president just handle new request and ignore the longer nodes.
+The president try to cover all the newer logs in the nodes which has longer logs, and fill the the nodes which has shorter logs. No matter how the original log sequence it looks like, every node would have the same log sequence with leader. That&rsquo;s what we called <strong>strong leadership</strong>.
+But wait a minute, if the president cover the longer node, will something be lost? No, since the president could become a president, it must hold the logs commit before, in reality, the longer logs includes the elements haven&rsquo;t reach a consensus. But if the president contains some log elements which haven&rsquo;t commit, it will still replicate this elements left.</p>
+<p>Let&rsquo;s think about a 1 node application, if we issue a <strong>write request</strong>, the node could shutdown before persist the write or after the persist, but the client don&rsquo;t know, the client don&rsquo;t get the response, so it feel like the write operation fails. Since the president in a 3 nodes system hasn&rsquo;t response the client yet, if could have persisted the write or not, thus the president can cover the other longer nodes, and submit the log elements which even haven&rsquo;t commit.</p>
+<div id="the-whole-progress" class="anchor">the whole progress></div>
+<h2 class="relative group">the whole progress 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#the-whole-progress" aria-label="Anchor">#</a></span>        
+    
+</h2><p>At the very beginning, we have some nodes,
+they all want to be the president to handle the out world request,
+if they have a president, they act like single one node, act as a whole.
+the system will keep running, if minority of the nodes fail, nothing lost, nothing broken in the perspective of out world request.</p>
+<p>In order to be a president, the node need to propose his next term, if current president is 48th, and the node propose 42th, that means the node fall behind, the other node will refuse him. The node need to compare his latest log with the others too, because it&rsquo;s a stream replicate system, we want the log to be highly reliable, nothing lost. If the node has newer log against the majority of the nodes, it could be voted as the next president. The reason of majority is we want to tolerate less than half of the nodes fail, and that also need the president replicate the data to a majority of nodes to promise the data will always survive.</p>
+<p>The president broadcast log elements with their president term and log index, the log index is just like the index of an array to provide a sequence number. The president force all the other nodes keep the same log with him, and that&rsquo;s how they reach consensus.</p>
+<p>If a new president occurs, it would find himself has longer logs than some nodes, or has shorter los than some nodes too. However, it always try to make the other nodes persist the same logs with him, if the other nodes have different logs, cover them. The method to compare a specific log element is the term and sequential number, if term and N.O. is the same, the log must be the same, because a president will never say act 123 is A and act 123 is B at the same time, and there is only 1 president in every certain term.</p>
+<blockquote>
+<p>try to read the paper before read the article, if you feel blocked, get back here instead of reading the article <strong>without reading the paper</strong>.
+a visible progress of raft could be found here: <a href="https://raft.github.io/"   target="_blank">
+    raftThe Raft Consensus Algorithm</a></p>
+</blockquote>
+
         </br></br>
         
 
@@ -971,7 +1065,7 @@ Authors: Diego Ongaro and John Ousterhout (Stanford University)</p>
               <span class="flex flex-col">
                 <span
                   class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-                  >Paper: Paxos Consensus Algorithm and its Variants</span
+                  >Paper: Paxos Consensus Algorithm and its variants</span
                 >
                 <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
                   

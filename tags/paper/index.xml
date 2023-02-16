@@ -6,23 +6,23 @@
     <description>Recent content in paper on Lun Jiang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 13 Feb 2023 19:08:19 +0800</lastBuildDate><atom:link href="https://challenai.github.io/tags/paper/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 16 Feb 2023 14:21:34 +0800</lastBuildDate><atom:link href="https://challenai.github.io/tags/paper/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Paper: Raft Consensus Algorithm</title>
       <link>https://challenai.github.io/paper/raft/</link>
-      <pubDate>Mon, 13 Feb 2023 19:08:19 +0800</pubDate>
+      <pubDate>Thu, 16 Feb 2023 14:21:34 +0800</pubDate>
       
       <guid>https://challenai.github.io/paper/raft/</guid>
       <description>Replicate is a common topic in distributed system, algorithms like paxos and its variants are difficult to understand, lack of details, but raft can help</description>
     </item>
     
     <item>
-      <title>Paper: Paxos Consensus Algorithm and its Variants</title>
+      <title>Paper: Paxos Consensus Algorithm and its variants</title>
       <link>https://challenai.github.io/paper/paxos/</link>
       <pubDate>Mon, 13 Feb 2023 18:08:19 +0800</pubDate>
       
       <guid>https://challenai.github.io/paper/paxos/</guid>
-      <description>none</description>
+      <description>placeholder</description>
     </item>
     
     <item>
@@ -35,12 +35,30 @@
     </item>
     
     <item>
+      <title>Paper: CockroachDB</title>
+      <link>https://challenai.github.io/paper/cockroachdb/</link>
+      <pubDate>Sun, 12 Feb 2023 12:08:19 +0800</pubDate>
+      
+      <guid>https://challenai.github.io/paper/cockroachdb/</guid>
+      <description>placeholder</description>
+    </item>
+    
+    <item>
       <title>Paper: Google File System</title>
       <link>https://challenai.github.io/paper/gfs/</link>
       <pubDate>Sun, 12 Feb 2023 12:08:19 +0800</pubDate>
       
       <guid>https://challenai.github.io/paper/gfs/</guid>
-      <description>A successful file system for large scale storage with cheap fragile machines. The way from scale up to scale out.</description>
+      <description>placeholder</description>
+    </item>
+    
+    <item>
+      <title>Paper: Kafka Message Queue</title>
+      <link>https://challenai.github.io/paper/kafka/</link>
+      <pubDate>Sun, 12 Feb 2023 12:08:19 +0800</pubDate>
+      
+      <guid>https://challenai.github.io/paper/kafka/</guid>
+      <description>placeholder</description>
     </item>
     
   </channel>

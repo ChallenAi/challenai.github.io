@@ -6,11 +6,11 @@
     <description>Recent content in Tags on Lun Jiang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 13 Feb 2023 19:08:19 +0800</lastBuildDate><atom:link href="https://challenai.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 16 Feb 2023 14:21:34 +0800</lastBuildDate><atom:link href="https://challenai.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>consensus</title>
       <link>https://challenai.github.io/tags/consensus/</link>
-      <pubDate>Mon, 13 Feb 2023 19:08:19 +0800</pubDate>
+      <pubDate>Thu, 16 Feb 2023 14:21:34 +0800</pubDate>
       
       <guid>https://challenai.github.io/tags/consensus/</guid>
       <description></description>
@@ -19,7 +19,7 @@
     <item>
       <title>consistency</title>
       <link>https://challenai.github.io/tags/consistency/</link>
-      <pubDate>Mon, 13 Feb 2023 19:08:19 +0800</pubDate>
+      <pubDate>Thu, 16 Feb 2023 14:21:34 +0800</pubDate>
       
       <guid>https://challenai.github.io/tags/consistency/</guid>
       <description></description>
@@ -28,7 +28,7 @@
     <item>
       <title>distributed system</title>
       <link>https://challenai.github.io/tags/distributed-system/</link>
-      <pubDate>Mon, 13 Feb 2023 19:08:19 +0800</pubDate>
+      <pubDate>Thu, 16 Feb 2023 14:21:34 +0800</pubDate>
       
       <guid>https://challenai.github.io/tags/distributed-system/</guid>
       <description></description>
@@ -37,7 +37,7 @@
     <item>
       <title>fault tolerant</title>
       <link>https://challenai.github.io/tags/fault-tolerant/</link>
-      <pubDate>Mon, 13 Feb 2023 19:08:19 +0800</pubDate>
+      <pubDate>Thu, 16 Feb 2023 14:21:34 +0800</pubDate>
       
       <guid>https://challenai.github.io/tags/fault-tolerant/</guid>
       <description></description>
@@ -46,7 +46,7 @@
     <item>
       <title>paper</title>
       <link>https://challenai.github.io/tags/paper/</link>
-      <pubDate>Mon, 13 Feb 2023 19:08:19 +0800</pubDate>
+      <pubDate>Thu, 16 Feb 2023 14:21:34 +0800</pubDate>
       
       <guid>https://challenai.github.io/tags/paper/</guid>
       <description></description>
@@ -55,7 +55,7 @@
     <item>
       <title>protocol</title>
       <link>https://challenai.github.io/tags/protocol/</link>
-      <pubDate>Mon, 13 Feb 2023 19:08:19 +0800</pubDate>
+      <pubDate>Thu, 16 Feb 2023 14:21:34 +0800</pubDate>
       
       <guid>https://challenai.github.io/tags/protocol/</guid>
       <description></description>
@@ -64,7 +64,7 @@
     <item>
       <title>raft</title>
       <link>https://challenai.github.io/tags/raft/</link>
-      <pubDate>Mon, 13 Feb 2023 19:08:19 +0800</pubDate>
+      <pubDate>Thu, 16 Feb 2023 14:21:34 +0800</pubDate>
       
       <guid>https://challenai.github.io/tags/raft/</guid>
       <description></description>
@@ -73,7 +73,7 @@
     <item>
       <title>replicate</title>
       <link>https://challenai.github.io/tags/replicate/</link>
-      <pubDate>Mon, 13 Feb 2023 19:08:19 +0800</pubDate>
+      <pubDate>Thu, 16 Feb 2023 14:21:34 +0800</pubDate>
       
       <guid>https://challenai.github.io/tags/replicate/</guid>
       <description></description>
@@ -224,6 +224,15 @@
     </item>
     
     <item>
+      <title>column storage</title>
+      <link>https://challenai.github.io/tags/column-storage/</link>
+      <pubDate>Sun, 12 Feb 2023 12:08:19 +0800</pubDate>
+      
+      <guid>https://challenai.github.io/tags/column-storage/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>condition variable</title>
       <link>https://challenai.github.io/tags/condition-variable/</link>
       <pubDate>Sun, 12 Feb 2023 12:08:19 +0800</pubDate>
@@ -341,6 +350,15 @@
     </item>
     
     <item>
+      <title>NewSQL</title>
+      <link>https://challenai.github.io/tags/newsql/</link>
+      <pubDate>Sun, 12 Feb 2023 12:08:19 +0800</pubDate>
+      
+      <guid>https://challenai.github.io/tags/newsql/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>poem</title>
       <link>https://challenai.github.io/tags/poem/</link>
       <pubDate>Sun, 12 Feb 2023 12:08:19 +0800</pubDate>
@@ -355,6 +373,15 @@
       <pubDate>Sun, 12 Feb 2023 12:08:19 +0800</pubDate>
       
       <guid>https://challenai.github.io/tags/policy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>queue</title>
+      <link>https://challenai.github.io/tags/queue/</link>
+      <pubDate>Sun, 12 Feb 2023 12:08:19 +0800</pubDate>
+      
+      <guid>https://challenai.github.io/tags/queue/</guid>
       <description></description>
     </item>
     
