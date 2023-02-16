@@ -783,7 +783,7 @@ the system will keep running, if minority of the nodes fail, nothing lost, nothi
 <p>The president broadcast log elements with their president term and log index, the log index is just like the index of an array to provide a sequence number. The president force all the other nodes keep the same log with him, and that&rsquo;s how they reach consensus.</p>
 <p>If a new president occurs, it would find himself has longer logs than some nodes, or has shorter los than some nodes too. However, it always try to make the other nodes persist the same logs with him, if the other nodes have different logs, cover them. The method to compare a specific log element is the term and sequential number, if term and N.O. is the same, the log must be the same, because a president will never say act 123 is A and act 123 is B at the same time, and there is only 1 president in every certain term.</p>
 <blockquote>
-<p>try to read the paper before read the article, if you feel blocked, get back here instead of reading the article <strong>without reading the paper</strong>.
+<p>try to read the paper before read the article, if you feel blocked, get back here instead of reading the article <strong>without reading the paper</strong>.<br>
 a visible progress of raft could be found here: <a href="https://raft.github.io/"   target="_blank">
     raftThe Raft Consensus Algorithm</a></p>
 </blockquote>
