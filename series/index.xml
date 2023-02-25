@@ -5,6 +5,16 @@
     <link>https://challenai.github.io/series/</link>
     <description>Recent content in Series on Lun Jiang</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="https://challenai.github.io/series/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Sat, 25 Feb 2023 22:50:19 +0800</lastBuildDate><atom:link href="https://challenai.github.io/series/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>economics</title>
+      <link>https://challenai.github.io/series/economics/</link>
+      <pubDate>Sat, 25 Feb 2023 22:50:19 +0800</pubDate>
+      
+      <guid>https://challenai.github.io/series/economics/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

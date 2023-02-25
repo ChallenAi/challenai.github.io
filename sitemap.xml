@@ -4,8 +4,35 @@
   
     
       <url>
-            <loc>https://challenai.github.io/tags/disk/</loc>
-            <lastmod>2023-02-16T22:00:39+08:00</lastmod>
+            <loc>https://challenai.github.io/inspiration/ecobasic/</loc>
+            <lastmod>2023-02-25T22:50:19+08:00</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+      <url>
+            <loc>https://challenai.github.io/tags/economics/</loc>
+            <lastmod>2023-02-25T22:50:19+08:00</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+      <url>
+            <loc>https://challenai.github.io/series/economics/</loc>
+            <lastmod>2023-02-25T22:50:19+08:00</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+      <url>
+            <loc>https://challenai.github.io/tags/inspiration/</loc>
+            <lastmod>2023-02-25T22:50:19+08:00</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
           </url>
@@ -14,6 +41,42 @@
     
       <url>
             <loc>https://challenai.github.io/</loc>
+            <lastmod>2023-02-25T22:50:19+08:00</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+      <url>
+            <loc>https://challenai.github.io/series/</loc>
+            <lastmod>2023-02-25T22:50:19+08:00</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+      <url>
+            <loc>https://challenai.github.io/tags/</loc>
+            <lastmod>2023-02-25T22:50:19+08:00</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+      <url>
+            <loc>https://challenai.github.io/about/</loc>
+            <lastmod>2023-02-22T20:57:12+00:00</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+      <url>
+            <loc>https://challenai.github.io/tags/disk/</loc>
             <lastmod>2023-02-16T22:00:39+08:00</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
@@ -50,15 +113,6 @@
     
       <url>
             <loc>https://challenai.github.io/contribute/storage/</loc>
-            <lastmod>2023-02-16T22:00:39+08:00</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-          </url>
-    
-  
-    
-      <url>
-            <loc>https://challenai.github.io/tags/</loc>
             <lastmod>2023-02-16T22:00:39+08:00</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
@@ -258,15 +312,6 @@
       <url>
             <loc>https://challenai.github.io/tags/replication/</loc>
             <lastmod>2023-02-13T18:08:19+08:00</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-          </url>
-    
-  
-    
-      <url>
-            <loc>https://challenai.github.io/about/</loc>
-            <lastmod>2023-02-12T15:10:51+00:00</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
           </url>
@@ -626,14 +671,6 @@
     
       <url>
             <loc>https://challenai.github.io/authors/</loc>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-          </url>
-    
-  
-    
-      <url>
-            <loc>https://challenai.github.io/series/</loc>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
           </url>
