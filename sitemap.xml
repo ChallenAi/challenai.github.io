@@ -67,6 +67,15 @@
   
     
       <url>
+            <loc>https://challenai.github.io/inspiration/ecostart/</loc>
+            <lastmod>2023-02-24T03:50:19+08:00</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+      <url>
             <loc>https://challenai.github.io/about/</loc>
             <lastmod>2023-02-22T20:57:12+00:00</lastmod>
             <changefreq>daily</changefreq>
