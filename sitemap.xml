@@ -4,6 +4,96 @@
   
     
       <url>
+            <loc>https://challenai.github.io/tags/availability/</loc>
+            <lastmod>2023-02-28T04:10:19+08:00</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+      <url>
+            <loc>https://challenai.github.io/tags/consistency/</loc>
+            <lastmod>2023-02-28T04:10:19+08:00</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+      <url>
+            <loc>https://challenai.github.io/tags/fault-tolerant/</loc>
+            <lastmod>2023-02-28T04:10:19+08:00</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+      <url>
+            <loc>https://challenai.github.io/</loc>
+            <lastmod>2023-02-28T04:10:19+08:00</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+      <url>
+            <loc>https://challenai.github.io/tags/paper/</loc>
+            <lastmod>2023-02-28T04:10:19+08:00</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+      <url>
+            <loc>https://challenai.github.io/paper/paxos/</loc>
+            <lastmod>2023-02-28T04:10:19+08:00</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+      <url>
+            <loc>https://challenai.github.io/tags/replication-group/</loc>
+            <lastmod>2023-02-28T04:10:19+08:00</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+      <url>
+            <loc>https://challenai.github.io/tags/sql/</loc>
+            <lastmod>2023-02-28T04:10:19+08:00</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+      <url>
+            <loc>https://challenai.github.io/tags/</loc>
+            <lastmod>2023-02-28T04:10:19+08:00</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+      <url>
+            <loc>https://challenai.github.io/tags/transaction/</loc>
+            <lastmod>2023-02-28T04:10:19+08:00</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+      <url>
             <loc>https://challenai.github.io/inspiration/plan/</loc>
             <lastmod>2023-02-27T18:26:21+08:00</lastmod>
             <changefreq>daily</changefreq>
@@ -22,25 +112,7 @@
   
     
       <url>
-            <loc>https://challenai.github.io/</loc>
-            <lastmod>2023-02-27T18:26:21+08:00</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-          </url>
-    
-  
-    
-      <url>
             <loc>https://challenai.github.io/tags/plan/</loc>
-            <lastmod>2023-02-27T18:26:21+08:00</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-          </url>
-    
-  
-    
-      <url>
-            <loc>https://challenai.github.io/tags/</loc>
             <lastmod>2023-02-27T18:26:21+08:00</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
@@ -157,15 +229,6 @@
   
     
       <url>
-            <loc>https://challenai.github.io/tags/transaction/</loc>
-            <lastmod>2023-02-16T22:00:39+08:00</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-          </url>
-    
-  
-    
-      <url>
             <loc>https://challenai.github.io/tags/consensus/</loc>
             <lastmod>2023-02-16T14:21:34+08:00</lastmod>
             <changefreq>daily</changefreq>
@@ -175,34 +238,7 @@
   
     
       <url>
-            <loc>https://challenai.github.io/tags/consistency/</loc>
-            <lastmod>2023-02-16T14:21:34+08:00</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-          </url>
-    
-  
-    
-      <url>
             <loc>https://challenai.github.io/tags/distributed-system/</loc>
-            <lastmod>2023-02-16T14:21:34+08:00</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-          </url>
-    
-  
-    
-      <url>
-            <loc>https://challenai.github.io/tags/fault-tolerant/</loc>
-            <lastmod>2023-02-16T14:21:34+08:00</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-          </url>
-    
-  
-    
-      <url>
-            <loc>https://challenai.github.io/tags/paper/</loc>
             <lastmod>2023-02-16T14:21:34+08:00</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
@@ -581,15 +617,6 @@
     
       <url>
             <loc>https://challenai.github.io/paper/kafka/</loc>
-            <lastmod>2023-02-12T12:08:19+08:00</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-          </url>
-    
-  
-    
-      <url>
-            <loc>https://challenai.github.io/paper/paxos/</loc>
             <lastmod>2023-02-12T12:08:19+08:00</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
