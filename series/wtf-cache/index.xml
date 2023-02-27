@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>wtf cache on Lun Jiang</title>
+    <link>https://challenai.github.io/series/wtf-cache/</link>
+    <description>Recent content in wtf cache on Lun Jiang</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 13 Feb 2023 18:08:19 +0800</lastBuildDate><atom:link href="https://challenai.github.io/series/wtf-cache/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Build Cache from Scratch: 1. initialize project</title>
+      <link>https://challenai.github.io/contribute/cache/wtfcache1/</link>
+      <pubDate>Mon, 13 Feb 2023 18:08:19 +0800</pubDate>
+      
+      <guid>https://challenai.github.io/contribute/cache/wtfcache1/</guid>
+      <description>placeholder</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -16,5 +16,23 @@
       <description></description>
     </item>
     
+    <item>
+      <title>kubernetes</title>
+      <link>https://challenai.github.io/series/kubernetes/</link>
+      <pubDate>Mon, 13 Feb 2023 18:08:19 +0800</pubDate>
+      
+      <guid>https://challenai.github.io/series/kubernetes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>wtf cache</title>
+      <link>https://challenai.github.io/series/wtf-cache/</link>
+      <pubDate>Mon, 13 Feb 2023 18:08:19 +0800</pubDate>
+      
+      <guid>https://challenai.github.io/series/wtf-cache/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

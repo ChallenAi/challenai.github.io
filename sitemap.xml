@@ -283,6 +283,24 @@
   
     
       <url>
+            <loc>https://challenai.github.io/contribute/cache/wtfcache1/</loc>
+            <lastmod>2023-02-13T18:08:19+08:00</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+      <url>
+            <loc>https://challenai.github.io/tags/cache/</loc>
+            <lastmod>2023-02-13T18:08:19+08:00</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+      <url>
             <loc>https://challenai.github.io/tags/cloud-native/</loc>
             <lastmod>2023-02-13T18:08:19+08:00</lastmod>
             <changefreq>daily</changefreq>
@@ -320,6 +338,15 @@
     
       <url>
             <loc>https://challenai.github.io/tags/kubernetes/</loc>
+            <lastmod>2023-02-13T18:08:19+08:00</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+      <url>
+            <loc>https://challenai.github.io/series/kubernetes/</loc>
             <lastmod>2023-02-13T18:08:19+08:00</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
@@ -373,7 +400,7 @@
   
     
       <url>
-            <loc>https://challenai.github.io/contribute/queue/</loc>
+            <loc>https://challenai.github.io/contribute/nats/</loc>
             <lastmod>2023-02-13T18:08:19+08:00</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
@@ -383,6 +410,15 @@
     
       <url>
             <loc>https://challenai.github.io/tags/replication/</loc>
+            <lastmod>2023-02-13T18:08:19+08:00</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+      <url>
+            <loc>https://challenai.github.io/series/wtf-cache/</loc>
             <lastmod>2023-02-13T18:08:19+08:00</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
