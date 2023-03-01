@@ -26,12 +26,12 @@
     </item>
     
     <item>
-      <title>Queue: Nats</title>
+      <title>Queue: Nats, Connectivity and Edge</title>
       <link>https://challenai.github.io/contribute/nats/</link>
       <pubDate>Mon, 13 Feb 2023 18:08:19 +0800</pubDate>
       
       <guid>https://challenai.github.io/contribute/nats/</guid>
-      <description>Message Queue is a separate server to store message with FIFO sequence.</description>
+      <description>Message Queue is a separate server to store message with FIFO sequence. Nats is a high performance message queue written in golang, it introduces some interesting ideas like connectivity, edge</description>
     </item>
     
     <item>
