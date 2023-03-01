@@ -103,7 +103,7 @@
   
     
       <url>
-            <loc>https://challenai.github.io/paper/paxos/</loc>
+            <loc>https://challenai.github.io/paper/spanner/</loc>
             <lastmod>2023-02-28T04:10:19+08:00</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
@@ -526,6 +526,24 @@
   
     
       <url>
+            <loc>https://challenai.github.io/tags/facebook/</loc>
+            <lastmod>2023-02-12T12:08:19+08:00</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+      <url>
+            <loc>https://challenai.github.io/tags/file/</loc>
+            <lastmod>2023-02-12T12:08:19+08:00</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+      <url>
             <loc>https://challenai.github.io/tags/garbage-collector/</loc>
             <lastmod>2023-02-12T12:08:19+08:00</lastmod>
             <changefreq>daily</changefreq>
@@ -652,6 +670,15 @@
   
     
       <url>
+            <loc>https://challenai.github.io/paper/borg/</loc>
+            <lastmod>2023-02-12T12:08:19+08:00</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+      <url>
             <loc>https://challenai.github.io/paper/gfs/</loc>
             <lastmod>2023-02-12T12:08:19+08:00</lastmod>
             <changefreq>daily</changefreq>
@@ -662,6 +689,15 @@
     
       <url>
             <loc>https://challenai.github.io/paper/kafka/</loc>
+            <lastmod>2023-02-12T12:08:19+08:00</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+      <url>
+            <loc>https://challenai.github.io/paper/haystack/</loc>
             <lastmod>2023-02-12T12:08:19+08:00</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>

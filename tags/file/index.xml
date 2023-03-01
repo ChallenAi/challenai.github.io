@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>file on Lun Jiang</title>
+    <link>https://challenai.github.io/tags/file/</link>
+    <description>Recent content in file on Lun Jiang</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 12 Feb 2023 12:08:19 +0800</lastBuildDate><atom:link href="https://challenai.github.io/tags/file/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Paper: Speed up for Long-tail Small Files</title>
+      <link>https://challenai.github.io/paper/haystack/</link>
+      <pubDate>Sun, 12 Feb 2023 12:08:19 +0800</pubDate>
+      
+      <guid>https://challenai.github.io/paper/haystack/</guid>
+      <description>placeholder</description>
+    </item>
+    
+  </channel>
+</rss>

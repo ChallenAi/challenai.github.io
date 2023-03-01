@@ -9,10 +9,10 @@
     <lastBuildDate>Tue, 28 Feb 2023 04:10:19 +0800</lastBuildDate><atom:link href="https://challenai.github.io/tags/sql/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Paper: Spanner as a Global Scale Database</title>
-      <link>https://challenai.github.io/paper/paxos/</link>
+      <link>https://challenai.github.io/paper/spanner/</link>
       <pubDate>Tue, 28 Feb 2023 04:10:19 +0800</pubDate>
       
-      <guid>https://challenai.github.io/paper/paxos/</guid>
+      <guid>https://challenai.github.io/paper/spanner/</guid>
       <description>Spanner is a globally distributed database. It provides SQL interface and relational like schema. It provides transaction feature for its scale and inspires some successors like cockroachdb and tidb</description>
     </item>
     
