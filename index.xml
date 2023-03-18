@@ -6,7 +6,17 @@
     <description>Recent content on Lun Jiang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 01 Mar 2023 10:32:19 +0800</lastBuildDate><atom:link href="https://challenai.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 18 Mar 2023 14:32:19 +0800</lastBuildDate><atom:link href="https://challenai.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Build Cache from Scratch: 1. initialize project</title>
+      <link>https://challenai.github.io/contribute/cache/wtfcache1/</link>
+      <pubDate>Sat, 18 Mar 2023 14:32:19 +0800</pubDate>
+      
+      <guid>https://challenai.github.io/contribute/cache/wtfcache1/</guid>
+      <description>build a high performance from scratch.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://challenai.github.io/contribute/cache/wtfcache1/cover.png" />
+    </item>
+    
     <item>
       <title>(cn) economics: 4. 数量化</title>
       <link>https://challenai.github.io/inspiration/eco4quantity1/</link>
@@ -85,16 +95,6 @@
       <guid>https://challenai.github.io/paper/raft/</guid>
       <description>Replicate is a common topic in distributed system, algorithms like paxos and its variants are difficult to understand, lack of details, but raft can help</description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://challenai.github.io/paper/raft/cover.png" />
-    </item>
-    
-    <item>
-      <title>Build Cache from Scratch: 1. initialize project</title>
-      <link>https://challenai.github.io/contribute/cache/wtfcache1/</link>
-      <pubDate>Mon, 13 Feb 2023 18:08:19 +0800</pubDate>
-      
-      <guid>https://challenai.github.io/contribute/cache/wtfcache1/</guid>
-      <description>placeholder</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://challenai.github.io/contribute/cache/wtfcache1/cover.png" />
     </item>
     
     <item>

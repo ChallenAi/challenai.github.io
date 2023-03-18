@@ -6,7 +6,16 @@
     <description>Recent content in Series on Lun Jiang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 01 Mar 2023 10:32:19 +0800</lastBuildDate><atom:link href="https://challenai.github.io/series/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 18 Mar 2023 14:32:19 +0800</lastBuildDate><atom:link href="https://challenai.github.io/series/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>wtf cache</title>
+      <link>https://challenai.github.io/series/wtf-cache/</link>
+      <pubDate>Sat, 18 Mar 2023 14:32:19 +0800</pubDate>
+      
+      <guid>https://challenai.github.io/series/wtf-cache/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>economics</title>
       <link>https://challenai.github.io/series/economics/</link>
@@ -22,15 +31,6 @@
       <pubDate>Mon, 13 Feb 2023 18:08:19 +0800</pubDate>
       
       <guid>https://challenai.github.io/series/kubernetes/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>wtf cache</title>
-      <link>https://challenai.github.io/series/wtf-cache/</link>
-      <pubDate>Mon, 13 Feb 2023 18:08:19 +0800</pubDate>
-      
-      <guid>https://challenai.github.io/series/wtf-cache/</guid>
       <description></description>
     </item>
     

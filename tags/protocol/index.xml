@@ -6,7 +6,16 @@
     <description>Recent content in protocol on Lun Jiang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 16 Feb 2023 14:21:34 +0800</lastBuildDate><atom:link href="https://challenai.github.io/tags/protocol/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 18 Mar 2023 14:32:19 +0800</lastBuildDate><atom:link href="https://challenai.github.io/tags/protocol/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Build Cache from Scratch: 1. initialize project</title>
+      <link>https://challenai.github.io/contribute/cache/wtfcache1/</link>
+      <pubDate>Sat, 18 Mar 2023 14:32:19 +0800</pubDate>
+      
+      <guid>https://challenai.github.io/contribute/cache/wtfcache1/</guid>
+      <description>build a high performance from scratch.</description>
+    </item>
+    
     <item>
       <title>Paper: Raft Consensus Algorithm</title>
       <link>https://challenai.github.io/paper/raft/</link>

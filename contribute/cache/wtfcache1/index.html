@@ -67,18 +67,18 @@
   
   
   <meta property="og:title" content="Build Cache from Scratch: 1. initialize project" />
-<meta property="og:description" content="placeholder" />
+<meta property="og:description" content="build a high performance from scratch." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://challenai.github.io/contribute/cache/wtfcache1/" /><meta property="og:image" content="https://challenai.github.io/contribute/cache/wtfcache1/cover.png"/><meta property="article:section" content="contribute" />
-<meta property="article:published_time" content="2023-02-13T18:08:19+08:00" />
-<meta property="article:modified_time" content="2023-02-13T18:08:19+08:00" /><meta property="og:site_name" content="Lun Jiang" />
+<meta property="article:published_time" content="2023-03-18T14:32:19+08:00" />
+<meta property="article:modified_time" content="2023-03-18T14:32:19+08:00" /><meta property="og:site_name" content="Lun Jiang" />
 
 
 
   <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://challenai.github.io/contribute/cache/wtfcache1/cover.png"/>
 <meta name="twitter:title" content="Build Cache from Scratch: 1. initialize project"/>
-<meta name="twitter:description" content="placeholder"/>
+<meta name="twitter:description" content="build a high performance from scratch."/>
 
   
   <script type="application/ld+json">
@@ -89,7 +89,7 @@
     "name": "Build Cache from Scratch: 1. initialize project",
     "headline": "Build Cache from Scratch: 1. initialize project",
     
-    "abstract": "placeholder",
+    "abstract": "build a high performance from scratch.",
     "inLanguage": "en",
     "url" : "https:\/\/challenai.github.io\/contribute\/cache\/wtfcache1\/",
     "author" : {
@@ -97,15 +97,15 @@
       "name": "Lun Jiang"
     },
     "copyrightYear": "2023",
-    "dateCreated": "2023-02-13T18:08:19\u002b08:00",
-    "datePublished": "2023-02-13T18:08:19\u002b08:00",
+    "dateCreated": "2023-03-18T14:32:19\u002b08:00",
+    "datePublished": "2023-03-18T14:32:19\u002b08:00",
     
-    "dateModified": "2023-02-13T18:08:19\u002b08:00",
+    "dateModified": "2023-03-18T14:32:19\u002b08:00",
     
-    "keywords": ["cache","distributed system","storage"],
+    "keywords": ["cache","distributed system","storage","protocol","code"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "8"
+    "wordCount": "100"
   }]
   </script>
 
@@ -587,7 +587,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2023-02-13 18:08:19 &#43;0800 &#43;0800">13 February 2023</time><span class="px-2 text-primary-500">&middot;</span><span>8 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">1 min</span>
+  <time datetime="2023-03-18 14:32:19 &#43;0800 &#43;0800">18 March 2023</time><span class="px-2 text-primary-500">&middot;</span><span>100 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">1 min</span>
   
 
   
@@ -684,7 +684,26 @@
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
             style="text-decoration-line: none !important;" href="#introduce" aria-label="Anchor">#</a></span>        
     
-</h2><p>todo</p>
+</h2><p>purpose:</p>
+<ul>
+<li>easy to understand, step by step. no one left behind.</li>
+<li>build a runnable and high performance prototype.</li>
+<li>introduce the core concepts for storage application.</li>
+<li>provide runnable code for every step in tutorial.</li>
+</ul>
+<p>features:</p>
+<ul>
+<li>provide key-value read and write ability.</li>
+<li>expose popular HTTP restful API.</li>
+<li>expose redis like TCP interface for users.</li>
+<li>collect some runtime stats and metrics.</li>
+<li>keys expiration and eviction.</li>
+<li>unit and e2e test.</li>
+<li>support persistence, free from data loss.</li>
+<li>introduce transaction and its implementation.</li>
+<li>introduce some critical methods to improve and measure performance.</li>
+<li>introduce some STOA or cutting edge concepts.</li>
+</ul>
 
         </br></br>
         
@@ -969,7 +988,7 @@
       <div class="flex justify-between pt-3">
         <span>
           
-            <a class="flex group mr-3" href="/contribute/kube/apiserver/">
+            <a class="flex group mr-3" href="/contribute/storage/">
               <span
                 class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
                 >&larr;</span
@@ -981,23 +1000,6 @@
               <span class="flex flex-col">
                 <span
                   class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-                  >Kubernetes: API Server</span
-                >
-                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
-                  
-                    <time datetime="2023-02-13 18:08:19 &#43;0800 &#43;0800">13 February 2023</time>
-                  
-                </span>
-              </span>
-            </a>
-          
-        </span>
-        <span>
-          
-            <a class="flex text-right group ml-3" href="/contribute/storage/">
-              <span class="flex flex-col">
-                <span
-                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
                   >Storage Engine: from Primitives to Implementation</span
                 >
                 <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
@@ -1006,15 +1008,10 @@
                   
                 </span>
               </span>
-              <span
-                class="ml-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
-                >&rarr;</span
-              >
-              <span
-                class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:hidden rtl:inline dark:text-neutral dark:group-hover:text-primary-400"
-                >&larr;</span
-              >
             </a>
+          
+        </span>
+        <span>
           
         </span>
       </div>
