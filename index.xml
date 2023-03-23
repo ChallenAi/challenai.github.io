@@ -8,6 +8,18 @@
     <language>en</language>
     <lastBuildDate>Sat, 18 Mar 2023 14:32:19 +0800</lastBuildDate><atom:link href="https://challenai.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>algorithm questions list</title>
+      <link>https://challenai.github.io/leetcod3/</link>
+      <pubDate>Thu, 23 Mar 2023 09:48:19 +0800</pubDate>
+      
+      <guid>https://challenai.github.io/leetcod3/</guid>
+      <description>Practice here:
+https://leetcode.com/challenai/
+ introduce introduce #    类型 阶段 题号 题目      1 锁定 307 实现数组 update 和 sum(i, j)    2 待定 315 计算右侧小于当前元素的个数    3 锁定 75 012 三色 partition    4 锁定 373 两个升序数组，求最小的 k 对组合    5 锁定 208 实现字典树    5 待定 472 字符串数组，求组合词    B 锁定 102     B 锁定 297 二叉树正反序列化    B  130 淹没岛屿    B  133 clone 图    B 锁定 210 给定节点和边，完成拓扑排序    B  310 最小高度树    B 备选 463 岛屿周长    B 社区 871 加油站，求经过的最少加油站数    D 锁定 39 组合    D  40 可重复组合    D 锁定 46 排列    D  47 可重复排列    D 备选 216 选 k 个数字(0~9)，和为 n    D 备选 377 组合的和为 k    D 备选 491 枚举递增子序列    D 锁定 124 BT 路径和最大 无   D 备选 129 BT 根叶路径数字和 无   D 备选 79 单词搜索    D 备选 212 单词搜索    D 备选 91 数字解码成字母    D 锁定 126 单词列表，形成链条路径    D  127 单词列表，形成链条路径    D  494 数字列表，添加+-得到 n    7 锁定 2 链表和    D 待定 200 求 01 矩阵中岛屿数    P 待定 139 长词能否由词列表中词组成    D 待定 140 长词能否由词列表中词组成    8 锁定 53 求最大连续子数组和    8 锁定 209 寻找最短子数组，和大于 target    8  76 最小的覆盖串    8 锁定 220 是否存在距离小于 k 且差小于 t    8 锁定 239 求滑动窗口内的最大值    8 待定 424 求最长重复子串(aaaaaxy,2 个不同)    9 社区 42 条形图接雨水    9 锁定 16 3 数和最近 k    9 备选 11 或 42 接雨水    10  19 链表移除倒数 k    11  385 [123,[456,[789]]]解析成嵌套类    11  394 3[a2[c]]解码成accaccacc    12 锁定 23 合并 k 个排序链表    12 锁定 493 前面比后面大两倍的对叫翻转对    13 锁定 154 搜索重复翻转排序数组的最小值    13  29 实现除法    13 待定 34 搜索排序数组中数字的起始位置    13  74 在排序矩阵中搜索 n    13 社区 410 最小化最大值，值是和    13 锁定 378 行列升序矩阵，求第 k 小    13 驱逐 2035 数组平分，让两者和也尽可能相等    14 社区 435 求没有重叠区间的最小移除数    P  45 跳到最后最小步数    P 锁定 72 编辑距离    P 暂缓 85 01 矩阵找最大的矩形    P 社区 174 地牢游戏，加减血但不能死    P 锁定 312 扎气球，max 三数积的和    P 备选 64 最小路径和    P 社区 ?</description>
+      
+    </item>
+    
+    <item>
       <title>Build Cache from Scratch: 1. initialize project</title>
       <link>https://challenai.github.io/contribute/cache/wtfcache1/</link>
       <pubDate>Sat, 18 Mar 2023 14:32:19 +0800</pubDate>
