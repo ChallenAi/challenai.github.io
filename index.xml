@@ -6,6 +6,7 @@
     <description>Recent content on Lun Jiang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
+    <copyright>© 2023 Lun Jiang</copyright>
     <lastBuildDate>Sat, 18 Mar 2023 14:32:19 +0800</lastBuildDate><atom:link href="https://challenai.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>algorithm questions list</title>
@@ -15,7 +16,7 @@
       <guid>https://challenai.github.io/leetcod3/</guid>
       <description>Practice here:
 https://leetcode.com/challenai/
- introduce introduce #    类型 阶段 题号 题目      1 锁定 307 实现数组 update 和 sum(i, j)    2 待定 315 计算右侧小于当前元素的个数    3 锁定 75 012 三色 partition    4 锁定 373 两个升序数组，求最小的 k 对组合    5 锁定 208 实现字典树    5 待定 472 字符串数组，求组合词    B 锁定 102     B 锁定 297 二叉树正反序列化    B  130 淹没岛屿    B  133 clone 图    B 锁定 210 给定节点和边，完成拓扑排序    B  310 最小高度树    B 备选 463 岛屿周长    B 社区 871 加油站，求经过的最少加油站数    D 锁定 39 组合    D  40 可重复组合    D 锁定 46 排列    D  47 可重复排列    D 备选 216 选 k 个数字(0~9)，和为 n    D 备选 377 组合的和为 k    D 备选 491 枚举递增子序列    D 锁定 124 BT 路径和最大 无   D 备选 129 BT 根叶路径数字和 无   D 备选 79 单词搜索    D 备选 212 单词搜索    D 备选 91 数字解码成字母    D 锁定 126 单词列表，形成链条路径    D  127 单词列表，形成链条路径    D  494 数字列表，添加+-得到 n    7 锁定 2 链表和    D 待定 200 求 01 矩阵中岛屿数    P 待定 139 长词能否由词列表中词组成    D 待定 140 长词能否由词列表中词组成    8 锁定 53 求最大连续子数组和    8 锁定 209 寻找最短子数组，和大于 target    8  76 最小的覆盖串    8 锁定 220 是否存在距离小于 k 且差小于 t    8 锁定 239 求滑动窗口内的最大值    8 待定 424 求最长重复子串(aaaaaxy,2 个不同)    9 社区 42 条形图接雨水    9 锁定 16 3 数和最近 k    9 备选 11 或 42 接雨水    10  19 链表移除倒数 k    11  385 [123,[456,[789]]]解析成嵌套类    11  394 3[a2[c]]解码成accaccacc    12 锁定 23 合并 k 个排序链表    12 锁定 493 前面比后面大两倍的对叫翻转对    13 锁定 154 搜索重复翻转排序数组的最小值    13  29 实现除法    13 待定 34 搜索排序数组中数字的起始位置    13  74 在排序矩阵中搜索 n    13 社区 410 最小化最大值，值是和    13 锁定 378 行列升序矩阵，求第 k 小    13 驱逐 2035 数组平分，让两者和也尽可能相等    14 社区 435 求没有重叠区间的最小移除数    P  45 跳到最后最小步数    P 锁定 72 编辑距离    P 暂缓 85 01 矩阵找最大的矩形    P 社区 174 地牢游戏，加减血但不能死    P 锁定 312 扎气球，max 三数积的和    P 备选 64 最小路径和    P 社区 ?</description>
+introduce # 类型 阶段 题号 题目 1 锁定 307 实现数组 update 和 sum(i, j) 2 待定 315 计算右侧小于当前元素的个数 3 锁定 75 012 三色 partition 4 锁定 373 两个升序数组，求最小的 k 对组合 5 锁定 208 实现字典树 5 待定 472 字符串数组，求组合词 B 锁定 102 B 锁定 297 二叉树正反序列化 B 130 淹没岛屿 B 133 clone 图 B 锁定 210 给定节点和边，完成拓扑排序 B 310 最小高度树 B 备选 463 岛屿周长 B 社区 871 加油站，求经过的最少加油站数 D 锁定 39 组合 D 40 可重复组合 D 锁定 46 排列 D 47 可重复排列 D 备选 216 选 k 个数字(0~9)，和为 n D 备选 377 组合的和为 k D 备选 491 枚举递增子序列 D 锁定 124 BT 路径和最大 无 D 备选 129 BT 根叶路径数字和 无 D 备选 79 单词搜索 D 备选 212 单词搜索 D 备选 91 数字解码成字母 D 锁定 126 单词列表，形成链条路径 D 127 单词列表，形成链条路径 D 494 数字列表，添加+-得到 n 7 锁定 2 链表和 D 待定 200 求 01 矩阵中岛屿数 P 待定 139 长词能否由词列表中词组成 D 待定 140 长词能否由词列表中词组成 8 锁定 53 求最大连续子数组和 8 锁定 209 寻找最短子数组，和大于 target 8 76 最小的覆盖串 8 锁定 220 是否存在距离小于 k 且差小于 t 8 锁定 239 求滑动窗口内的最大值 8 待定 424 求最长重复子串(aaaaaxy,2 个不同) 9 社区 42 条形图接雨水 9 锁定 16 3 数和最近 k 9 备选 11 或 42 接雨水 10 19 链表移除倒数 k 11 385 [123,[456,[789]]]解析成嵌套类 11 394 3[a2[c]]解码成accaccacc 12 锁定 23 合并 k 个排序链表 12 锁定 493 前面比后面大两倍的对叫翻转对 13 锁定 154 搜索重复翻转排序数组的最小值 13 29 实现除法 13 待定 34 搜索排序数组中数字的起始位置 13 74 在排序矩阵中搜索 n 13 社区 410 最小化最大值，值是和 13 锁定 378 行列升序矩阵，求第 k 小 13 驱逐 2035 数组平分，让两者和也尽可能相等 14 社区 435 求没有重叠区间的最小移除数 P 45 跳到最后最小步数 P 锁定 72 编辑距离 P 暂缓 85 01 矩阵找最大的矩形 P 社区 174 地牢游戏，加减血但不能死 P 锁定 312 扎气球，max 三数积的和 P 备选 64 最小路径和 P 社区 ?</description>
       
     </item>
     
@@ -25,12 +26,12 @@ https://leetcode.com/challenai/
       <pubDate>Sat, 18 Mar 2023 14:32:19 +0800</pubDate>
       
       <guid>https://challenai.github.io/contribute/cache/wtfcache1/</guid>
-      <description>build a high performance from scratch.</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://challenai.github.io/contribute/cache/wtfcache1/cover.png" />
+      <description>build a high performance cache from scratch.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://challenai.github.io/contribute/cache/wtfcache1/cover.jpg" />
     </item>
     
     <item>
-      <title>(cn) economics: 4. 数量化</title>
+      <title>economics: 4. 数量化</title>
       <link>https://challenai.github.io/inspiration/eco4quantity1/</link>
       <pubDate>Wed, 01 Mar 2023 10:32:19 +0800</pubDate>
       
@@ -46,21 +47,11 @@ https://leetcode.com/challenai/
       
       <guid>https://challenai.github.io/paper/spanner/</guid>
       <description>Spanner is a globally distributed database. It provides SQL interface and relational like schema. It provides transaction feature for its scale and inspires some successors like cockroachdb and tidb</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://challenai.github.io/paper/spanner/cover.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://challenai.github.io/paper/spanner/cover.jpg" />
     </item>
     
     <item>
-      <title>(cn) plan: 个人长期计划</title>
-      <link>https://challenai.github.io/inspiration/plan/</link>
-      <pubDate>Mon, 27 Feb 2023 18:26:21 +0800</pubDate>
-      
-      <guid>https://challenai.github.io/inspiration/plan/</guid>
-      <description>生命只有一次，不管开心还是痛苦，体验最重要了</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://challenai.github.io/inspiration/plan/cover.png" />
-    </item>
-    
-    <item>
-      <title>(cn) economics: 2. 需求和供给</title>
+      <title>economics: 2. 需求和供给</title>
       <link>https://challenai.github.io/inspiration/eco2basic/</link>
       <pubDate>Sat, 25 Feb 2023 22:50:19 +0800</pubDate>
       
@@ -70,7 +61,7 @@ https://leetcode.com/challenai/
     </item>
     
     <item>
-      <title>(cn) economics: 1. 背景</title>
+      <title>economics: 1. 背景</title>
       <link>https://challenai.github.io/inspiration/eco1start/</link>
       <pubDate>Fri, 24 Feb 2023 03:50:19 +0800</pubDate>
       
@@ -96,7 +87,7 @@ https://leetcode.com/challenai/
       
       <guid>https://challenai.github.io/contribute/storage/</guid>
       <description>work in progress</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://challenai.github.io/contribute/storage/cover.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://challenai.github.io/contribute/storage/cover.webp" />
     </item>
     
     <item>
@@ -106,7 +97,7 @@ https://leetcode.com/challenai/
       
       <guid>https://challenai.github.io/paper/raft/</guid>
       <description>Replicate is a common topic in distributed system, algorithms like paxos and its variants are difficult to understand, lack of details, but raft can help</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://challenai.github.io/paper/raft/cover.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://challenai.github.io/paper/raft/cover.jpg" />
     </item>
     
     <item>
@@ -125,7 +116,7 @@ https://leetcode.com/challenai/
       <pubDate>Mon, 13 Feb 2023 18:08:19 +0800</pubDate>
       
       <guid>https://challenai.github.io/contribute/kube/controller/</guid>
-      <description>placeholder</description>
+      <description>Deployment controller is used to specify replicas, rollback</description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://challenai.github.io/contribute/kube/controller/cover.png" />
     </item>
     
@@ -136,7 +127,7 @@ https://leetcode.com/challenai/
       
       <guid>https://challenai.github.io/paper/vmft/</guid>
       <description>replicate computation is complex, paper vmft try to introduce the work to replicate virtual machine</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://challenai.github.io/paper/vmft/cover.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://challenai.github.io/paper/vmft/cover.jpg" />
     </item>
     
     <item>
@@ -146,47 +137,7 @@ https://leetcode.com/challenai/
       
       <guid>https://challenai.github.io/contribute/nats/</guid>
       <description>Message Queue is a separate server to store message with FIFO sequence. Nats is a high performance message queue written in golang, it introduces some interesting ideas like connectivity, edge</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://challenai.github.io/contribute/nats/cover.png" />
-    </item>
-    
-    <item>
-      <title>Container: Namespace, Cgroups and Shipping</title>
-      <link>https://challenai.github.io/contribute/container/</link>
-      <pubDate>Sun, 12 Feb 2023 22:00:39 +0800</pubDate>
-      
-      <guid>https://challenai.github.io/contribute/container/</guid>
-      <description>work in progress</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://challenai.github.io/contribute/container/cover.png" />
-    </item>
-    
-    <item>
-      <title>(cn) Golang Runtime Introduction</title>
-      <link>https://challenai.github.io/contribute/golang/</link>
-      <pubDate>Sun, 12 Feb 2023 12:08:19 +0800</pubDate>
-      
-      <guid>https://challenai.github.io/contribute/golang/</guid>
-      <description>Todo: Collate</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://challenai.github.io/contribute/golang/cover.png" />
-    </item>
-    
-    <item>
-      <title>(cn) 艾风逸: 名字的故事</title>
-      <link>https://challenai.github.io/inspiration/name/</link>
-      <pubDate>Sun, 12 Feb 2023 12:08:19 +0800</pubDate>
-      
-      <guid>https://challenai.github.io/inspiration/name/</guid>
-      <description>每个人大概都一定程度上不喜欢自己的出身，名字，历史，那些不能掌控的初值。小时候一直想给自己取个新名字，是一种抱怨，无能的人才会抱怨，表达对既定的不满又无力改变；也是一种期盼，包含对的美好祝福。</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://challenai.github.io/inspiration/name/cover.png" />
-    </item>
-    
-    <item>
-      <title>Chinese Poem from 1500 Years Ago: An Attractive Man</title>
-      <link>https://challenai.github.io/inspiration/meng/</link>
-      <pubDate>Sun, 12 Feb 2023 12:08:19 +0800</pubDate>
-      
-      <guid>https://challenai.github.io/inspiration/meng/</guid>
-      <description>Love is always the topic for us all. It repeats again and again during thousands of years of our journey. It&amp;rsquo;s simple like that, fall in love, together and apart. maybe happy, maybe painful, kinda experience.</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://challenai.github.io/inspiration/meng/cover.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://challenai.github.io/contribute/nats/cover.jpg" />
     </item>
     
     <item>
@@ -195,58 +146,98 @@ https://leetcode.com/challenai/
       <pubDate>Sun, 12 Feb 2023 12:08:19 +0800</pubDate>
       
       <guid>https://challenai.github.io/contribute/kube/scheduler/</guid>
-      <description>placeholder</description>
+      <description>Scheduler 在 affinity，taints，resource，os 的基础上，从一组 nodes 中，选择最合适的 node，运行 pod</description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://challenai.github.io/contribute/kube/scheduler/cover.png" />
     </item>
     
     <item>
-      <title>Paper: CockroachDB</title>
-      <link>https://challenai.github.io/paper/cockroachdb/</link>
-      <pubDate>Sun, 12 Feb 2023 12:08:19 +0800</pubDate>
+      <title>有趣的算法题: 嵌套字段解析</title>
+      <link>https://challenai.github.io/contribute/parse/</link>
+      <pubDate>Fri, 22 Oct 2021 18:08:19 +0800</pubDate>
       
-      <guid>https://challenai.github.io/paper/cockroachdb/</guid>
-      <description>placeholder</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://challenai.github.io/paper/cockroachdb/cover.png" />
+      <guid>https://challenai.github.io/contribute/parse/</guid>
+      <description>解析消息，消息按逗号分割，一重引号里套两重引号表示转义</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://challenai.github.io/contribute/parse/cover.jpg" />
     </item>
     
     <item>
-      <title>Paper: Deploy Services and Jobs with Borg</title>
-      <link>https://challenai.github.io/paper/borg/</link>
-      <pubDate>Sun, 12 Feb 2023 12:08:19 +0800</pubDate>
+      <title>分布式键值存储系统的设计与实现</title>
+      <link>https://challenai.github.io/paper/kvstore/</link>
+      <pubDate>Sat, 15 May 2021 12:08:19 +0800</pubDate>
       
-      <guid>https://challenai.github.io/paper/borg/</guid>
-      <description>placeholder</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://challenai.github.io/paper/borg/cover.png" />
+      <guid>https://challenai.github.io/paper/kvstore/</guid>
+      <description>键值数据库数据分片的方法通常有根据键的范围分片和根据键的散列分片，根据键的范围分片通常给每个分片指定一块连续的键范围，然后将特定键保存到指定分片。根据键的散列分片则有助于数据的平衡分配，避免出现热点，但是也丧失了高效范围查询的能力。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://challenai.github.io/paper/kvstore/cover.png" />
     </item>
     
     <item>
-      <title>Paper: Google File System</title>
-      <link>https://challenai.github.io/paper/gfs/</link>
-      <pubDate>Sun, 12 Feb 2023 12:08:19 +0800</pubDate>
+      <title>艾风逸: 名字的故事</title>
+      <link>https://challenai.github.io/inspiration/name/</link>
+      <pubDate>Fri, 14 May 2021 11:08:19 +0800</pubDate>
       
-      <guid>https://challenai.github.io/paper/gfs/</guid>
-      <description>placeholder</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://challenai.github.io/paper/gfs/cover.png" />
+      <guid>https://challenai.github.io/inspiration/name/</guid>
+      <description>每个人大概都一定程度上不喜欢自己的出身，名字，历史，那些不能掌控的初值。小时候一直想给自己取个新名字，是一种抱怨，无能的人才会抱怨，表达对既定的不满又无力改变；也是一种期盼，包含对的美好祝福。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://challenai.github.io/inspiration/name/cover.jpg" />
     </item>
     
     <item>
-      <title>Paper: Kafka Message Queue</title>
-      <link>https://challenai.github.io/paper/kafka/</link>
-      <pubDate>Sun, 12 Feb 2023 12:08:19 +0800</pubDate>
+      <title>Asian Poem: Rain Watcher</title>
+      <link>https://challenai.github.io/inspiration/rain/</link>
+      <pubDate>Wed, 12 May 2021 09:08:19 +0800</pubDate>
       
-      <guid>https://challenai.github.io/paper/kafka/</guid>
-      <description>placeholder</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://challenai.github.io/paper/kafka/cover.png" />
+      <guid>https://challenai.github.io/inspiration/rain/</guid>
+      <description>I hear it rains from dusk to dawn, one drop by another.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://challenai.github.io/inspiration/rain/cover.jpg" />
     </item>
     
     <item>
-      <title>Paper: Speed up for Long-tail Small Files</title>
-      <link>https://challenai.github.io/paper/haystack/</link>
-      <pubDate>Sun, 12 Feb 2023 12:08:19 +0800</pubDate>
+      <title>DDIA 读书笔记</title>
+      <link>https://challenai.github.io/contribute/ddia/</link>
+      <pubDate>Wed, 12 May 2021 03:50:19 +0800</pubDate>
       
-      <guid>https://challenai.github.io/paper/haystack/</guid>
-      <description>placeholder</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://challenai.github.io/paper/haystack/cover.png" />
+      <guid>https://challenai.github.io/contribute/ddia/</guid>
+      <description>一本讲数据系统的很好的书，CRUD 时可以多翻翻，这里梳理了重点</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://challenai.github.io/contribute/ddia/cover.webp" />
+    </item>
+    
+    <item>
+      <title>Vim 及其配置</title>
+      <link>https://challenai.github.io/contribute/vim/</link>
+      <pubDate>Fri, 23 Apr 2021 22:00:39 +0800</pubDate>
+      
+      <guid>https://challenai.github.io/contribute/vim/</guid>
+      <description>vim 是一种编辑方式，编辑唯一的要求是定位光标，比如调到某函数，修改该函数的参数</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://challenai.github.io/contribute/vim/cover.png" />
+    </item>
+    
+    <item>
+      <title>Docker 命令速查</title>
+      <link>https://challenai.github.io/contribute/docker/</link>
+      <pubDate>Fri, 23 Apr 2021 12:08:19 +0800</pubDate>
+      
+      <guid>https://challenai.github.io/contribute/docker/</guid>
+      <description>Docker 构建和测试镜像工作流: 编写 Dockerfile -&amp;gt; 构建新镜像 build -&amp;gt; run -&amp;gt; stop -&amp;gt; rm</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://challenai.github.io/contribute/docker/cover.jpg" />
+    </item>
+    
+    <item>
+      <title>HTTPS/SSL/TLS</title>
+      <link>https://challenai.github.io/contribute/https/</link>
+      <pubDate>Thu, 22 Apr 2021 12:08:19 +0800</pubDate>
+      
+      <guid>https://challenai.github.io/contribute/https/</guid>
+      <description>HTTPS 证书申请，编码调用证书和 nginx 配置</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://challenai.github.io/contribute/https/cover.jpg" />
+    </item>
+    
+    <item>
+      <title>Asian Poem from 1500 Years Ago: An Attractive Man</title>
+      <link>https://challenai.github.io/inspiration/meng/</link>
+      <pubDate>Tue, 27 Oct 2020 12:08:19 +0800</pubDate>
+      
+      <guid>https://challenai.github.io/inspiration/meng/</guid>
+      <description>Love is always the topic for us all. It repeats again and again during thousands of years of our journey. It&amp;rsquo;s simple like that, fall in love, together and apart. maybe happy, maybe painful, kinda experience.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://challenai.github.io/inspiration/meng/cover.jpg" />
     </item>
     
   </channel>

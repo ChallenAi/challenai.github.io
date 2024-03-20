@@ -6,6 +6,7 @@
     <description>Recent content in protocol on Lun Jiang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
+    <copyright>© 2023 Lun Jiang</copyright>
     <lastBuildDate>Sat, 18 Mar 2023 14:32:19 +0800</lastBuildDate><atom:link href="https://challenai.github.io/tags/protocol/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Build Cache from Scratch: 1. initialize project</title>
@@ -13,7 +14,8 @@
       <pubDate>Sat, 18 Mar 2023 14:32:19 +0800</pubDate>
       
       <guid>https://challenai.github.io/contribute/cache/wtfcache1/</guid>
-      <description>build a high performance from scratch.</description>
+      <description>build a high performance cache from scratch.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://challenai.github.io/contribute/cache/wtfcache1/cover.jpg" />
     </item>
     
     <item>
@@ -23,6 +25,17 @@
       
       <guid>https://challenai.github.io/paper/raft/</guid>
       <description>Replicate is a common topic in distributed system, algorithms like paxos and its variants are difficult to understand, lack of details, but raft can help</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://challenai.github.io/paper/raft/cover.jpg" />
+    </item>
+    
+    <item>
+      <title>HTTPS/SSL/TLS</title>
+      <link>https://challenai.github.io/contribute/https/</link>
+      <pubDate>Thu, 22 Apr 2021 12:08:19 +0800</pubDate>
+      
+      <guid>https://challenai.github.io/contribute/https/</guid>
+      <description>HTTPS 证书申请，编码调用证书和 nginx 配置</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://challenai.github.io/contribute/https/cover.jpg" />
     </item>
     
   </channel>

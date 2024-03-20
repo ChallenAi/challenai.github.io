@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>vim on Lun Jiang</title>
+    <link>https://challenai.github.io/tags/vim/</link>
+    <description>Recent content in vim on Lun Jiang</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>© 2023 Lun Jiang</copyright>
+    <lastBuildDate>Fri, 23 Apr 2021 22:00:39 +0800</lastBuildDate><atom:link href="https://challenai.github.io/tags/vim/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Vim 及其配置</title>
+      <link>https://challenai.github.io/contribute/vim/</link>
+      <pubDate>Fri, 23 Apr 2021 22:00:39 +0800</pubDate>
+      
+      <guid>https://challenai.github.io/contribute/vim/</guid>
+      <description>vim 是一种编辑方式，编辑唯一的要求是定位光标，比如调到某函数，修改该函数的参数</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://challenai.github.io/contribute/vim/cover.png" />
+    </item>
+    
+  </channel>
+</rss>

@@ -6,59 +6,66 @@
     <description>Recent content in Grocery on Lun Jiang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
+    <copyright>© 2023 Lun Jiang</copyright>
     <lastBuildDate>Mon, 13 Jun 2022 20:55:37 +0800</lastBuildDate><atom:link href="https://challenai.github.io/inspiration/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>(cn) economics: 4. 数量化</title>
+      <title>economics: 4. 数量化</title>
       <link>https://challenai.github.io/inspiration/eco4quantity1/</link>
       <pubDate>Wed, 01 Mar 2023 10:32:19 +0800</pubDate>
       
       <guid>https://challenai.github.io/inspiration/eco4quantity1/</guid>
       <description>取其神而忘其形。对弱者心怀悲悯，不作恶。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://challenai.github.io/inspiration/eco4quantity1/cover.png" />
     </item>
     
     <item>
-      <title>(cn) plan: 个人长期计划</title>
-      <link>https://challenai.github.io/inspiration/plan/</link>
-      <pubDate>Mon, 27 Feb 2023 18:26:21 +0800</pubDate>
-      
-      <guid>https://challenai.github.io/inspiration/plan/</guid>
-      <description>生命只有一次，不管开心还是痛苦，体验最重要了</description>
-    </item>
-    
-    <item>
-      <title>(cn) economics: 2. 需求和供给</title>
+      <title>economics: 2. 需求和供给</title>
       <link>https://challenai.github.io/inspiration/eco2basic/</link>
       <pubDate>Sat, 25 Feb 2023 22:50:19 +0800</pubDate>
       
       <guid>https://challenai.github.io/inspiration/eco2basic/</guid>
       <description>市场不是万能的，但是现实情况往往是，我们远远低估了市场的力量，高估了人工的力量。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://challenai.github.io/inspiration/eco2basic/cover.png" />
     </item>
     
     <item>
-      <title>(cn) economics: 1. 背景</title>
+      <title>economics: 1. 背景</title>
       <link>https://challenai.github.io/inspiration/eco1start/</link>
       <pubDate>Fri, 24 Feb 2023 03:50:19 +0800</pubDate>
       
       <guid>https://challenai.github.io/inspiration/eco1start/</guid>
       <description>搞懂一些东西不见得是件好事，人生是一场痛苦的旅程，而认知，尽管在物质方面虽回报颇丰，但在精神方面，是彻彻底底的痛苦，做一个天真的孩子，未尝不是一件好事，一旦长大，就已经截断了退路。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://challenai.github.io/inspiration/eco1start/cover.png" />
     </item>
     
     <item>
-      <title>(cn) 艾风逸: 名字的故事</title>
+      <title>艾风逸: 名字的故事</title>
       <link>https://challenai.github.io/inspiration/name/</link>
-      <pubDate>Sun, 12 Feb 2023 12:08:19 +0800</pubDate>
+      <pubDate>Fri, 14 May 2021 11:08:19 +0800</pubDate>
       
       <guid>https://challenai.github.io/inspiration/name/</guid>
       <description>每个人大概都一定程度上不喜欢自己的出身，名字，历史，那些不能掌控的初值。小时候一直想给自己取个新名字，是一种抱怨，无能的人才会抱怨，表达对既定的不满又无力改变；也是一种期盼，包含对的美好祝福。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://challenai.github.io/inspiration/name/cover.jpg" />
     </item>
     
     <item>
-      <title>Chinese Poem from 1500 Years Ago: An Attractive Man</title>
+      <title>Asian Poem: Rain Watcher</title>
+      <link>https://challenai.github.io/inspiration/rain/</link>
+      <pubDate>Wed, 12 May 2021 09:08:19 +0800</pubDate>
+      
+      <guid>https://challenai.github.io/inspiration/rain/</guid>
+      <description>I hear it rains from dusk to dawn, one drop by another.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://challenai.github.io/inspiration/rain/cover.jpg" />
+    </item>
+    
+    <item>
+      <title>Asian Poem from 1500 Years Ago: An Attractive Man</title>
       <link>https://challenai.github.io/inspiration/meng/</link>
-      <pubDate>Sun, 12 Feb 2023 12:08:19 +0800</pubDate>
+      <pubDate>Tue, 27 Oct 2020 12:08:19 +0800</pubDate>
       
       <guid>https://challenai.github.io/inspiration/meng/</guid>
       <description>Love is always the topic for us all. It repeats again and again during thousands of years of our journey. It&amp;rsquo;s simple like that, fall in love, together and apart. maybe happy, maybe painful, kinda experience.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://challenai.github.io/inspiration/meng/cover.jpg" />
     </item>
     
   </channel>

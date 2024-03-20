@@ -6,6 +6,7 @@
     <description>Recent content in message queue on Lun Jiang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
+    <copyright>© 2023 Lun Jiang</copyright>
     <lastBuildDate>Mon, 13 Feb 2023 18:08:19 +0800</lastBuildDate><atom:link href="https://challenai.github.io/tags/message-queue/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Queue: Nats, Connectivity and Edge</title>
@@ -14,6 +15,7 @@
       
       <guid>https://challenai.github.io/contribute/nats/</guid>
       <description>Message Queue is a separate server to store message with FIFO sequence. Nats is a high performance message queue written in golang, it introduces some interesting ideas like connectivity, edge</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://challenai.github.io/contribute/nats/cover.jpg" />
     </item>
     
   </channel>

@@ -6,6 +6,7 @@
     <description>Recent content in distributed system on Lun Jiang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
+    <copyright>© 2023 Lun Jiang</copyright>
     <lastBuildDate>Sat, 18 Mar 2023 14:32:19 +0800</lastBuildDate><atom:link href="https://challenai.github.io/tags/distributed-system/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Build Cache from Scratch: 1. initialize project</title>
@@ -13,7 +14,8 @@
       <pubDate>Sat, 18 Mar 2023 14:32:19 +0800</pubDate>
       
       <guid>https://challenai.github.io/contribute/cache/wtfcache1/</guid>
-      <description>build a high performance from scratch.</description>
+      <description>build a high performance cache from scratch.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://challenai.github.io/contribute/cache/wtfcache1/cover.jpg" />
     </item>
     
     <item>
@@ -23,6 +25,7 @@
       
       <guid>https://challenai.github.io/paper/raft/</guid>
       <description>Replicate is a common topic in distributed system, algorithms like paxos and its variants are difficult to understand, lack of details, but raft can help</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://challenai.github.io/paper/raft/cover.jpg" />
     </item>
     
     <item>
@@ -32,6 +35,7 @@
       
       <guid>https://challenai.github.io/contribute/kube/apiserver/</guid>
       <description>placeholder</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://challenai.github.io/contribute/kube/apiserver/cover.png" />
     </item>
     
     <item>
@@ -40,7 +44,8 @@
       <pubDate>Mon, 13 Feb 2023 18:08:19 +0800</pubDate>
       
       <guid>https://challenai.github.io/contribute/kube/controller/</guid>
-      <description>placeholder</description>
+      <description>Deployment controller is used to specify replicas, rollback</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://challenai.github.io/contribute/kube/controller/cover.png" />
     </item>
     
     <item>
@@ -50,6 +55,7 @@
       
       <guid>https://challenai.github.io/paper/vmft/</guid>
       <description>replicate computation is complex, paper vmft try to introduce the work to replicate virtual machine</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://challenai.github.io/paper/vmft/cover.jpg" />
     </item>
     
     <item>
@@ -58,52 +64,18 @@
       <pubDate>Sun, 12 Feb 2023 12:08:19 +0800</pubDate>
       
       <guid>https://challenai.github.io/contribute/kube/scheduler/</guid>
-      <description>placeholder</description>
+      <description>Scheduler 在 affinity，taints，resource，os 的基础上，从一组 nodes 中，选择最合适的 node，运行 pod</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://challenai.github.io/contribute/kube/scheduler/cover.png" />
     </item>
     
     <item>
-      <title>Paper: CockroachDB</title>
-      <link>https://challenai.github.io/paper/cockroachdb/</link>
-      <pubDate>Sun, 12 Feb 2023 12:08:19 +0800</pubDate>
+      <title>分布式键值存储系统的设计与实现</title>
+      <link>https://challenai.github.io/paper/kvstore/</link>
+      <pubDate>Sat, 15 May 2021 12:08:19 +0800</pubDate>
       
-      <guid>https://challenai.github.io/paper/cockroachdb/</guid>
-      <description>placeholder</description>
-    </item>
-    
-    <item>
-      <title>Paper: Deploy Services and Jobs with Borg</title>
-      <link>https://challenai.github.io/paper/borg/</link>
-      <pubDate>Sun, 12 Feb 2023 12:08:19 +0800</pubDate>
-      
-      <guid>https://challenai.github.io/paper/borg/</guid>
-      <description>placeholder</description>
-    </item>
-    
-    <item>
-      <title>Paper: Google File System</title>
-      <link>https://challenai.github.io/paper/gfs/</link>
-      <pubDate>Sun, 12 Feb 2023 12:08:19 +0800</pubDate>
-      
-      <guid>https://challenai.github.io/paper/gfs/</guid>
-      <description>placeholder</description>
-    </item>
-    
-    <item>
-      <title>Paper: Kafka Message Queue</title>
-      <link>https://challenai.github.io/paper/kafka/</link>
-      <pubDate>Sun, 12 Feb 2023 12:08:19 +0800</pubDate>
-      
-      <guid>https://challenai.github.io/paper/kafka/</guid>
-      <description>placeholder</description>
-    </item>
-    
-    <item>
-      <title>Paper: Speed up for Long-tail Small Files</title>
-      <link>https://challenai.github.io/paper/haystack/</link>
-      <pubDate>Sun, 12 Feb 2023 12:08:19 +0800</pubDate>
-      
-      <guid>https://challenai.github.io/paper/haystack/</guid>
-      <description>placeholder</description>
+      <guid>https://challenai.github.io/paper/kvstore/</guid>
+      <description>键值数据库数据分片的方法通常有根据键的范围分片和根据键的散列分片，根据键的范围分片通常给每个分片指定一块连续的键范围，然后将特定键保存到指定分片。根据键的散列分片则有助于数据的平衡分配，避免出现热点，但是也丧失了高效范围查询的能力。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://challenai.github.io/paper/kvstore/cover.png" />
     </item>
     
   </channel>

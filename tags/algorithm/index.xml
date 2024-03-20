@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>algorithm on Lun Jiang</title>
+    <link>https://challenai.github.io/tags/algorithm/</link>
+    <description>Recent content in algorithm on Lun Jiang</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>© 2023 Lun Jiang</copyright>
+    <lastBuildDate>Fri, 22 Oct 2021 18:08:19 +0800</lastBuildDate><atom:link href="https://challenai.github.io/tags/algorithm/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>有趣的算法题: 嵌套字段解析</title>
+      <link>https://challenai.github.io/contribute/parse/</link>
+      <pubDate>Fri, 22 Oct 2021 18:08:19 +0800</pubDate>
+      
+      <guid>https://challenai.github.io/contribute/parse/</guid>
+      <description>解析消息，消息按逗号分割，一重引号里套两重引号表示转义</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://challenai.github.io/contribute/parse/cover.jpg" />
+    </item>
+    
+  </channel>
+</rss>

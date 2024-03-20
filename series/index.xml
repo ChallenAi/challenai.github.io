@@ -6,6 +6,7 @@
     <description>Recent content in Series on Lun Jiang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
+    <copyright>© 2023 Lun Jiang</copyright>
     <lastBuildDate>Sat, 18 Mar 2023 14:32:19 +0800</lastBuildDate><atom:link href="https://challenai.github.io/series/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>wtf cache</title>
@@ -14,6 +15,7 @@
       
       <guid>https://challenai.github.io/series/wtf-cache/</guid>
       <description></description>
+      
     </item>
     
     <item>
@@ -23,6 +25,7 @@
       
       <guid>https://challenai.github.io/series/economics/</guid>
       <description></description>
+      
     </item>
     
     <item>
@@ -32,6 +35,17 @@
       
       <guid>https://challenai.github.io/series/kubernetes/</guid>
       <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Asia Culture</title>
+      <link>https://challenai.github.io/series/asia-culture/</link>
+      <pubDate>Wed, 12 May 2021 09:08:19 +0800</pubDate>
+      
+      <guid>https://challenai.github.io/series/asia-culture/</guid>
+      <description></description>
+      
     </item>
     
   </channel>

@@ -6,6 +6,7 @@
     <description>Recent content in Papers on Lun Jiang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
+    <copyright>© 2023 Lun Jiang</copyright>
     <lastBuildDate>Mon, 13 Jun 2022 20:55:37 +0800</lastBuildDate><atom:link href="https://challenai.github.io/paper/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Paper: Spanner as a Global Scale Database</title>
@@ -14,6 +15,7 @@
       
       <guid>https://challenai.github.io/paper/spanner/</guid>
       <description>Spanner is a globally distributed database. It provides SQL interface and relational like schema. It provides transaction feature for its scale and inspires some successors like cockroachdb and tidb</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://challenai.github.io/paper/spanner/cover.jpg" />
     </item>
     
     <item>
@@ -23,6 +25,7 @@
       
       <guid>https://challenai.github.io/paper/raft/</guid>
       <description>Replicate is a common topic in distributed system, algorithms like paxos and its variants are difficult to understand, lack of details, but raft can help</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://challenai.github.io/paper/raft/cover.jpg" />
     </item>
     
     <item>
@@ -32,51 +35,17 @@
       
       <guid>https://challenai.github.io/paper/vmft/</guid>
       <description>replicate computation is complex, paper vmft try to introduce the work to replicate virtual machine</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://challenai.github.io/paper/vmft/cover.jpg" />
     </item>
     
     <item>
-      <title>Paper: CockroachDB</title>
-      <link>https://challenai.github.io/paper/cockroachdb/</link>
-      <pubDate>Sun, 12 Feb 2023 12:08:19 +0800</pubDate>
+      <title>分布式键值存储系统的设计与实现</title>
+      <link>https://challenai.github.io/paper/kvstore/</link>
+      <pubDate>Sat, 15 May 2021 12:08:19 +0800</pubDate>
       
-      <guid>https://challenai.github.io/paper/cockroachdb/</guid>
-      <description>placeholder</description>
-    </item>
-    
-    <item>
-      <title>Paper: Deploy Services and Jobs with Borg</title>
-      <link>https://challenai.github.io/paper/borg/</link>
-      <pubDate>Sun, 12 Feb 2023 12:08:19 +0800</pubDate>
-      
-      <guid>https://challenai.github.io/paper/borg/</guid>
-      <description>placeholder</description>
-    </item>
-    
-    <item>
-      <title>Paper: Google File System</title>
-      <link>https://challenai.github.io/paper/gfs/</link>
-      <pubDate>Sun, 12 Feb 2023 12:08:19 +0800</pubDate>
-      
-      <guid>https://challenai.github.io/paper/gfs/</guid>
-      <description>placeholder</description>
-    </item>
-    
-    <item>
-      <title>Paper: Kafka Message Queue</title>
-      <link>https://challenai.github.io/paper/kafka/</link>
-      <pubDate>Sun, 12 Feb 2023 12:08:19 +0800</pubDate>
-      
-      <guid>https://challenai.github.io/paper/kafka/</guid>
-      <description>placeholder</description>
-    </item>
-    
-    <item>
-      <title>Paper: Speed up for Long-tail Small Files</title>
-      <link>https://challenai.github.io/paper/haystack/</link>
-      <pubDate>Sun, 12 Feb 2023 12:08:19 +0800</pubDate>
-      
-      <guid>https://challenai.github.io/paper/haystack/</guid>
-      <description>placeholder</description>
+      <guid>https://challenai.github.io/paper/kvstore/</guid>
+      <description>键值数据库数据分片的方法通常有根据键的范围分片和根据键的散列分片，根据键的范围分片通常给每个分片指定一块连续的键范围，然后将特定键保存到指定分片。根据键的散列分片则有助于数据的平衡分配，避免出现热点，但是也丧失了高效范围查询的能力。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://challenai.github.io/paper/kvstore/cover.png" />
     </item>
     
   </channel>

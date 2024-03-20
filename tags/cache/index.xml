@@ -6,6 +6,7 @@
     <description>Recent content in cache on Lun Jiang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
+    <copyright>© 2023 Lun Jiang</copyright>
     <lastBuildDate>Sat, 18 Mar 2023 14:32:19 +0800</lastBuildDate><atom:link href="https://challenai.github.io/tags/cache/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Build Cache from Scratch: 1. initialize project</title>
@@ -13,16 +14,8 @@
       <pubDate>Sat, 18 Mar 2023 14:32:19 +0800</pubDate>
       
       <guid>https://challenai.github.io/contribute/cache/wtfcache1/</guid>
-      <description>build a high performance from scratch.</description>
-    </item>
-    
-    <item>
-      <title>Paper: Speed up for Long-tail Small Files</title>
-      <link>https://challenai.github.io/paper/haystack/</link>
-      <pubDate>Sun, 12 Feb 2023 12:08:19 +0800</pubDate>
-      
-      <guid>https://challenai.github.io/paper/haystack/</guid>
-      <description>placeholder</description>
+      <description>build a high performance cache from scratch.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://challenai.github.io/contribute/cache/wtfcache1/cover.jpg" />
     </item>
     
   </channel>

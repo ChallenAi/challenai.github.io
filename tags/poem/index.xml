@@ -6,14 +6,26 @@
     <description>Recent content in poem on Lun Jiang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 12 Feb 2023 12:08:19 +0800</lastBuildDate><atom:link href="https://challenai.github.io/tags/poem/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>© 2023 Lun Jiang</copyright>
+    <lastBuildDate>Wed, 12 May 2021 09:08:19 +0800</lastBuildDate><atom:link href="https://challenai.github.io/tags/poem/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Chinese Poem from 1500 Years Ago: An Attractive Man</title>
+      <title>Asian Poem: Rain Watcher</title>
+      <link>https://challenai.github.io/inspiration/rain/</link>
+      <pubDate>Wed, 12 May 2021 09:08:19 +0800</pubDate>
+      
+      <guid>https://challenai.github.io/inspiration/rain/</guid>
+      <description>I hear it rains from dusk to dawn, one drop by another.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://challenai.github.io/inspiration/rain/cover.jpg" />
+    </item>
+    
+    <item>
+      <title>Asian Poem from 1500 Years Ago: An Attractive Man</title>
       <link>https://challenai.github.io/inspiration/meng/</link>
-      <pubDate>Sun, 12 Feb 2023 12:08:19 +0800</pubDate>
+      <pubDate>Tue, 27 Oct 2020 12:08:19 +0800</pubDate>
       
       <guid>https://challenai.github.io/inspiration/meng/</guid>
       <description>Love is always the topic for us all. It repeats again and again during thousands of years of our journey. It&amp;rsquo;s simple like that, fall in love, together and apart. maybe happy, maybe painful, kinda experience.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://challenai.github.io/inspiration/meng/cover.jpg" />
     </item>
     
   </channel>

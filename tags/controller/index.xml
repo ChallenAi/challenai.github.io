@@ -6,6 +6,7 @@
     <description>Recent content in controller on Lun Jiang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
+    <copyright>© 2023 Lun Jiang</copyright>
     <lastBuildDate>Mon, 13 Feb 2023 18:08:19 +0800</lastBuildDate><atom:link href="https://challenai.github.io/tags/controller/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Kubernetes: Controller</title>
@@ -13,7 +14,8 @@
       <pubDate>Mon, 13 Feb 2023 18:08:19 +0800</pubDate>
       
       <guid>https://challenai.github.io/contribute/kube/controller/</guid>
-      <description>placeholder</description>
+      <description>Deployment controller is used to specify replicas, rollback</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://challenai.github.io/contribute/kube/controller/cover.png" />
     </item>
     
   </channel>

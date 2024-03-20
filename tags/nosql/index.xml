@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>nosql on Lun Jiang</title>
+    <link>https://challenai.github.io/tags/nosql/</link>
+    <description>Recent content in nosql on Lun Jiang</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>© 2023 Lun Jiang</copyright>
+    <lastBuildDate>Sat, 15 May 2021 12:08:19 +0800</lastBuildDate><atom:link href="https://challenai.github.io/tags/nosql/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>分布式键值存储系统的设计与实现</title>
+      <link>https://challenai.github.io/paper/kvstore/</link>
+      <pubDate>Sat, 15 May 2021 12:08:19 +0800</pubDate>
+      
+      <guid>https://challenai.github.io/paper/kvstore/</guid>
+      <description>键值数据库数据分片的方法通常有根据键的范围分片和根据键的散列分片，根据键的范围分片通常给每个分片指定一块连续的键范围，然后将特定键保存到指定分片。根据键的散列分片则有助于数据的平衡分配，避免出现热点，但是也丧失了高效范围查询的能力。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://challenai.github.io/paper/kvstore/cover.png" />
+    </item>
+    
+  </channel>
+</rss>

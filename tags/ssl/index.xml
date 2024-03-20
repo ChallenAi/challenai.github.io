@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SSL on Lun Jiang</title>
+    <link>https://challenai.github.io/tags/ssl/</link>
+    <description>Recent content in SSL on Lun Jiang</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>© 2023 Lun Jiang</copyright>
+    <lastBuildDate>Thu, 22 Apr 2021 12:08:19 +0800</lastBuildDate><atom:link href="https://challenai.github.io/tags/ssl/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>HTTPS/SSL/TLS</title>
+      <link>https://challenai.github.io/contribute/https/</link>
+      <pubDate>Thu, 22 Apr 2021 12:08:19 +0800</pubDate>
+      
+      <guid>https://challenai.github.io/contribute/https/</guid>
+      <description>HTTPS 证书申请，编码调用证书和 nginx 配置</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://challenai.github.io/contribute/https/cover.jpg" />
+    </item>
+    
+  </channel>
+</rss>

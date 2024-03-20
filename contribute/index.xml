@@ -6,6 +6,7 @@
     <description>Recent content in Code Space on Lun Jiang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
+    <copyright>© 2023 Lun Jiang</copyright>
     <lastBuildDate>Mon, 13 Jun 2022 20:55:37 +0800</lastBuildDate><atom:link href="https://challenai.github.io/contribute/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Build Cache from Scratch: 1. initialize project</title>
@@ -13,7 +14,8 @@
       <pubDate>Sat, 18 Mar 2023 14:32:19 +0800</pubDate>
       
       <guid>https://challenai.github.io/contribute/cache/wtfcache1/</guid>
-      <description>build a high performance from scratch.</description>
+      <description>build a high performance cache from scratch.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://challenai.github.io/contribute/cache/wtfcache1/cover.jpg" />
     </item>
     
     <item>
@@ -23,6 +25,7 @@
       
       <guid>https://challenai.github.io/contribute/storage/</guid>
       <description>work in progress</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://challenai.github.io/contribute/storage/cover.webp" />
     </item>
     
     <item>
@@ -32,6 +35,7 @@
       
       <guid>https://challenai.github.io/contribute/kube/apiserver/</guid>
       <description>placeholder</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://challenai.github.io/contribute/kube/apiserver/cover.png" />
     </item>
     
     <item>
@@ -40,7 +44,8 @@
       <pubDate>Mon, 13 Feb 2023 18:08:19 +0800</pubDate>
       
       <guid>https://challenai.github.io/contribute/kube/controller/</guid>
-      <description>placeholder</description>
+      <description>Deployment controller is used to specify replicas, rollback</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://challenai.github.io/contribute/kube/controller/cover.png" />
     </item>
     
     <item>
@@ -50,24 +55,7 @@
       
       <guid>https://challenai.github.io/contribute/nats/</guid>
       <description>Message Queue is a separate server to store message with FIFO sequence. Nats is a high performance message queue written in golang, it introduces some interesting ideas like connectivity, edge</description>
-    </item>
-    
-    <item>
-      <title>Container: Namespace, Cgroups and Shipping</title>
-      <link>https://challenai.github.io/contribute/container/</link>
-      <pubDate>Sun, 12 Feb 2023 22:00:39 +0800</pubDate>
-      
-      <guid>https://challenai.github.io/contribute/container/</guid>
-      <description>work in progress</description>
-    </item>
-    
-    <item>
-      <title>(cn) Golang Runtime Introduction</title>
-      <link>https://challenai.github.io/contribute/golang/</link>
-      <pubDate>Sun, 12 Feb 2023 12:08:19 +0800</pubDate>
-      
-      <guid>https://challenai.github.io/contribute/golang/</guid>
-      <description>Todo: Collate</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://challenai.github.io/contribute/nats/cover.jpg" />
     </item>
     
     <item>
@@ -76,7 +64,58 @@
       <pubDate>Sun, 12 Feb 2023 12:08:19 +0800</pubDate>
       
       <guid>https://challenai.github.io/contribute/kube/scheduler/</guid>
-      <description>placeholder</description>
+      <description>Scheduler 在 affinity，taints，resource，os 的基础上，从一组 nodes 中，选择最合适的 node，运行 pod</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://challenai.github.io/contribute/kube/scheduler/cover.png" />
+    </item>
+    
+    <item>
+      <title>有趣的算法题: 嵌套字段解析</title>
+      <link>https://challenai.github.io/contribute/parse/</link>
+      <pubDate>Fri, 22 Oct 2021 18:08:19 +0800</pubDate>
+      
+      <guid>https://challenai.github.io/contribute/parse/</guid>
+      <description>解析消息，消息按逗号分割，一重引号里套两重引号表示转义</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://challenai.github.io/contribute/parse/cover.jpg" />
+    </item>
+    
+    <item>
+      <title>DDIA 读书笔记</title>
+      <link>https://challenai.github.io/contribute/ddia/</link>
+      <pubDate>Wed, 12 May 2021 03:50:19 +0800</pubDate>
+      
+      <guid>https://challenai.github.io/contribute/ddia/</guid>
+      <description>一本讲数据系统的很好的书，CRUD 时可以多翻翻，这里梳理了重点</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://challenai.github.io/contribute/ddia/cover.webp" />
+    </item>
+    
+    <item>
+      <title>Vim 及其配置</title>
+      <link>https://challenai.github.io/contribute/vim/</link>
+      <pubDate>Fri, 23 Apr 2021 22:00:39 +0800</pubDate>
+      
+      <guid>https://challenai.github.io/contribute/vim/</guid>
+      <description>vim 是一种编辑方式，编辑唯一的要求是定位光标，比如调到某函数，修改该函数的参数</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://challenai.github.io/contribute/vim/cover.png" />
+    </item>
+    
+    <item>
+      <title>Docker 命令速查</title>
+      <link>https://challenai.github.io/contribute/docker/</link>
+      <pubDate>Fri, 23 Apr 2021 12:08:19 +0800</pubDate>
+      
+      <guid>https://challenai.github.io/contribute/docker/</guid>
+      <description>Docker 构建和测试镜像工作流: 编写 Dockerfile -&amp;gt; 构建新镜像 build -&amp;gt; run -&amp;gt; stop -&amp;gt; rm</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://challenai.github.io/contribute/docker/cover.jpg" />
+    </item>
+    
+    <item>
+      <title>HTTPS/SSL/TLS</title>
+      <link>https://challenai.github.io/contribute/https/</link>
+      <pubDate>Thu, 22 Apr 2021 12:08:19 +0800</pubDate>
+      
+      <guid>https://challenai.github.io/contribute/https/</guid>
+      <description>HTTPS 证书申请，编码调用证书和 nginx 配置</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://challenai.github.io/contribute/https/cover.jpg" />
     </item>
     
   </channel>

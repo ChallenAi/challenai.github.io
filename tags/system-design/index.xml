@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>system design on Lun Jiang</title>
+    <link>https://challenai.github.io/tags/system-design/</link>
+    <description>Recent content in system design on Lun Jiang</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>© 2023 Lun Jiang</copyright>
+    <lastBuildDate>Wed, 12 May 2021 03:50:19 +0800</lastBuildDate><atom:link href="https://challenai.github.io/tags/system-design/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DDIA 读书笔记</title>
+      <link>https://challenai.github.io/contribute/ddia/</link>
+      <pubDate>Wed, 12 May 2021 03:50:19 +0800</pubDate>
+      
+      <guid>https://challenai.github.io/contribute/ddia/</guid>
+      <description>一本讲数据系统的很好的书，CRUD 时可以多翻翻，这里梳理了重点</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://challenai.github.io/contribute/ddia/cover.webp" />
+    </item>
+    
+  </channel>
+</rss>

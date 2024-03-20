@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>docker on Lun Jiang</title>
+    <link>https://challenai.github.io/tags/docker/</link>
+    <description>Recent content in docker on Lun Jiang</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>© 2023 Lun Jiang</copyright>
+    <lastBuildDate>Fri, 23 Apr 2021 12:08:19 +0800</lastBuildDate><atom:link href="https://challenai.github.io/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Docker 命令速查</title>
+      <link>https://challenai.github.io/contribute/docker/</link>
+      <pubDate>Fri, 23 Apr 2021 12:08:19 +0800</pubDate>
+      
+      <guid>https://challenai.github.io/contribute/docker/</guid>
+      <description>Docker 构建和测试镜像工作流: 编写 Dockerfile -&amp;gt; 构建新镜像 build -&amp;gt; run -&amp;gt; stop -&amp;gt; rm</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://challenai.github.io/contribute/docker/cover.jpg" />
+    </item>
+    
+  </channel>
+</rss>
