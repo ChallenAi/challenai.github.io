@@ -8,14 +8,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   
-  <title>Build Cache from Scratch: 1. introduction &middot; Lun Jiang</title>
-  <meta name="title" content="Build Cache from Scratch: 1. introduction &middot; Lun Jiang" />
+  <title>Build Cache from Scratch: 3. Cache core implementation &middot; Lun Jiang</title>
+  <meta name="title" content="Build Cache from Scratch: 3. Cache core implementation &middot; Lun Jiang" />
   
   <meta name="description" content="build a high performance cache from scratch." />
   <meta name="keywords" content="cache, distributed system, storage, protocol, code, " />
   
   
-  <link rel="canonical" href="https://challenai.github.io/contribute/cache/wtfcache1/" />
+  <link rel="canonical" href="https://challenai.github.io/contribute/cache/wtfcache3/" />
   
   
   
@@ -60,18 +60,18 @@
   
   
   
-  <meta property="og:title" content="Build Cache from Scratch: 1. introduction" />
+  <meta property="og:title" content="Build Cache from Scratch: 3. Cache core implementation" />
 <meta property="og:description" content="build a high performance cache from scratch." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://challenai.github.io/contribute/cache/wtfcache1/" /><meta property="og:image" content="https://challenai.github.io/contribute/cache/wtfcache1/cover.jpg" /><meta property="article:section" content="contribute" />
-<meta property="article:published_time" content="2023-03-18T14:32:19+08:00" />
-<meta property="article:modified_time" content="2023-03-18T14:32:19+08:00" />
-<meta property="og:see_also" content="https://challenai.github.io/contribute/cache/wtfcache5/" /><meta property="og:see_also" content="https://challenai.github.io/contribute/cache/wtfcache4/" /><meta property="og:see_also" content="https://challenai.github.io/contribute/cache/wtfcache3/" /><meta property="og:see_also" content="https://challenai.github.io/contribute/cache/wtfcache2/" />
+<meta property="og:url" content="https://challenai.github.io/contribute/cache/wtfcache3/" /><meta property="og:image" content="https://challenai.github.io/contribute/cache/wtfcache3/cover.jpg" /><meta property="article:section" content="contribute" />
+<meta property="article:published_time" content="2023-06-16T11:52:11+08:00" />
+<meta property="article:modified_time" content="2023-06-16T11:52:11+08:00" />
+<meta property="og:see_also" content="https://challenai.github.io/contribute/cache/wtfcache5/" /><meta property="og:see_also" content="https://challenai.github.io/contribute/cache/wtfcache4/" /><meta property="og:see_also" content="https://challenai.github.io/contribute/cache/wtfcache2/" /><meta property="og:see_also" content="https://challenai.github.io/contribute/cache/wtfcache1/" />
 
 
 
   <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content="https://challenai.github.io/contribute/cache/wtfcache1/cover.jpg" /><meta name="twitter:title" content="Build Cache from Scratch: 1. introduction"/>
+<meta name="twitter:image" content="https://challenai.github.io/contribute/cache/wtfcache3/cover.jpg" /><meta name="twitter:title" content="Build Cache from Scratch: 3. Cache core implementation"/>
 <meta name="twitter:description" content="build a high performance cache from scratch."/>
 
   
@@ -80,26 +80,26 @@
     "@context": "https://schema.org",
     "@type": "Article",
     "articleSection": "Code Space",
-    "name": "Build Cache from Scratch: 1. introduction",
-    "headline": "Build Cache from Scratch: 1. introduction",
+    "name": "Build Cache from Scratch: 3. Cache core implementation",
+    "headline": "Build Cache from Scratch: 3. Cache core implementation",
     
     "abstract": "build a high performance cache from scratch.",
     "inLanguage": "en",
-    "url" : "https:\/\/challenai.github.io\/contribute\/cache\/wtfcache1\/",
+    "url" : "https:\/\/challenai.github.io\/contribute\/cache\/wtfcache3\/",
     "author" : {
       "@type": "Person",
       "name": "Lun Jiang"
     },
     "copyrightYear": "2023",
-    "dateCreated": "2023-03-18T14:32:19\u002b08:00",
-    "datePublished": "2023-03-18T14:32:19\u002b08:00",
+    "dateCreated": "2023-06-16T11:52:11\u002b08:00",
+    "datePublished": "2023-06-16T11:52:11\u002b08:00",
     
-    "dateModified": "2023-03-18T14:32:19\u002b08:00",
+    "dateModified": "2023-06-16T11:52:11\u002b08:00",
     
     "keywords": ["cache","distributed system","storage","protocol","code"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "112"
+    "wordCount": "529"
   }]
   </script>
 
@@ -573,7 +573,7 @@
 
     
     <div class="fixed inset-x-0 top-0 h-[800px] single_hero_background nozoom"
-    style="background-image:url(/contribute/cache/wtfcache1/cover_hu3d03a01dcc18bc5be0e67db3d8d209a6_48732_1200x0_resize_q75_box.jpg);">
+    style="background-image:url(/contribute/cache/wtfcache3/cover_hu3d03a01dcc18bc5be0e67db3d8d209a6_48732_1200x0_resize_q75_box.jpg);">
     
 
 
@@ -626,8 +626,8 @@
   <li class="inline hidden">
     <a
       class="hover:underline decoration-neutral-300 dark:underline-neutral-600"
-      href="/contribute/cache/wtfcache1/"
-      >Build Cache from Scratch: 1. introduction</a
+      href="/contribute/cache/wtfcache3/"
+      >Build Cache from Scratch: 3. Cache core implementation</a
     ><span class="px-1 text-primary-500">/</span>
   </li>
 
@@ -636,7 +636,7 @@
 
     
     <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
-      Build Cache from Scratch: 1. introduction
+      Build Cache from Scratch: 3. Cache core implementation
     </h1>
     <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
       
@@ -681,7 +681,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2023-03-18 14:32:19 &#43;0800 &#43;0800">18 March 2023</time><span class="px-2 text-primary-500">&middot;</span><span>112 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">1 min</span>
+  <time datetime="2023-06-16 11:52:11 &#43;0800 &#43;0800">16 June 2023</time><span class="px-2 text-primary-500">&middot;</span><span>529 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">3 mins</span>
   
 
   
@@ -727,8 +727,10 @@
     class="min-w-[220px] py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#prerequisition">prerequisition</a></li>
-    <li><a href="#introduce">introduce</a></li>
+    <li><a href="#what-is-a-cache-how-to-describe-a-cache">What is a cache, how to describe a cache</a></li>
+    <li><a href="#implement-the-real-internal-structure-in-memory">Implement the real internal structure: in memory</a></li>
+    <li><a href="#implement-the-real-internal-structure-disk-oriented">Implement the real internal structure: disk oriented</a></li>
+    <li><a href="#implement-the-real-internal-structure-cloud-persisted">Implement the real internal structure: cloud persisted</a></li>
   </ul>
 </nav>
   </div>
@@ -742,8 +744,10 @@
     class="py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#prerequisition">prerequisition</a></li>
-    <li><a href="#introduce">introduce</a></li>
+    <li><a href="#what-is-a-cache-how-to-describe-a-cache">What is a cache, how to describe a cache</a></li>
+    <li><a href="#implement-the-real-internal-structure-in-memory">Implement the real internal structure: in memory</a></li>
+    <li><a href="#implement-the-real-internal-structure-disk-oriented">Implement the real internal structure: disk oriented</a></li>
+    <li><a href="#implement-the-real-internal-structure-cloud-persisted">Implement the real internal structure: cloud persisted</a></li>
   </ul>
 </nav>
   </div>
@@ -785,9 +789,7 @@
     
     <div
         class="py-1 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
-        <a href="https://challenai.github.io/contribute/cache/wtfcache3/">
-            Part : Build Cache from Scratch: 3. Cache core implementation
-        </a>
+        Part : This Article
     </div>
     
     
@@ -803,7 +805,9 @@
     
     <div
         class="py-1 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
-        Part : This Article
+        <a href="https://challenai.github.io/contribute/cache/wtfcache1/">
+            Part : Build Cache from Scratch: 1. introduction
+        </a>
     </div>
     
     
@@ -820,54 +824,110 @@
 </blockquote>
 
 
-<h2 class="relative group">prerequisition 
-    <div id="prerequisition" class="anchor"></div>
+<h2 class="relative group">What is a cache, how to describe a cache 
+    <div id="what-is-a-cache-how-to-describe-a-cache" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#prerequisition" aria-label="Anchor">#</a>
+            style="text-decoration-line: none !important;" href="#what-is-a-cache-how-to-describe-a-cache" aria-label="Anchor">#</a>
     </span>        
     
 </h2>
-<ul>
-<li>editor like goland, vim or vscode.</li>
-<li>git</li>
-<li>go environment</li>
-<li>*nix environment</li>
-</ul>
+<p>cache is somewhere we can store data,
+we usually find data by it&rsquo;s ID, or key,
+thus we need to store a key-value pair when we store data.
+at last, we have the basic requirement of removing a specific key-value pair.</p>
+<p>As a result, or cache should look like as follows:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">cache:
+</span></span><span class="line"><span class="cl">  - set(key, value)
+</span></span><span class="line"><span class="cl">  - get(key) -&gt; value
+</span></span><span class="line"><span class="cl">  - delete(key)
+</span></span></code></pre></div><p>according to our design, we get the abstract interface.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="kd">type</span> <span class="nx">Cache</span> <span class="kd">interface</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="nf">Get</span><span class="p">(</span><span class="nx">key</span> <span class="kt">string</span><span class="p">)</span> <span class="p">([]</span><span class="kt">byte</span><span class="p">,</span> <span class="kt">error</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">	<span class="nf">Set</span><span class="p">(</span><span class="nx">key</span> <span class="kt">string</span><span class="p">,</span> <span class="nx">value</span> <span class="p">[]</span><span class="kt">byte</span><span class="p">)</span> <span class="kt">error</span>
+</span></span><span class="line"><span class="cl">	<span class="nf">Del</span><span class="p">(</span><span class="nx">key</span> <span class="kt">string</span><span class="p">)</span> <span class="p">(</span><span class="kt">bool</span><span class="p">,</span> <span class="kt">error</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>We design our cache abstarct in <code>cache</code> folder.</p>
 
 
-<h2 class="relative group">introduce 
-    <div id="introduce" class="anchor"></div>
+<h2 class="relative group">Implement the real internal structure: in memory 
+    <div id="implement-the-real-internal-structure-in-memory" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#introduce" aria-label="Anchor">#</a>
+            style="text-decoration-line: none !important;" href="#implement-the-real-internal-structure-in-memory" aria-label="Anchor">#</a>
     </span>        
     
 </h2>
-<p>purpose:</p>
-<ul>
-<li>easy to understand, step by step. no one left behind.</li>
-<li>build a runnable and high performance prototype.</li>
-<li>introduce the core concepts for storage application.</li>
-<li>provide runnable code for every step in tutorial.</li>
-</ul>
-<p>features:</p>
-<ul>
-<li>provide key-value read and write ability.</li>
-<li>expose popular HTTP restful API.</li>
-<li>expose redis like TCP interface for users.</li>
-<li>collect some runtime stats and metrics.</li>
-<li>keys expiration and eviction.</li>
-<li>unit and e2e test.</li>
-<li>support persistence, free from data loss.</li>
-<li>introduce transaction and its implementation.</li>
-<li>introduce some critical methods to improve and measure performance.</li>
-<li>introduce some STOA or cutting edge concepts.</li>
-</ul>
+<p>we find the structure of cache looks like hashmap, and of course, we can use hashmap to store our kv pairs.
+but there&rsquo;re something we need to pay attention, our cache should be able to accessed by more than one user simutaneously, so we need a thread-safe hashmap, so our choice is <code>sync.Map</code>.</p>
+<p>The core implementation is showed as bellow:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="kd">type</span> <span class="nx">MemCache</span> <span class="kd">struct</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="nx">sync</span><span class="p">.</span><span class="nx">Map</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">func</span> <span class="p">(</span><span class="nx">mc</span> <span class="o">*</span><span class="nx">MemCache</span><span class="p">)</span> <span class="nf">Get</span><span class="p">(</span><span class="nx">k</span> <span class="kt">string</span><span class="p">)</span> <span class="p">([]</span><span class="kt">byte</span><span class="p">,</span> <span class="kt">error</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="c1">// sync.Map.Load(k)
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">func</span> <span class="p">(</span><span class="nx">mc</span> <span class="o">*</span><span class="nx">MemCache</span><span class="p">)</span> <span class="nf">Set</span><span class="p">(</span><span class="nx">k</span> <span class="kt">string</span><span class="p">,</span> <span class="nx">v</span> <span class="p">[]</span><span class="kt">byte</span><span class="p">)</span> <span class="kt">error</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="c1">// sync.Map.LoadOrStore(k, v)
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">func</span> <span class="p">(</span><span class="nx">mc</span> <span class="o">*</span><span class="nx">MemCache</span><span class="p">)</span> <span class="nf">Del</span><span class="p">(</span><span class="nx">k</span> <span class="kt">string</span><span class="p">)</span> <span class="p">(</span><span class="kt">bool</span><span class="p">,</span> <span class="kt">error</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="c1">// syc.Map.LoadAndDelete(k)
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span>
+</span></span></code></pre></div><p>We implement our memory cache in <code>mem</code> folder.</p>
+
+
+<h2 class="relative group">Implement the real internal structure: disk oriented 
+    <div id="implement-the-real-internal-structure-disk-oriented" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#implement-the-real-internal-structure-disk-oriented" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+<p>to persist data in the disk, most of the time the database is the best choice,<br>
+because there are quiet a lot of different types of database which provide different features currently,
+it&rsquo;s unnecessary to build a whole new one, and the internal structure is not really easy to understand.
+In our case, we need a key-value based database, there are different options like LevelDB, RocksDB, Riak, Cassandra, DynamoDB, BoltDB, BadgerDB.
+However, the critical feature for us is a tiny high performance single node storage engine. Thus the best option should be RocksDB, we don&rsquo;t need distributed feature, we don&rsquo;t have really huge data for a cache application, we hope it to be real-time, and we have a golang version RocksDB alternative which provide high performance, it&rsquo;s called BadgerDB, and of the most value is that this engine is written in golang, it&rsquo;s extremly easy to maintain, you can find everyone can run it with <code>go run main.go</code>, but with RocksDB, you don&rsquo;t know how to maintain them properly since they have so many dependencies which you need to install munually, adn disastrous C++ code.</p>
+<p>The core implementation is showed as bellow:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="kd">type</span> <span class="nx">Store</span> <span class="kd">struct</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="nx">db</span> <span class="o">*</span><span class="nx">xxDB</span> <span class="c1">// for example, BadgerDB, or even mysql...
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">func</span> <span class="p">(</span><span class="nx">s</span> <span class="o">*</span><span class="nx">Store</span><span class="p">)</span> <span class="nf">Get</span><span class="p">(</span><span class="nx">k</span> <span class="kt">string</span><span class="p">)</span> <span class="p">([]</span><span class="kt">byte</span><span class="p">,</span> <span class="kt">error</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// db.Get(k)
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">func</span> <span class="p">(</span><span class="nx">s</span> <span class="o">*</span><span class="nx">Store</span><span class="p">)</span> <span class="nf">Set</span><span class="p">(</span><span class="nx">k</span> <span class="kt">string</span><span class="p">,</span> <span class="nx">v</span> <span class="p">[]</span><span class="kt">byte</span><span class="p">)</span> <span class="kt">error</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// db.Set(k)
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">func</span> <span class="p">(</span><span class="nx">s</span> <span class="o">*</span><span class="nx">Store</span><span class="p">)</span> <span class="nf">Del</span><span class="p">(</span><span class="nx">k</span> <span class="kt">string</span><span class="p">)</span> <span class="p">(</span><span class="kt">bool</span><span class="p">,</span> <span class="kt">error</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// db.Delete(k)
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span>
+</span></span></code></pre></div><p>We implement our persisted cache in <code>store</code> folder.</p>
+
+
+<h2 class="relative group">Implement the real internal structure: cloud persisted 
+    <div id="implement-the-real-internal-structure-cloud-persisted" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#implement-the-real-internal-structure-cloud-persisted" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+<p>If you understand all the steps above, I believe it&rsquo;s not difficult for you to bridge the interface to cloud platform. Therefore it&rsquo;s an extra task for you. If you need some assistance, feel free to email me.</p>
 
         </div>
                 
@@ -901,9 +961,7 @@
     
     <div
         class="py-1 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
-        <a href="https://challenai.github.io/contribute/cache/wtfcache3/">
-            Part : Build Cache from Scratch: 3. Cache core implementation
-        </a>
+        Part : This Article
     </div>
     
     
@@ -919,7 +977,9 @@
     
     <div
         class="py-1 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
-        Part : This Article
+        <a href="https://challenai.github.io/contribute/cache/wtfcache1/">
+            Part : Build Cache from Scratch: 1. introduction
+        </a>
     </div>
     
     
@@ -935,7 +995,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://challenai.github.io/contribute/cache/wtfcache1/&amp;title=Build%20Cache%20from%20Scratch:%201.%20introduction"
+      href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://challenai.github.io/contribute/cache/wtfcache3/&amp;title=Build%20Cache%20from%20Scratch:%203.%20Cache%20core%20implementation"
       title="Share on LinkedIn"
       aria-label="Share on LinkedIn"
       >
@@ -954,7 +1014,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://twitter.com/intent/tweet/?url=https://challenai.github.io/contribute/cache/wtfcache1/&amp;text=Build%20Cache%20from%20Scratch:%201.%20introduction"
+      href="https://twitter.com/intent/tweet/?url=https://challenai.github.io/contribute/cache/wtfcache3/&amp;text=Build%20Cache%20from%20Scratch:%203.%20Cache%20core%20implementation"
       title="Tweet on Twitter"
       aria-label="Tweet on Twitter"
       >
@@ -972,7 +1032,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://reddit.com/submit/?url=https://challenai.github.io/contribute/cache/wtfcache1/&amp;resubmit=true&amp;title=Build%20Cache%20from%20Scratch:%201.%20introduction"
+      href="https://reddit.com/submit/?url=https://challenai.github.io/contribute/cache/wtfcache3/&amp;resubmit=true&amp;title=Build%20Cache%20from%20Scratch:%203.%20Cache%20core%20implementation"
       title="Submit to Reddit"
       aria-label="Submit to Reddit"
       >
@@ -991,7 +1051,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://pinterest.com/pin/create/bookmarklet/?url=https://challenai.github.io/contribute/cache/wtfcache1/&amp;description=Build%20Cache%20from%20Scratch:%201.%20introduction"
+      href="https://pinterest.com/pin/create/bookmarklet/?url=https://challenai.github.io/contribute/cache/wtfcache3/&amp;description=Build%20Cache%20from%20Scratch:%203.%20Cache%20core%20implementation"
       title="Pin on Pinterest"
       aria-label="Pin on Pinterest"
       >
@@ -1010,7 +1070,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://www.facebook.com/sharer/sharer.php?u=https://challenai.github.io/contribute/cache/wtfcache1/&amp;quote=Build%20Cache%20from%20Scratch:%201.%20introduction"
+      href="https://www.facebook.com/sharer/sharer.php?u=https://challenai.github.io/contribute/cache/wtfcache3/&amp;quote=Build%20Cache%20from%20Scratch:%203.%20Cache%20core%20implementation"
       title="Share on Facebook"
       aria-label="Share on Facebook"
       >
@@ -1029,7 +1089,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="mailto:?body=https://challenai.github.io/contribute/cache/wtfcache1/&amp;subject=Build%20Cache%20from%20Scratch:%201.%20introduction"
+      href="mailto:?body=https://challenai.github.io/contribute/cache/wtfcache3/&amp;subject=Build%20Cache%20from%20Scratch:%203.%20Cache%20core%20implementation"
       title="Send via email"
       aria-label="Send via email"
       >
@@ -1048,7 +1108,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://api.whatsapp.com/send?text=https://challenai.github.io/contribute/cache/wtfcache1/&amp;resubmit=true&amp;title=Build%20Cache%20from%20Scratch:%201.%20introduction"
+      href="https://api.whatsapp.com/send?text=https://challenai.github.io/contribute/cache/wtfcache3/&amp;resubmit=true&amp;title=Build%20Cache%20from%20Scratch:%203.%20Cache%20core%20implementation"
       title=""
       aria-label=""
       >
@@ -1067,7 +1127,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://t.me/share/url?url=https://challenai.github.io/contribute/cache/wtfcache1/&amp;resubmit=true&amp;title=Build%20Cache%20from%20Scratch:%201.%20introduction"
+      href="https://t.me/share/url?url=https://challenai.github.io/contribute/cache/wtfcache3/&amp;resubmit=true&amp;title=Build%20Cache%20from%20Scratch:%203.%20Cache%20core%20implementation"
       title=""
       aria-label=""
       >
@@ -1090,8 +1150,8 @@
      
     
      <script>
-        var oid = "views_contribute\/cache\/wtfcache1\/index.md"
-        var oid_likes = "likes_contribute\/cache\/wtfcache1\/index.md"
+        var oid = "views_contribute\/cache\/wtfcache3\/index.md"
+        var oid_likes = "likes_contribute\/cache\/wtfcache3\/index.md"
       </script>
       
       
@@ -1111,7 +1171,7 @@
       <div class="flex justify-between pt-3">
         <span>
           
-            <a class="flex group mr-3" href="/contribute/storage/">
+            <a class="flex group mr-3" href="/contribute/cache/wtfcache2/">
               <span
                 class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
                 >&larr;</span
@@ -1123,11 +1183,11 @@
               <span class="flex flex-col">
                 <span
                   class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-                  >Storage Engine: from Primitives to Implementation</span
+                  >Build Cache from Scratch: 2. initialize project</span
                 >
                 <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
                   
-                    <time datetime="2023-02-16 22:00:39 &#43;0800 &#43;0800">16 February 2023</time>
+                    <time datetime="2023-06-16 11:32:11 &#43;0800 &#43;0800">16 June 2023</time>
                   
                 </span>
               </span>
@@ -1136,15 +1196,15 @@
         </span>
         <span>
           
-            <a class="flex text-right group ml-3" href="/contribute/cache/wtfcache2/">
+            <a class="flex text-right group ml-3" href="/contribute/cache/wtfcache4/">
               <span class="flex flex-col">
                 <span
                   class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-                  >Build Cache from Scratch: 2. initialize project</span
+                  >Build Cache from Scratch: 4. HTTP cache server</span
                 >
                 <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
                   
-                    <time datetime="2023-06-16 11:32:11 &#43;0800 &#43;0800">16 June 2023</time>
+                    <time datetime="2023-06-16 12:12:11 &#43;0800 &#43;0800">16 June 2023</time>
                   
                 </span>
               </span>
