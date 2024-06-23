@@ -99,7 +99,7 @@
     "keywords": ["cache","distributed system","storage","protocol","code"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "105"
+    "wordCount": "517"
   }]
   </script>
 
@@ -681,7 +681,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-06-17 15:20:29 &#43;0800 &#43;0800">17 June 2024</time><span class="px-2 text-primary-500">&middot;</span><span>105 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">1 min</span>
+  <time datetime="2024-06-17 15:20:29 &#43;0800 &#43;0800">17 June 2024</time><span class="px-2 text-primary-500">&middot;</span><span>517 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">3 mins</span>
   
 
   
@@ -728,6 +728,9 @@
     <nav id="TableOfContents">
   <ul>
     <li><a href="#expose-high-performance-tcp-api-for-users">Expose high performance TCP API for users</a></li>
+    <li><a href="#redis-resp-v3">redis RESP V3</a></li>
+    <li><a href="#build-basic-server">build basic server</a></li>
+    <li><a href="#handle-bytes-according-our-protocol">handle bytes according our protocol</a></li>
   </ul>
 </nav>
   </div>
@@ -742,6 +745,9 @@
     <nav id="TableOfContents">
   <ul>
     <li><a href="#expose-high-performance-tcp-api-for-users">Expose high performance TCP API for users</a></li>
+    <li><a href="#redis-resp-v3">redis RESP V3</a></li>
+    <li><a href="#build-basic-server">build basic server</a></li>
+    <li><a href="#handle-bytes-according-our-protocol">handle bytes according our protocol</a></li>
   </ul>
 </nav>
   </div>
@@ -829,13 +835,115 @@
     
 </h2>
 <p>Different from HTTP protocol, we build TCP service from scratch without any framework,<br>
-The main reason is that the TCP only serve in the specific high performance case,
-the protocol is not actually standardlized due to the consideration of performance.</p>
-<p>Since it&rsquo;s a cache application, we can communicate with client via redis compatable protocal,
+The main reason is that the TCP only serves in the specific high performance case,
+the protocol is not actually standardized due to the consideration of performance.</p>
+<p>Since it&rsquo;s a cache application, we can communicate with the client via redis compatible protocol,
 so that the redis client can talk to our application directly.
-By the way, It&rsquo;s not difficult to design a new protocol for special use case, but it&rsquo;s unnecessary to repeat.</p>
-<p>The current Redis protocol is called RESP v3.</p>
+By the way, It&rsquo;s not difficult to design a new protocol for a special use case, but it&rsquo;s unnecessary to repeat.</p>
+<p>The current Redis protocol is called RESP V3 (Redis Serialization Protocol, Version 3).</p>
 
+
+<h2 class="relative group">redis RESP V3 
+    <div id="redis-resp-v3" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#redis-resp-v3" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+<p>Our cache application provides 3 interfaces: get/set/delete.<br>
+Therefore we need to provide 3 commands according to RESP.</p>
+<p>The set request should be <code>SET mykey myvalue\r\n</code>.
+The successful set response should be <code>+OK\r\n</code>.</p>
+<p>The get request should be <code>GET mykey\r\n</code>.
+The successful get response should be <code>$7\r\nmyvalue\r\n</code>.</p>
+<p>The delete request should be <code>DEL mykey\r\n</code>.
+The successful delete response should be <code>+OK\r\n</code>.</p>
+<p>The failed response with error message should be <code>-ERR xxx\r\n</code>.</p>
+
+
+<h2 class="relative group">build basic server 
+    <div id="build-basic-server" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#build-basic-server" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+<p>In the case of someone who hasn&rsquo;t tried TCP programming and feels scared,<br>
+actually, there are no magic inside a TCP connection, it&rsquo;s pretty standard.
+<br>
+If you program with C, you need to create a socket, bind socket to an address, listen and accept.<br>
+However I will tell you it&rsquo;s all bullshit, there are history reasons, the socket concept and all the details are inherited from system calls.<br>
+The program itself doesn&rsquo;t provide any convenience compared with some modern languages like Rust, Go or node.js(2012).<br>
+The truth is that, in 99% cases, we create the servers with some template code even in C/C++,<br>
+because most of the time we create the TCP server, not local unix domain socket server,
+it&rsquo;s unnecessary to consider too much about hundreads of different parameters and error case,<br>
+it&rsquo;s all covered by language itself.<br>
+<br>
+In golang, we need to listen to some addresses.
+And start accepting connections.
+It&rsquo;s simple, but no performance loss because of the internal battery: epoll inside.
+And of course, less bugs.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="c1">// step 1
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">server</span><span class="p">,</span> <span class="nx">err</span> <span class="o">:=</span> <span class="nx">net</span><span class="p">.</span><span class="nf">Listen</span><span class="p">(</span><span class="s">&#34;tcp&#34;</span><span class="p">,</span> <span class="nx">addr</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// handle error
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl"><span class="c1">// step 2
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">for</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="nx">connection</span><span class="p">,</span> <span class="nx">err</span> <span class="o">:=</span> <span class="nx">server</span><span class="p">.</span><span class="nf">Accept</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// handle error
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span>
+</span></span></code></pre></div>
+
+<h2 class="relative group">handle bytes according our protocol 
+    <div id="handle-bytes-according-our-protocol" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#handle-bytes-according-our-protocol" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+<p>We don&rsquo;t have authorization for connections,  therefore we can handle requests from the first bytes.<br>
+The protocol is line based, therefore we can create a buffer utils to read line and write line, read and write bytes.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="kd">type</span> <span class="nx">Buffer</span> <span class="kd">struct</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">w</span> <span class="o">*</span><span class="nx">bufio</span><span class="p">.</span><span class="nx">Writer</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">r</span> <span class="o">*</span><span class="nx">bufio</span><span class="p">.</span><span class="nx">Reader</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">func</span> <span class="p">(</span><span class="nx">c</span> <span class="o">*</span><span class="nx">Buffer</span><span class="p">)</span> <span class="nf">ReadLine</span><span class="p">()</span> <span class="p">(</span><span class="kt">string</span><span class="p">,</span> <span class="kt">error</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// read line with standard library api
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nx">line</span><span class="p">,</span> <span class="nx">err</span> <span class="o">:=</span> <span class="nx">c</span><span class="p">.</span><span class="nx">r</span><span class="p">.</span><span class="nf">ReadSlice</span><span class="p">(</span><span class="nx">seperator</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">func</span> <span class="nf">WriteLine</span><span class="p">(</span><span class="nx">l</span> <span class="kt">string</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// write line with standard library api
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nx">c</span><span class="p">.</span><span class="nx">w</span><span class="p">.</span><span class="nf">Write</span><span class="p">(</span><span class="nx">l</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>As a result, our TCP server could simply run as follows.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="kd">type</span> <span class="nx">Client</span> <span class="kd">struct</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="nx">buf</span> <span class="o">*</span><span class="nx">buffer</span><span class="p">.</span><span class="nx">Buffer</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">func</span> <span class="p">(</span><span class="nx">c</span> <span class="o">*</span><span class="nx">Client</span><span class="p">)</span> <span class="nf">Read</span><span class="p">()</span> <span class="kt">error</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">line</span><span class="p">,</span> <span class="nx">err</span> <span class="o">:=</span> <span class="nx">c</span><span class="p">.</span><span class="nx">buf</span><span class="p">.</span><span class="nf">ReadLine</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="k">switch</span> <span class="nx">start</span> <span class="nx">word</span> <span class="nx">of</span> <span class="nx">line</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">      <span class="k">case</span> <span class="s">&#34;GET&#34;</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// handleGetRequst
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>      <span class="k">case</span> <span class="s">&#34;SET&#34;</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// handleSetRequst
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>      <span class="k">case</span> <span class="s">&#34;DEL&#34;</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// handleDelRequst
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>      <span class="k">default</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// error
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span>
+</span></span></code></pre></div>
         </div>
                 
         

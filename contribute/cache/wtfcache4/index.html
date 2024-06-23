@@ -99,7 +99,7 @@
     "keywords": ["cache","distributed system","storage","protocol","code"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "180"
+    "wordCount": "181"
   }]
   </script>
 
@@ -681,7 +681,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-06-17 12:12:11 &#43;0800 &#43;0800">17 June 2024</time><span class="px-2 text-primary-500">&middot;</span><span>180 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">1 min</span>
+  <time datetime="2024-06-17 12:12:11 &#43;0800 &#43;0800">17 June 2024</time><span class="px-2 text-primary-500">&middot;</span><span>181 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">1 min</span>
   
 
   
@@ -829,12 +829,12 @@
     
 </h2>
 <p>There are different ways to expose HTTP API in golang,
-for examples, the <code>net/http</code>, <code>fasthttp</code>,
+for example, the <code>net/http</code>, <code>fasthttp</code>,
 we can use some high level web framework to expose too: <code>gin</code>, <code>martini</code>, <code>echo</code>.</p>
-<p>The <code>fasthttp</code> provide competitive performance when the throughput is higher,
+<p>The <code>fasthttp</code> provides competitive performance when the throughput is higher,
 The web framework is much easier to use and maintain.</p>
 <p>In this project, we employ the basic <code>net/http</code> from golang standard library.
-The only thing we need to to is implement <code>func Handle(w http.ResponseWriter, req *http.Request)</code> in the case of standard library.
+The only thing we need to to do is implement <code>func Handle(w http.ResponseWriter, req *http.Request)</code> in the case of standard library.
 Therefore, we can route our request as follows:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="kd">func</span> <span class="nf">CacheRoute</span><span class="p">(</span><span class="nx">w</span> <span class="nx">http</span><span class="p">.</span><span class="nx">ResponseWriter</span><span class="p">,</span> <span class="nx">req</span> <span class="o">*</span><span class="nx">http</span><span class="p">.</span><span class="nx">Request</span><span class="p">)</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">	<span class="k">switch</span> <span class="nx">req</span><span class="p">.</span><span class="nx">Method</span> <span class="p">{</span>

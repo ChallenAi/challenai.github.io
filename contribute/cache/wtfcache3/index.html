@@ -99,7 +99,7 @@
     "keywords": ["cache","distributed system","storage","protocol","code"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "529"
+    "wordCount": "595"
   }]
   </script>
 
@@ -681,7 +681,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-06-16 11:52:11 &#43;0800 &#43;0800">16 June 2024</time><span class="px-2 text-primary-500">&middot;</span><span>529 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">3 mins</span>
+  <time datetime="2024-06-16 11:52:11 &#43;0800 &#43;0800">16 June 2024</time><span class="px-2 text-primary-500">&middot;</span><span>595 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">3 mins</span>
   
 
   
@@ -834,10 +834,10 @@
     </span>        
     
 </h2>
-<p>cache is somewhere we can store data,
-we usually find data by it&rsquo;s ID, or key,
+<p>cache is somewhere we can store data.
+We usually find data by its ID, or key,
 thus we need to store a key-value pair when we store data.
-at last, we have the basic requirement of removing a specific key-value pair.</p>
+At last, we have the basic requirement of removing a specific key-value pair.</p>
 <p>As a result, or cache should look like as follows:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">cache:
 </span></span><span class="line"><span class="cl">  - set(key, value)
@@ -849,7 +849,7 @@ at last, we have the basic requirement of removing a specific key-value pair.</p
 </span></span><span class="line"><span class="cl">	<span class="nf">Set</span><span class="p">(</span><span class="nx">key</span> <span class="kt">string</span><span class="p">,</span> <span class="nx">value</span> <span class="p">[]</span><span class="kt">byte</span><span class="p">)</span> <span class="kt">error</span>
 </span></span><span class="line"><span class="cl">	<span class="nf">Del</span><span class="p">(</span><span class="nx">key</span> <span class="kt">string</span><span class="p">)</span> <span class="p">(</span><span class="kt">bool</span><span class="p">,</span> <span class="kt">error</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></div><p>We design our cache abstarct in <code>cache</code> folder.</p>
+</span></span></code></pre></div><p>We design our cache abstract in the <code>cache</code> folder.</p>
 
 
 <h2 class="relative group">Implement the real internal structure: in memory 
@@ -862,8 +862,15 @@ at last, we have the basic requirement of removing a specific key-value pair.</p
     </span>        
     
 </h2>
-<p>we find the structure of cache looks like hashmap, and of course, we can use hashmap to store our kv pairs.
-but there&rsquo;re something we need to pay attention, our cache should be able to accessed by more than one user simutaneously, so we need a thread-safe hashmap, so our choice is <code>sync.Map</code>.</p>
+<p>We find the structure of the cache looks like a hashmap,<br>
+and the hashmap provides O(1) time complexity for all our operation: get/set/delete.<br>
+Therefore, we decided to use hashmap to store our kv pairs.<br>
+Notice that our design is to <strong>store</strong> data in a hashmap,<br>
+and if there are some other considerations like performance, we can use some other data structure.<br>
+But there&rsquo;s something we need to pay attention when we use hashmap,<br>
+we don&rsquo;t expect our cache serve only one user at a time, it&rsquo;s not good enough for current world,<br>
+so our cache should handle more than one requests <strong>simutaneously</strong>,
+in another world, we need a <strong>thread-safe</strong> hashmap, so our choice is <code>sync.Map</code>.</p>
 <p>The core implementation is showed as bellow:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="kd">type</span> <span class="nx">MemCache</span> <span class="kd">struct</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">	<span class="nx">sync</span><span class="p">.</span><span class="nx">Map</span>
@@ -880,7 +887,7 @@ but there&rsquo;re something we need to pay attention, our cache should be able 
 </span></span><span class="line"><span class="cl"><span class="kd">func</span> <span class="p">(</span><span class="nx">mc</span> <span class="o">*</span><span class="nx">MemCache</span><span class="p">)</span> <span class="nf">Del</span><span class="p">(</span><span class="nx">k</span> <span class="kt">string</span><span class="p">)</span> <span class="p">(</span><span class="kt">bool</span><span class="p">,</span> <span class="kt">error</span><span class="p">)</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">	<span class="c1">// syc.Map.LoadAndDelete(k)
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span>
-</span></span></code></pre></div><p>We implement our memory cache in <code>mem</code> folder.</p>
+</span></span></code></pre></div><p>We implement our memory cache in the <code>mem</code> folder.</p>
 
 
 <h2 class="relative group">Implement the real internal structure: disk oriented 
@@ -893,12 +900,12 @@ but there&rsquo;re something we need to pay attention, our cache should be able 
     </span>        
     
 </h2>
-<p>to persist data in the disk, most of the time the database is the best choice,<br>
-because there are quiet a lot of different types of database which provide different features currently,
+<p>to <strong>persist data to the disk</strong>, most of the time the database is the best choice,<br>
+because there are quite a lot of different types of database which provide different features currently,
 it&rsquo;s unnecessary to build a whole new one, and the internal structure is not really easy to understand.
-In our case, we need a key-value based database, there are different options like LevelDB, RocksDB, Riak, Cassandra, DynamoDB, BoltDB, BadgerDB.
+In our case, we need <strong>a key-value based database</strong>, there are different options like LevelDB, RocksDB, Riak, Cassandra, DynamoDB, BoltDB, BadgerDB.
 However, the critical feature for us is a tiny high performance single node storage engine. Thus the best option should be RocksDB, we don&rsquo;t need distributed feature, we don&rsquo;t have really huge data for a cache application, we hope it to be real-time, and we have a golang version RocksDB alternative which provide high performance, it&rsquo;s called BadgerDB, and of the most value is that this engine is written in golang, it&rsquo;s extremly easy to maintain, you can find everyone can run it with <code>go run main.go</code>, but with RocksDB, you don&rsquo;t know how to maintain them properly since they have so many dependencies which you need to install munually, adn disastrous C++ code.</p>
-<p>The core implementation is showed as bellow:</p>
+<p>The core implementation is shown as below:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="kd">type</span> <span class="nx">Store</span> <span class="kd">struct</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">	<span class="nx">db</span> <span class="o">*</span><span class="nx">xxDB</span> <span class="c1">// for example, BadgerDB, or even mysql...
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span>
@@ -914,7 +921,7 @@ However, the critical feature for us is a tiny high performance single node stor
 </span></span><span class="line"><span class="cl"><span class="kd">func</span> <span class="p">(</span><span class="nx">s</span> <span class="o">*</span><span class="nx">Store</span><span class="p">)</span> <span class="nf">Del</span><span class="p">(</span><span class="nx">k</span> <span class="kt">string</span><span class="p">)</span> <span class="p">(</span><span class="kt">bool</span><span class="p">,</span> <span class="kt">error</span><span class="p">)</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">    <span class="c1">// db.Delete(k)
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span>
-</span></span></code></pre></div><p>We implement our persisted cache in <code>store</code> folder.</p>
+</span></span></code></pre></div><p>We implement our persisted cache in the <code>store</code> folder.</p>
 
 
 <h2 class="relative group">Implement the real internal structure: cloud persisted 
@@ -927,7 +934,8 @@ However, the critical feature for us is a tiny high performance single node stor
     </span>        
     
 </h2>
-<p>If you understand all the steps above, I believe it&rsquo;s not difficult for you to bridge the interface to cloud platform. Therefore it&rsquo;s an extra task for you. If you need some assistance, feel free to email me.</p>
+<p>If you understand all the steps above, I believe it&rsquo;s not difficult for you to bridge the interface to the cloud platform.<br>
+Therefore it&rsquo;s an extra task for you. If you need some assistance, feel free to email me.</p>
 
         </div>
                 

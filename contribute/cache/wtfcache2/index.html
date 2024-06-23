@@ -99,7 +99,7 @@
     "keywords": ["cache","distributed system","storage","protocol","code"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "202"
+    "wordCount": "205"
   }]
   </script>
 
@@ -681,7 +681,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-06-16 11:32:11 &#43;0800 &#43;0800">16 June 2024</time><span class="px-2 text-primary-500">&middot;</span><span>202 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">1 min</span>
+  <time datetime="2024-06-16 11:32:11 &#43;0800 &#43;0800">16 June 2024</time><span class="px-2 text-primary-500">&middot;</span><span>205 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">1 min</span>
   
 
   
@@ -727,7 +727,6 @@
     class="min-w-[220px] py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#intro">intro</a></li>
     <li><a href="#set-the-basic-environment">set the basic environment</a></li>
   </ul>
 </nav>
@@ -742,7 +741,6 @@
     class="py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#intro">intro</a></li>
     <li><a href="#set-the-basic-environment">set the basic environment</a></li>
   </ul>
 </nav>
@@ -820,7 +818,7 @@
 </blockquote>
 
 
-<h2 class="relative group">intro 
+<h1 class="relative group">intro 
     <div id="intro" class="anchor"></div>
     
     <span
@@ -829,7 +827,7 @@
             style="text-decoration-line: none !important;" href="#intro" aria-label="Anchor">#</a>
     </span>        
     
-</h2>
+</h1>
 <p>In this article, we will see how to build a distributed cache system from scratch,
 this is the first part of our articles.</p>
 
@@ -844,9 +842,9 @@ this is the first part of our articles.</p>
     </span>        
     
 </h2>
-<p>first of all, let&rsquo;s simply create a folder to store all project, the command should look like this: <code>mkdir cache</code>.</p>
+<p>First of all, let&rsquo;s simply create a folder to store the new project, the command should look like this: <code>mkdir cache</code>.</p>
 <p>you should start a new go project with <code>go mod init something</code>, for example: <code>go mod init cacheme</code>,
-then you can find a <code>go.mod</code> file appears in your directory.</p>
+then you can find a <code>go.mod</code> file that appears in your directory.</p>
 <p>Since we have a project, we can create a <code>main.go</code> file in our project to print <code>hello, world</code>:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="kn">package</span> <span class="nx">main</span>
 </span></span><span class="line"><span class="cl">
@@ -856,12 +854,12 @@ then you can find a <code>go.mod</code> file appears in your directory.</p>
 </span></span><span class="line"><span class="cl">	<span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="s">&#34;vim-go&#34;</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></div><p>Now, it&rsquo;s time to run the project with <code>go run main.go</code>,
-your can also compile it to a binary with <code>go build -o hello main.go</code> and input <code>./hello</code> to run this binary executable file.</p>
+you can also compile it to a binary with <code>go build -o hello main.go</code> and input <code>./hello</code> to run this binary executable file.</p>
 <p>the other things we could do (but not necessary) are listed as follows:</p>
 <ul>
-<li>add <code>.gitignore</code> file so that we can ignore some useless files like .DS_Store in mac environment</li>
-<li>add a read me so that everyone else could understand what this project is used for.</li>
-<li>add a license, I personally prefer some loose licenses like MIT or GPL3</li>
+<li>add a <code>.gitignore</code> file so that we can ignore some useless files like .DS_Store in mac environment</li>
+<li>add a read me so that everyone else can understand what this project is used for.</li>
+<li>add a license, I personally prefer some simple licenses like MIT or GPL3</li>
 </ul>
 
         </div>
