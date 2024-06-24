@@ -8,8 +8,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   
-  <title>Build Cache from Scratch: 5. observe our service &middot; Lun Jiang</title>
-  <meta name="title" content="Build Cache from Scratch: 5. observe our service &middot; Lun Jiang" />
+  <title>Build Cache from Scratch: 6. observe our service &middot; Lun Jiang</title>
+  <meta name="title" content="Build Cache from Scratch: 6. observe our service &middot; Lun Jiang" />
   
   <meta name="description" content="If we meet some performance issue, we need some information of our server to help us improve. " />
   <meta name="keywords" content="cache, distributed system, storage, protocol, code, " />
@@ -60,7 +60,7 @@
   
   
   
-  <meta property="og:title" content="Build Cache from Scratch: 5. observe our service" />
+  <meta property="og:title" content="Build Cache from Scratch: 6. observe our service" />
 <meta property="og:description" content="If we meet some performance issue, we need some information of our server to help us improve." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://challenai.github.io/contribute/cache/wtfcache6/" /><meta property="og:image" content="https://challenai.github.io/contribute/cache/wtfcache6/cover.jpg" /><meta property="article:section" content="contribute" />
@@ -71,7 +71,7 @@
 
 
   <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content="https://challenai.github.io/contribute/cache/wtfcache6/cover.jpg" /><meta name="twitter:title" content="Build Cache from Scratch: 5. observe our service"/>
+<meta name="twitter:image" content="https://challenai.github.io/contribute/cache/wtfcache6/cover.jpg" /><meta name="twitter:title" content="Build Cache from Scratch: 6. observe our service"/>
 <meta name="twitter:description" content="If we meet some performance issue, we need some information of our server to help us improve."/>
 
   
@@ -80,8 +80,8 @@
     "@context": "https://schema.org",
     "@type": "Article",
     "articleSection": "Code Space",
-    "name": "Build Cache from Scratch: 5. observe our service",
-    "headline": "Build Cache from Scratch: 5. observe our service",
+    "name": "Build Cache from Scratch: 6. observe our service",
+    "headline": "Build Cache from Scratch: 6. observe our service",
     
     "abstract": "If we meet some performance issue, we need some information of our server to help us improve.",
     "inLanguage": "en",
@@ -627,7 +627,7 @@
     <a
       class="hover:underline decoration-neutral-300 dark:underline-neutral-600"
       href="/contribute/cache/wtfcache6/"
-      >Build Cache from Scratch: 5. observe our service</a
+      >Build Cache from Scratch: 6. observe our service</a
     ><span class="px-1 text-primary-500">/</span>
   </li>
 
@@ -636,7 +636,7 @@
 
     
     <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
-      Build Cache from Scratch: 5. observe our service
+      Build Cache from Scratch: 6. observe our service
     </h1>
     <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
       
@@ -845,7 +845,7 @@
 To know the current state of our servers, we need to collect some metric.<br>
 In another word, we need to collect some internal information of the server to expose metrics.<br>
 The count of keys, the size of our data, the count of requests, the delays, and something else,<br>
-we don&rsquo;t collect too much information about our server since it&rsquo;s a toturial,<br>
+we don&rsquo;t collect too much information about our server since it&rsquo;s a tutorial,<br>
 if you can collect 2 metrics, you can collect 200 metrics.</p>
 
 
@@ -917,9 +917,9 @@ For a delete operation, it&rsquo;s just check whether the key exists and decide 
 </span></span><span class="line"><span class="cl">    <span class="c1">// ...
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span>
 </span></span></code></pre></div><p>However, no matter what case we program in our 2 modify operation, we can find there&rsquo;s a race issue,<br>
-For example, if 2 requests to set a key arrived concurrently, the &ldquo;check if the key exists&rdquo; progress can get a true reply at the same time, and the key count would be unaccurate,<br>
+For example, if 2 requests to set a key arrived concurrently, the &ldquo;check if the key exists&rdquo; progress can get a true reply at the same time, and the key count would be inaccurate,<br>
 There are different methods to handle this problem.<br>
-The easiest one is to lock the critical area and try to make it sychronised.</p>
+The easiest one is to lock the critical area and try to make it synchronised.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="kd">func</span> <span class="nf">Set</span><span class="p">()</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">    <span class="nx">mutex</span><span class="p">.</span><span class="nf">Lock</span><span class="p">()</span>
 </span></span><span class="line"><span class="cl">    <span class="k">defer</span> <span class="nx">mutex</span><span class="p">.</span><span class="nf">Unlock</span><span class="p">()</span>
@@ -943,9 +943,9 @@ we can use <code>cas</code> idea to store the original state, then we set the ke
 </span></span><span class="line"><span class="cl">        <span class="nx">mc</span><span class="p">.</span><span class="nx">Stat</span><span class="p">.</span><span class="nf">CompareAndSetKeyCount</span><span class="p">(</span><span class="nx">count</span><span class="p">,</span> <span class="nb">int64</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="nx">v</span><span class="p">)</span> <span class="o">-</span> <span class="nb">len</span><span class="p">(</span><span class="nx">v_</span><span class="p">.([]</span><span class="kt">byte</span><span class="p">))))</span>
 </span></span><span class="line"><span class="cl">    <span class="p">}</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></div><p>To make the toturial as understandable as possible, we don&rsquo;t actually use and lock,<br>
+</span></span></code></pre></div><p>To make the tutorial as understandable as possible, we don&rsquo;t actually use and lock,<br>
 However, in the real world, the application is not always correct, but runs as normal,<br>
-and trade-off is some thing works here, to trade off between performance and accuracy of keys count, we choose to sacriface the accuracy of keys count,<br>
+and trade-off is some thing works here, to trade off between performance and accuracy of keys count, we choose to sacrifice the accuracy of keys count,<br>
 because it&rsquo;s just a metrics, 12.64k keys and 12.63k keys are totally no difference, and this trade-off improve performance, make it easy to maintain too.</p>
 <p>At last, we can provide a HTTP endpoint to show the metric.</p>
 
@@ -1024,7 +1024,7 @@ because it&rsquo;s just a metrics, 12.64k keys and 12.63k keys are totally no di
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://challenai.github.io/contribute/cache/wtfcache6/&amp;title=Build%20Cache%20from%20Scratch:%205.%20observe%20our%20service"
+      href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://challenai.github.io/contribute/cache/wtfcache6/&amp;title=Build%20Cache%20from%20Scratch:%206.%20observe%20our%20service"
       title="Share on LinkedIn"
       aria-label="Share on LinkedIn"
       >
@@ -1043,7 +1043,7 @@ because it&rsquo;s just a metrics, 12.64k keys and 12.63k keys are totally no di
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://twitter.com/intent/tweet/?url=https://challenai.github.io/contribute/cache/wtfcache6/&amp;text=Build%20Cache%20from%20Scratch:%205.%20observe%20our%20service"
+      href="https://twitter.com/intent/tweet/?url=https://challenai.github.io/contribute/cache/wtfcache6/&amp;text=Build%20Cache%20from%20Scratch:%206.%20observe%20our%20service"
       title="Tweet on Twitter"
       aria-label="Tweet on Twitter"
       >
@@ -1061,7 +1061,7 @@ because it&rsquo;s just a metrics, 12.64k keys and 12.63k keys are totally no di
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://reddit.com/submit/?url=https://challenai.github.io/contribute/cache/wtfcache6/&amp;resubmit=true&amp;title=Build%20Cache%20from%20Scratch:%205.%20observe%20our%20service"
+      href="https://reddit.com/submit/?url=https://challenai.github.io/contribute/cache/wtfcache6/&amp;resubmit=true&amp;title=Build%20Cache%20from%20Scratch:%206.%20observe%20our%20service"
       title="Submit to Reddit"
       aria-label="Submit to Reddit"
       >
@@ -1080,7 +1080,7 @@ because it&rsquo;s just a metrics, 12.64k keys and 12.63k keys are totally no di
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://pinterest.com/pin/create/bookmarklet/?url=https://challenai.github.io/contribute/cache/wtfcache6/&amp;description=Build%20Cache%20from%20Scratch:%205.%20observe%20our%20service"
+      href="https://pinterest.com/pin/create/bookmarklet/?url=https://challenai.github.io/contribute/cache/wtfcache6/&amp;description=Build%20Cache%20from%20Scratch:%206.%20observe%20our%20service"
       title="Pin on Pinterest"
       aria-label="Pin on Pinterest"
       >
@@ -1099,7 +1099,7 @@ because it&rsquo;s just a metrics, 12.64k keys and 12.63k keys are totally no di
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://www.facebook.com/sharer/sharer.php?u=https://challenai.github.io/contribute/cache/wtfcache6/&amp;quote=Build%20Cache%20from%20Scratch:%205.%20observe%20our%20service"
+      href="https://www.facebook.com/sharer/sharer.php?u=https://challenai.github.io/contribute/cache/wtfcache6/&amp;quote=Build%20Cache%20from%20Scratch:%206.%20observe%20our%20service"
       title="Share on Facebook"
       aria-label="Share on Facebook"
       >
@@ -1118,7 +1118,7 @@ because it&rsquo;s just a metrics, 12.64k keys and 12.63k keys are totally no di
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="mailto:?body=https://challenai.github.io/contribute/cache/wtfcache6/&amp;subject=Build%20Cache%20from%20Scratch:%205.%20observe%20our%20service"
+      href="mailto:?body=https://challenai.github.io/contribute/cache/wtfcache6/&amp;subject=Build%20Cache%20from%20Scratch:%206.%20observe%20our%20service"
       title="Send via email"
       aria-label="Send via email"
       >
@@ -1137,7 +1137,7 @@ because it&rsquo;s just a metrics, 12.64k keys and 12.63k keys are totally no di
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://api.whatsapp.com/send?text=https://challenai.github.io/contribute/cache/wtfcache6/&amp;resubmit=true&amp;title=Build%20Cache%20from%20Scratch:%205.%20observe%20our%20service"
+      href="https://api.whatsapp.com/send?text=https://challenai.github.io/contribute/cache/wtfcache6/&amp;resubmit=true&amp;title=Build%20Cache%20from%20Scratch:%206.%20observe%20our%20service"
       title=""
       aria-label=""
       >
@@ -1156,7 +1156,7 @@ because it&rsquo;s just a metrics, 12.64k keys and 12.63k keys are totally no di
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://t.me/share/url?url=https://challenai.github.io/contribute/cache/wtfcache6/&amp;resubmit=true&amp;title=Build%20Cache%20from%20Scratch:%205.%20observe%20our%20service"
+      href="https://t.me/share/url?url=https://challenai.github.io/contribute/cache/wtfcache6/&amp;resubmit=true&amp;title=Build%20Cache%20from%20Scratch:%206.%20observe%20our%20service"
       title=""
       aria-label=""
       >
