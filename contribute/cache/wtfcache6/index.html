@@ -8,14 +8,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   
-  <title>Build Cache from Scratch: 5. TCP cache server &middot; Lun Jiang</title>
-  <meta name="title" content="Build Cache from Scratch: 5. TCP cache server &middot; Lun Jiang" />
+  <title>Build Cache from Scratch: 5. observe our service &middot; Lun Jiang</title>
+  <meta name="title" content="Build Cache from Scratch: 5. observe our service &middot; Lun Jiang" />
   
-  <meta name="description" content="Different from HTTP protocol, we build TCP service from scratch without any framework" />
+  <meta name="description" content="If we meet some performance issue, we need some information of our server to help us improve. " />
   <meta name="keywords" content="cache, distributed system, storage, protocol, code, " />
   
   
-  <link rel="canonical" href="https://challenai.github.io/contribute/cache/wtfcache5/" />
+  <link rel="canonical" href="https://challenai.github.io/contribute/cache/wtfcache6/" />
   
   
   
@@ -60,19 +60,19 @@
   
   
   
-  <meta property="og:title" content="Build Cache from Scratch: 5. TCP cache server" />
-<meta property="og:description" content="Different from HTTP protocol, we build TCP service from scratch without any framework" />
+  <meta property="og:title" content="Build Cache from Scratch: 5. observe our service" />
+<meta property="og:description" content="If we meet some performance issue, we need some information of our server to help us improve." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://challenai.github.io/contribute/cache/wtfcache5/" /><meta property="og:image" content="https://challenai.github.io/contribute/cache/wtfcache5/cover.jpg" /><meta property="article:section" content="contribute" />
-<meta property="article:published_time" content="2024-06-23T14:12:29+08:00" />
-<meta property="article:modified_time" content="2024-06-23T14:12:29+08:00" />
-<meta property="og:see_also" content="https://challenai.github.io/contribute/cache/wtfcache6/" /><meta property="og:see_also" content="https://challenai.github.io/contribute/cache/wtfcache4/" /><meta property="og:see_also" content="https://challenai.github.io/contribute/cache/wtfcache3/" /><meta property="og:see_also" content="https://challenai.github.io/contribute/cache/wtfcache2/" /><meta property="og:see_also" content="https://challenai.github.io/contribute/cache/wtfcache1/" />
+<meta property="og:url" content="https://challenai.github.io/contribute/cache/wtfcache6/" /><meta property="og:image" content="https://challenai.github.io/contribute/cache/wtfcache6/cover.jpg" /><meta property="article:section" content="contribute" />
+<meta property="article:published_time" content="2024-06-24T12:33:12+08:00" />
+<meta property="article:modified_time" content="2024-06-24T12:33:12+08:00" />
+<meta property="og:see_also" content="https://challenai.github.io/contribute/cache/wtfcache5/" /><meta property="og:see_also" content="https://challenai.github.io/contribute/cache/wtfcache4/" /><meta property="og:see_also" content="https://challenai.github.io/contribute/cache/wtfcache3/" /><meta property="og:see_also" content="https://challenai.github.io/contribute/cache/wtfcache2/" /><meta property="og:see_also" content="https://challenai.github.io/contribute/cache/wtfcache1/" />
 
 
 
   <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content="https://challenai.github.io/contribute/cache/wtfcache5/cover.jpg" /><meta name="twitter:title" content="Build Cache from Scratch: 5. TCP cache server"/>
-<meta name="twitter:description" content="Different from HTTP protocol, we build TCP service from scratch without any framework"/>
+<meta name="twitter:image" content="https://challenai.github.io/contribute/cache/wtfcache6/cover.jpg" /><meta name="twitter:title" content="Build Cache from Scratch: 5. observe our service"/>
+<meta name="twitter:description" content="If we meet some performance issue, we need some information of our server to help us improve."/>
 
   
   <script type="application/ld+json">
@@ -80,26 +80,26 @@
     "@context": "https://schema.org",
     "@type": "Article",
     "articleSection": "Code Space",
-    "name": "Build Cache from Scratch: 5. TCP cache server",
-    "headline": "Build Cache from Scratch: 5. TCP cache server",
+    "name": "Build Cache from Scratch: 5. observe our service",
+    "headline": "Build Cache from Scratch: 5. observe our service",
     
-    "abstract": "Different from HTTP protocol, we build TCP service from scratch without any framework",
+    "abstract": "If we meet some performance issue, we need some information of our server to help us improve.",
     "inLanguage": "en",
-    "url" : "https:\/\/challenai.github.io\/contribute\/cache\/wtfcache5\/",
+    "url" : "https:\/\/challenai.github.io\/contribute\/cache\/wtfcache6\/",
     "author" : {
       "@type": "Person",
       "name": "Lun Jiang"
     },
     "copyrightYear": "2024",
-    "dateCreated": "2024-06-23T14:12:29\u002b08:00",
-    "datePublished": "2024-06-23T14:12:29\u002b08:00",
+    "dateCreated": "2024-06-24T12:33:12\u002b08:00",
+    "datePublished": "2024-06-24T12:33:12\u002b08:00",
     
-    "dateModified": "2024-06-23T14:12:29\u002b08:00",
+    "dateModified": "2024-06-24T12:33:12\u002b08:00",
     
     "keywords": ["cache","distributed system","storage","protocol","code"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "517"
+    "wordCount": "602"
   }]
   </script>
 
@@ -573,7 +573,7 @@
 
     
     <div class="fixed inset-x-0 top-0 h-[800px] single_hero_background nozoom"
-    style="background-image:url(/contribute/cache/wtfcache5/cover_hu3d03a01dcc18bc5be0e67db3d8d209a6_48732_1200x0_resize_q75_box.jpg);">
+    style="background-image:url(/contribute/cache/wtfcache6/cover_hu3d03a01dcc18bc5be0e67db3d8d209a6_48732_1200x0_resize_q75_box.jpg);">
     
 
 
@@ -626,8 +626,8 @@
   <li class="inline hidden">
     <a
       class="hover:underline decoration-neutral-300 dark:underline-neutral-600"
-      href="/contribute/cache/wtfcache5/"
-      >Build Cache from Scratch: 5. TCP cache server</a
+      href="/contribute/cache/wtfcache6/"
+      >Build Cache from Scratch: 5. observe our service</a
     ><span class="px-1 text-primary-500">/</span>
   </li>
 
@@ -636,7 +636,7 @@
 
     
     <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
-      Build Cache from Scratch: 5. TCP cache server
+      Build Cache from Scratch: 5. observe our service
     </h1>
     <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
       
@@ -681,7 +681,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-06-23 14:12:29 &#43;0800 &#43;0800">23 June 2024</time><span class="px-2 text-primary-500">&middot;</span><span>517 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">3 mins</span>
+  <time datetime="2024-06-24 12:33:12 &#43;0800 &#43;0800">24 June 2024</time><span class="px-2 text-primary-500">&middot;</span><span>602 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">3 mins</span>
   
 
   
@@ -727,10 +727,9 @@
     class="min-w-[220px] py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#expose-high-performance-tcp-api-for-users">Expose high performance TCP API for users</a></li>
-    <li><a href="#redis-resp-v3">redis RESP V3</a></li>
-    <li><a href="#build-basic-server">build basic server</a></li>
-    <li><a href="#handle-bytes-according-our-protocol">handle bytes according our protocol</a></li>
+    <li><a href="#observe-our-service">observe our service</a></li>
+    <li><a href="#how-to-collect">how to collect</a></li>
+    <li><a href="#update-count-when-set-and-delete-operation-appears">update count when set and delete operation appears</a></li>
   </ul>
 </nav>
   </div>
@@ -744,10 +743,9 @@
     class="py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#expose-high-performance-tcp-api-for-users">Expose high performance TCP API for users</a></li>
-    <li><a href="#redis-resp-v3">redis RESP V3</a></li>
-    <li><a href="#build-basic-server">build basic server</a></li>
-    <li><a href="#handle-bytes-according-our-protocol">handle bytes according our protocol</a></li>
+    <li><a href="#observe-our-service">observe our service</a></li>
+    <li><a href="#how-to-collect">how to collect</a></li>
+    <li><a href="#update-count-when-set-and-delete-operation-appears">update count when set and delete operation appears</a></li>
   </ul>
 </nav>
   </div>
@@ -771,16 +769,16 @@
     
     <div
         class="py-1 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
-        <a href="https://challenai.github.io/contribute/cache/wtfcache6/">
-            Part : Build Cache from Scratch: 5. observe our service
-        </a>
+        Part : This Article
     </div>
     
     
     
     <div
         class="py-1 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
-        Part : This Article
+        <a href="https://challenai.github.io/contribute/cache/wtfcache5/">
+            Part : Build Cache from Scratch: 5. TCP cache server
+        </a>
     </div>
     
     
@@ -833,126 +831,124 @@
 </blockquote>
 
 
-<h2 class="relative group">Expose high performance TCP API for users 
-    <div id="expose-high-performance-tcp-api-for-users" class="anchor"></div>
+<h2 class="relative group">observe our service 
+    <div id="observe-our-service" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#expose-high-performance-tcp-api-for-users" aria-label="Anchor">#</a>
+            style="text-decoration-line: none !important;" href="#observe-our-service" aria-label="Anchor">#</a>
     </span>        
     
 </h2>
-<p>Different from HTTP protocol, we build TCP service from scratch without any framework,<br>
-The main reason is that the TCP only serves in the specific high performance case,
-the protocol is not actually standardized due to the consideration of performance.</p>
-<p>Since it&rsquo;s a cache application, we can communicate with the client via redis compatible protocol,
-so that the redis client can talk to our application directly.
-By the way, It&rsquo;s not difficult to design a new protocol for a special use case, but it&rsquo;s unnecessary to repeat.</p>
-<p>The current Redis protocol is called RESP V3 (Redis Serialization Protocol, Version 3).</p>
+<p>If we meet some performance issue, we need some information of our server to help us improve.<br>
+To know the current state of our servers, we need to collect some metric.<br>
+In another word, we need to collect some internal information of the server to expose metrics.<br>
+The count of keys, the size of our data, the count of requests, the delays, and something else,<br>
+we don&rsquo;t collect too much information about our server since it&rsquo;s a toturial,<br>
+if you can collect 2 metrics, you can collect 200 metrics.</p>
 
 
-<h2 class="relative group">redis RESP V3 
-    <div id="redis-resp-v3" class="anchor"></div>
+<h2 class="relative group">how to collect 
+    <div id="how-to-collect" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#redis-resp-v3" aria-label="Anchor">#</a>
+            style="text-decoration-line: none !important;" href="#how-to-collect" aria-label="Anchor">#</a>
     </span>        
     
 </h2>
-<p>Our cache application provides 3 interfaces: get/set/delete.<br>
-Therefore we need to provide 3 commands according to RESP.</p>
-<p>The set request should be <code>SET mykey myvalue\r\n</code>.
-The successful set response should be <code>+OK\r\n</code>.</p>
-<p>The get request should be <code>GET mykey\r\n</code>.
-The successful get response should be <code>$7\r\nmyvalue\r\n</code>.</p>
-<p>The delete request should be <code>DEL mykey\r\n</code>.
-The successful delete response should be <code>+OK\r\n</code>.</p>
-<p>The failed response with error message should be <code>-ERR xxx\r\n</code>.</p>
-
-
-<h2 class="relative group">build basic server 
-    <div id="build-basic-server" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#build-basic-server" aria-label="Anchor">#</a>
-    </span>        
-    
-</h2>
-<p>In the case of someone who hasn&rsquo;t tried TCP programming and feels scared,<br>
-actually, there are no magic inside a TCP connection, it&rsquo;s pretty standard.
+<p>we decide to count the keys and compute the total storage size as example.<br>
+No matter what interface and protocol we want to expose, the internal implementation should be the same.<br>
+Therefore, we make the stat feature a shared one,<br>
+in this case, we only collect cache metrics, so we place the metrics into cache folder directly.<br>
 <br>
-If you program with C, you need to create a socket, bind socket to an address, listen and accept.<br>
-However I will tell you it&rsquo;s all bullshit, there are history reasons, the socket concept and all the details are inherited from system calls.<br>
-The program itself doesn&rsquo;t provide any convenience compared with some modern languages like Rust, Go or node.js(2012).<br>
-The truth is that, in 99% cases, we create the servers with some template code even in C/C++,<br>
-because most of the time we create the TCP server, not local unix domain socket server,
-it&rsquo;s unnecessary to consider too much about hundreads of different parameters and error case,<br>
-it&rsquo;s all covered by language itself.<br>
-<br>
-In golang, we need to listen to some addresses.
-And start accepting connections.
-It&rsquo;s simple, but no performance loss because of the internal battery: epoll inside.
-And of course, less bugs.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="c1">// step 1
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">server</span><span class="p">,</span> <span class="nx">err</span> <span class="o">:=</span> <span class="nx">net</span><span class="p">.</span><span class="nf">Listen</span><span class="p">(</span><span class="s">&#34;tcp&#34;</span><span class="p">,</span> <span class="nx">addr</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="c1">// handle error
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
-</span></span><span class="line"><span class="cl"><span class="c1">// step 2
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">for</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">	<span class="nx">connection</span><span class="p">,</span> <span class="nx">err</span> <span class="o">:=</span> <span class="nx">server</span><span class="p">.</span><span class="nf">Accept</span><span class="p">()</span>
-</span></span><span class="line"><span class="cl">    <span class="c1">// handle error
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span>
+However, we should remember that we used <code>sync.Map</code> to replace internal hashmap to avoid thread unsafe issue,<br>
+Therefore, we use <code>atomic</code> package to synchronise our statistics progress here.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="c1">// stat.go
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">type</span> <span class="nx">Stat</span> <span class="kd">struct</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="c1">// entries count
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="nx">keys</span> <span class="kt">int64</span>
+</span></span><span class="line"><span class="cl">	<span class="c1">// size of all the entries
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="nx">sz</span> <span class="kt">int64</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">func</span> <span class="p">(</span><span class="nx">ms</span> <span class="o">*</span><span class="nx">Stat</span><span class="p">)</span> <span class="nf">CountKeys</span><span class="p">()</span> <span class="kt">int64</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="k">return</span> <span class="nx">atomic</span><span class="p">.</span><span class="nf">LoadInt64</span><span class="p">(</span><span class="o">&amp;</span><span class="nx">ms</span><span class="p">.</span><span class="nx">keys</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">func</span> <span class="p">(</span><span class="nx">ms</span> <span class="o">*</span><span class="nx">Stat</span><span class="p">)</span> <span class="nf">GetSz</span><span class="p">()</span> <span class="kt">int64</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="k">return</span> <span class="nx">atomic</span><span class="p">.</span><span class="nf">LoadInt64</span><span class="p">(</span><span class="o">&amp;</span><span class="nx">ms</span><span class="p">.</span><span class="nx">sz</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">func</span> <span class="p">(</span><span class="nx">ms</span> <span class="o">*</span><span class="nx">Stat</span><span class="p">)</span> <span class="nf">IncrKey</span><span class="p">(</span><span class="nx">num</span> <span class="kt">int64</span><span class="p">)</span> <span class="kt">int64</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="k">return</span> <span class="nx">atomic</span><span class="p">.</span><span class="nf">AddInt64</span><span class="p">(</span><span class="o">&amp;</span><span class="nx">ms</span><span class="p">.</span><span class="nx">keys</span><span class="p">,</span> <span class="nx">num</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">func</span> <span class="p">(</span><span class="nx">ms</span> <span class="o">*</span><span class="nx">Stat</span><span class="p">)</span> <span class="nf">IncrSz</span><span class="p">(</span><span class="nx">sz</span> <span class="kt">int64</span><span class="p">)</span> <span class="kt">int64</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="k">return</span> <span class="nx">atomic</span><span class="p">.</span><span class="nf">AddInt64</span><span class="p">(</span><span class="o">&amp;</span><span class="nx">ms</span><span class="p">.</span><span class="nx">sz</span><span class="p">,</span> <span class="nx">sz</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></div>
 
-<h2 class="relative group">handle bytes according our protocol 
-    <div id="handle-bytes-according-our-protocol" class="anchor"></div>
+<h2 class="relative group">update count when set and delete operation appears 
+    <div id="update-count-when-set-and-delete-operation-appears" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#handle-bytes-according-our-protocol" aria-label="Anchor">#</a>
+            style="text-decoration-line: none !important;" href="#update-count-when-set-and-delete-operation-appears" aria-label="Anchor">#</a>
     </span>        
     
 </h2>
-<p>We don&rsquo;t have authorization for connections,  therefore we can handle requests from the first bytes.<br>
-The protocol is line based, therefore we can create a buffer utils to read line and write line, read and write bytes.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="kd">type</span> <span class="nx">Buffer</span> <span class="kd">struct</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="nx">w</span> <span class="o">*</span><span class="nx">bufio</span><span class="p">.</span><span class="nx">Writer</span>
-</span></span><span class="line"><span class="cl">    <span class="nx">r</span> <span class="o">*</span><span class="nx">bufio</span><span class="p">.</span><span class="nx">Reader</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="kd">func</span> <span class="p">(</span><span class="nx">c</span> <span class="o">*</span><span class="nx">Buffer</span><span class="p">)</span> <span class="nf">ReadLine</span><span class="p">()</span> <span class="p">(</span><span class="kt">string</span><span class="p">,</span> <span class="kt">error</span><span class="p">)</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="c1">// read line with standard library api
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nx">line</span><span class="p">,</span> <span class="nx">err</span> <span class="o">:=</span> <span class="nx">c</span><span class="p">.</span><span class="nx">r</span><span class="p">.</span><span class="nf">ReadSlice</span><span class="p">(</span><span class="nx">seperator</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="kd">func</span> <span class="nf">WriteLine</span><span class="p">(</span><span class="nx">l</span> <span class="kt">string</span><span class="p">)</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="c1">// write line with standard library api
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nx">c</span><span class="p">.</span><span class="nx">w</span><span class="p">.</span><span class="nf">Write</span><span class="p">(</span><span class="nx">l</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></div><p>As a result, our TCP server could simply run as follows.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="kd">type</span> <span class="nx">Client</span> <span class="kd">struct</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">	<span class="nx">buf</span> <span class="o">*</span><span class="nx">buffer</span><span class="p">.</span><span class="nx">Buffer</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="kd">func</span> <span class="p">(</span><span class="nx">c</span> <span class="o">*</span><span class="nx">Client</span><span class="p">)</span> <span class="nf">Read</span><span class="p">()</span> <span class="kt">error</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="nx">line</span><span class="p">,</span> <span class="nx">err</span> <span class="o">:=</span> <span class="nx">c</span><span class="p">.</span><span class="nx">buf</span><span class="p">.</span><span class="nf">ReadLine</span><span class="p">()</span>
-</span></span><span class="line"><span class="cl">    <span class="k">switch</span> <span class="nx">start</span> <span class="nx">word</span> <span class="nx">of</span> <span class="nx">line</span><span class="p">:</span>
-</span></span><span class="line"><span class="cl">      <span class="k">case</span> <span class="s">&#34;GET&#34;</span><span class="p">:</span>
-</span></span><span class="line"><span class="cl">        <span class="c1">// handleGetRequst
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>      <span class="k">case</span> <span class="s">&#34;SET&#34;</span><span class="p">:</span>
-</span></span><span class="line"><span class="cl">        <span class="c1">// handleSetRequst
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>      <span class="k">case</span> <span class="s">&#34;DEL&#34;</span><span class="p">:</span>
-</span></span><span class="line"><span class="cl">        <span class="c1">// handleDelRequst
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>      <span class="k">default</span><span class="p">:</span>
-</span></span><span class="line"><span class="cl">        <span class="c1">// error
+<p>When we set a key, there&rsquo;re 2 cases: add or update.<br>
+If we meet an add operation, we need to add key count and size of entry.<br>
+If we meet an update operation, we need to compute the difference between the existed key and new one.<br>
+<br>
+For a delete operation, it&rsquo;s just check whether the key exists and decide whether we need to decrease count.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="kd">func</span> <span class="p">(</span><span class="nx">mc</span> <span class="o">*</span><span class="nx">xxCache</span><span class="p">)</span> <span class="nf">Set</span><span class="p">(</span><span class="nx">k</span> <span class="kt">string</span><span class="p">,</span> <span class="nx">v</span> <span class="p">[]</span><span class="kt">byte</span><span class="p">)</span> <span class="kt">error</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// test if the key exists.
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="k">if</span> <span class="p">!</span><span class="nx">exist</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">		<span class="nx">mc</span><span class="p">.</span><span class="nx">Stat</span><span class="p">.</span><span class="nf">IncrKey</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">		<span class="nx">mc</span><span class="p">.</span><span class="nx">Stat</span><span class="p">.</span><span class="nf">IncrSz</span><span class="p">(</span><span class="nb">int64</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="nx">k</span><span class="p">)</span> <span class="o">+</span> <span class="nb">len</span><span class="p">(</span><span class="nx">v</span><span class="p">)))</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="kc">nil</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">mc</span><span class="p">.</span><span class="nx">Stat</span><span class="p">.</span><span class="nf">IncrSz</span><span class="p">(</span><span class="nb">int64</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="nx">v</span><span class="p">)</span> <span class="o">-</span> <span class="nb">len</span><span class="p">(</span><span class="nx">v_</span><span class="p">.([]</span><span class="kt">byte</span><span class="p">))))</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// ...
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span>
-</span></span></code></pre></div>
+</span></span></code></pre></div><p>However, no matter what case we program in our 2 modify operation, we can find there&rsquo;s a race issue,<br>
+For example, if 2 requests to set a key arrived concurrently, the &ldquo;check if the key exists&rdquo; progress can get a true reply at the same time, and the key count would be unaccurate,<br>
+There are different methods to handle this problem.<br>
+The easiest one is to lock the critical area and try to make it sychronised.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="kd">func</span> <span class="nf">Set</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">mutex</span><span class="p">.</span><span class="nf">Lock</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="k">defer</span> <span class="nx">mutex</span><span class="p">.</span><span class="nf">Unlock</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// ...
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="k">if</span> <span class="nx">exist</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// ...
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>Since it&rsquo;s a high performance cache application, the cost of a lock in hot code area is not acceptable,<br>
+we can use <code>cas</code> idea to store the original state, then we set the key if there&rsquo;s no confliction, and retry if it conflicts.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="c1">// positive lock
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">func</span> <span class="nf">Set</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">count</span> <span class="o">:=</span> <span class="nx">mc</span><span class="p">.</span><span class="nx">Stat</span><span class="p">.</span><span class="nf">CountKeys</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// ...
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="k">if</span> <span class="nx">exist</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="c1">// ...
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="nx">mc</span><span class="p">.</span><span class="nx">Stat</span><span class="p">.</span><span class="nf">CompareAndSetKeyCount</span><span class="p">(</span><span class="nx">count</span><span class="p">,</span> <span class="nb">int64</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="nx">v</span><span class="p">)</span> <span class="o">-</span> <span class="nb">len</span><span class="p">(</span><span class="nx">v_</span><span class="p">.([]</span><span class="kt">byte</span><span class="p">))))</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>To make the toturial as understandable as possible, we don&rsquo;t actually use and lock,<br>
+However, in the real world, the application is not always correct, but runs as normal,<br>
+and trade-off is some thing works here, to trade off between performance and accuracy of keys count, we choose to sacriface the accuracy of keys count,<br>
+because it&rsquo;s just a metrics, 12.64k keys and 12.63k keys are totally no difference, and this trade-off improve performance, make it easy to maintain too.</p>
+<p>At last, we can provide a HTTP endpoint to show the metric.</p>
+
         </div>
                 
         
@@ -967,16 +963,16 @@ The protocol is line based, therefore we can create a buffer utils to read line 
     
     <div
         class="py-1 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
-        <a href="https://challenai.github.io/contribute/cache/wtfcache6/">
-            Part : Build Cache from Scratch: 5. observe our service
-        </a>
+        Part : This Article
     </div>
     
     
     
     <div
         class="py-1 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
-        Part : This Article
+        <a href="https://challenai.github.io/contribute/cache/wtfcache5/">
+            Part : Build Cache from Scratch: 5. TCP cache server
+        </a>
     </div>
     
     
@@ -1028,7 +1024,7 @@ The protocol is line based, therefore we can create a buffer utils to read line 
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://challenai.github.io/contribute/cache/wtfcache5/&amp;title=Build%20Cache%20from%20Scratch:%205.%20TCP%20cache%20server"
+      href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://challenai.github.io/contribute/cache/wtfcache6/&amp;title=Build%20Cache%20from%20Scratch:%205.%20observe%20our%20service"
       title="Share on LinkedIn"
       aria-label="Share on LinkedIn"
       >
@@ -1047,7 +1043,7 @@ The protocol is line based, therefore we can create a buffer utils to read line 
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://twitter.com/intent/tweet/?url=https://challenai.github.io/contribute/cache/wtfcache5/&amp;text=Build%20Cache%20from%20Scratch:%205.%20TCP%20cache%20server"
+      href="https://twitter.com/intent/tweet/?url=https://challenai.github.io/contribute/cache/wtfcache6/&amp;text=Build%20Cache%20from%20Scratch:%205.%20observe%20our%20service"
       title="Tweet on Twitter"
       aria-label="Tweet on Twitter"
       >
@@ -1065,7 +1061,7 @@ The protocol is line based, therefore we can create a buffer utils to read line 
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://reddit.com/submit/?url=https://challenai.github.io/contribute/cache/wtfcache5/&amp;resubmit=true&amp;title=Build%20Cache%20from%20Scratch:%205.%20TCP%20cache%20server"
+      href="https://reddit.com/submit/?url=https://challenai.github.io/contribute/cache/wtfcache6/&amp;resubmit=true&amp;title=Build%20Cache%20from%20Scratch:%205.%20observe%20our%20service"
       title="Submit to Reddit"
       aria-label="Submit to Reddit"
       >
@@ -1084,7 +1080,7 @@ The protocol is line based, therefore we can create a buffer utils to read line 
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://pinterest.com/pin/create/bookmarklet/?url=https://challenai.github.io/contribute/cache/wtfcache5/&amp;description=Build%20Cache%20from%20Scratch:%205.%20TCP%20cache%20server"
+      href="https://pinterest.com/pin/create/bookmarklet/?url=https://challenai.github.io/contribute/cache/wtfcache6/&amp;description=Build%20Cache%20from%20Scratch:%205.%20observe%20our%20service"
       title="Pin on Pinterest"
       aria-label="Pin on Pinterest"
       >
@@ -1103,7 +1099,7 @@ The protocol is line based, therefore we can create a buffer utils to read line 
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://www.facebook.com/sharer/sharer.php?u=https://challenai.github.io/contribute/cache/wtfcache5/&amp;quote=Build%20Cache%20from%20Scratch:%205.%20TCP%20cache%20server"
+      href="https://www.facebook.com/sharer/sharer.php?u=https://challenai.github.io/contribute/cache/wtfcache6/&amp;quote=Build%20Cache%20from%20Scratch:%205.%20observe%20our%20service"
       title="Share on Facebook"
       aria-label="Share on Facebook"
       >
@@ -1122,7 +1118,7 @@ The protocol is line based, therefore we can create a buffer utils to read line 
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="mailto:?body=https://challenai.github.io/contribute/cache/wtfcache5/&amp;subject=Build%20Cache%20from%20Scratch:%205.%20TCP%20cache%20server"
+      href="mailto:?body=https://challenai.github.io/contribute/cache/wtfcache6/&amp;subject=Build%20Cache%20from%20Scratch:%205.%20observe%20our%20service"
       title="Send via email"
       aria-label="Send via email"
       >
@@ -1141,7 +1137,7 @@ The protocol is line based, therefore we can create a buffer utils to read line 
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://api.whatsapp.com/send?text=https://challenai.github.io/contribute/cache/wtfcache5/&amp;resubmit=true&amp;title=Build%20Cache%20from%20Scratch:%205.%20TCP%20cache%20server"
+      href="https://api.whatsapp.com/send?text=https://challenai.github.io/contribute/cache/wtfcache6/&amp;resubmit=true&amp;title=Build%20Cache%20from%20Scratch:%205.%20observe%20our%20service"
       title=""
       aria-label=""
       >
@@ -1160,7 +1156,7 @@ The protocol is line based, therefore we can create a buffer utils to read line 
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://t.me/share/url?url=https://challenai.github.io/contribute/cache/wtfcache5/&amp;resubmit=true&amp;title=Build%20Cache%20from%20Scratch:%205.%20TCP%20cache%20server"
+      href="https://t.me/share/url?url=https://challenai.github.io/contribute/cache/wtfcache6/&amp;resubmit=true&amp;title=Build%20Cache%20from%20Scratch:%205.%20observe%20our%20service"
       title=""
       aria-label=""
       >
@@ -1183,8 +1179,8 @@ The protocol is line based, therefore we can create a buffer utils to read line 
      
     
      <script>
-        var oid = "views_contribute\/cache\/wtfcache5\/index.md"
-        var oid_likes = "likes_contribute\/cache\/wtfcache5\/index.md"
+        var oid = "views_contribute\/cache\/wtfcache6\/index.md"
+        var oid_likes = "likes_contribute\/cache\/wtfcache6\/index.md"
       </script>
       
       
@@ -1204,7 +1200,7 @@ The protocol is line based, therefore we can create a buffer utils to read line 
       <div class="flex justify-between pt-3">
         <span>
           
-            <a class="flex group mr-3" href="/contribute/cache/wtfcache4/">
+            <a class="flex group mr-3" href="/contribute/cache/wtfcache5/">
               <span
                 class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
                 >&larr;</span
@@ -1216,11 +1212,11 @@ The protocol is line based, therefore we can create a buffer utils to read line 
               <span class="flex flex-col">
                 <span
                   class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-                  >Build Cache from Scratch: 4. HTTP cache server</span
+                  >Build Cache from Scratch: 5. TCP cache server</span
                 >
                 <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
                   
-                    <time datetime="2024-06-17 12:12:11 &#43;0800 &#43;0800">17 June 2024</time>
+                    <time datetime="2024-06-23 14:12:29 &#43;0800 &#43;0800">23 June 2024</time>
                   
                 </span>
               </span>
@@ -1228,28 +1224,6 @@ The protocol is line based, therefore we can create a buffer utils to read line 
           
         </span>
         <span>
-          
-            <a class="flex text-right group ml-3" href="/contribute/cache/wtfcache6/">
-              <span class="flex flex-col">
-                <span
-                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-                  >Build Cache from Scratch: 5. observe our service</span
-                >
-                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
-                  
-                    <time datetime="2024-06-24 12:33:12 &#43;0800 &#43;0800">24 June 2024</time>
-                  
-                </span>
-              </span>
-              <span
-                class="ml-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
-                >&rarr;</span
-              >
-              <span
-                class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:hidden rtl:inline dark:text-neutral dark:group-hover:text-primary-400"
-                >&larr;</span
-              >
-            </a>
           
         </span>
       </div>

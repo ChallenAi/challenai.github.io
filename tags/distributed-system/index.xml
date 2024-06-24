@@ -7,14 +7,24 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2023 Lun Jiang</copyright>
-    <lastBuildDate>Mon, 17 Jun 2024 15:20:29 +0800</lastBuildDate><atom:link href="https://challenai.github.io/tags/distributed-system/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 24 Jun 2024 12:33:12 +0800</lastBuildDate><atom:link href="https://challenai.github.io/tags/distributed-system/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Build Cache from Scratch: 5. observe our service</title>
+      <link>https://challenai.github.io/contribute/cache/wtfcache6/</link>
+      <pubDate>Mon, 24 Jun 2024 12:33:12 +0800</pubDate>
+      
+      <guid>https://challenai.github.io/contribute/cache/wtfcache6/</guid>
+      <description>If we meet some performance issue, we need some information of our server to help us improve.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://challenai.github.io/contribute/cache/wtfcache6/cover.jpg" />
+    </item>
+    
     <item>
       <title>Build Cache from Scratch: 5. TCP cache server</title>
       <link>https://challenai.github.io/contribute/cache/wtfcache5/</link>
-      <pubDate>Mon, 17 Jun 2024 15:20:29 +0800</pubDate>
+      <pubDate>Sun, 23 Jun 2024 14:12:29 +0800</pubDate>
       
       <guid>https://challenai.github.io/contribute/cache/wtfcache5/</guid>
-      <description>build a high performance cache from scratch.</description>
+      <description>Different from HTTP protocol, we build TCP service from scratch without any framework</description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://challenai.github.io/contribute/cache/wtfcache5/cover.jpg" />
     </item>
     
@@ -24,7 +34,7 @@
       <pubDate>Mon, 17 Jun 2024 12:12:11 +0800</pubDate>
       
       <guid>https://challenai.github.io/contribute/cache/wtfcache4/</guid>
-      <description>build a high performance cache from scratch.</description>
+      <description>There are different ways to expose HTTP API in golang</description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://challenai.github.io/contribute/cache/wtfcache4/cover.jpg" />
     </item>
     
@@ -34,7 +44,7 @@
       <pubDate>Sun, 16 Jun 2024 11:52:11 +0800</pubDate>
       
       <guid>https://challenai.github.io/contribute/cache/wtfcache3/</guid>
-      <description>build a high performance cache from scratch.</description>
+      <description>cache is somewhere we can store data. We usually find data by its ID, or key</description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://challenai.github.io/contribute/cache/wtfcache3/cover.jpg" />
     </item>
     
@@ -54,7 +64,7 @@
       <pubDate>Sat, 18 Mar 2023 14:32:19 +0800</pubDate>
       
       <guid>https://challenai.github.io/contribute/cache/wtfcache1/</guid>
-      <description>build a high performance cache from scratch.</description>
+      <description>before we start, we should figure out our final requirements and prepare the environment.</description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://challenai.github.io/contribute/cache/wtfcache1/cover.jpg" />
     </item>
     
